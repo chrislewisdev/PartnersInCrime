@@ -20,10 +20,16 @@ MonoBehaviour:
     spriteCollectionDataGUID: 272c20a8fc79a9b4390a7951e52e766e
     spriteNames:
     - megaboss
+    - Robot
+    - wall
     spriteTextureGUIDs:
     - 101d05d62a8d4fb45877bfa284eba7da
+    - 3f1eedef69f77074f8d52d9546880bf8
+    - da9c9f1eb64f98d4985b7cfdfa8b6f8d
     spriteTextureTimeStamps:
     - 1363648831.59672
+    - 1377976368.10852
+    - 1377976378.04909
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
