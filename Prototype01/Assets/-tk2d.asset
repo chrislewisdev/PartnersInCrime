@@ -22,14 +22,23 @@ MonoBehaviour:
     - megaboss
     - Robot
     - wall
+    - AI
+    - camera
+    - selectionCircle
     spriteTextureGUIDs:
     - 101d05d62a8d4fb45877bfa284eba7da
     - 3f1eedef69f77074f8d52d9546880bf8
     - da9c9f1eb64f98d4985b7cfdfa8b6f8d
+    - 31c97032d07ff9b4fb3df5d17a6b89dc
+    - 37507ff05d9943547b9c9c7620a7027e
+    - 668ea8b1a81ec1d4f99dc72d627db848
     spriteTextureTimeStamps:
-    - 1363648831.59672
-    - 1377976368.10852
-    - 1377976378.04909
+    - 1378144991.56956
+    - 1378144991.56856
+    - 1378144991.57056
+    - 1378156228.54083
+    - 1378147559.66645
+    - 1378165481.49425
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
