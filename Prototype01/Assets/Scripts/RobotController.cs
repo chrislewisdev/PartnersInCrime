@@ -2,10 +2,13 @@
 using System.Collections;
 
 public class RobotController : MonoBehaviour {
+	
+	CharacterController moveController;
+	Vector3 velocity = Vector3.zero;
 
 	// Use this for initialization
 	void Start () {
-	
+		moveController = GetComponent<CharacterController>();
 	}
 	
 	// Update is called once per frame
@@ -14,7 +17,7 @@ public class RobotController : MonoBehaviour {
 		float horizontal = Input.GetAxis ("Horizontal");
 		float vertical = Input.GetAxis ("Vertical");
 		
-		if (Mathf.Abs (horizontal) > 0.1f)
+		/*if (Mathf.Abs (horizontal) > 0.1f)
 		{
 			if (horizontal > 0.1f && rigidbody.velocity.x < 15f ||
 				horizontal < 0.1f && rigidbody.velocity.x > -15f)
@@ -30,7 +33,27 @@ public class RobotController : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.UpArrow) && OnGround ())
 		{
 			rigidbody.AddForce (Vector3.up * 1000f);
+		}*/
+		
+		//Vector3 acceleration = -Vector3.left * horizontal;
+		//acceleration += Physics.gravity;
+		
+		//velocity = Physics.gravity;
+		velocity = moveController.velocity;
+		velocity.x = horizontal * 15f;
+		
+		if (Input.GetKeyDown (KeyCode.UpArrow) && moveController.isGrounded)
+		{
+			velocity += Vector3.up * 35f;
 		}
+		
+		velocity += Physics.gravity * Time.deltaTime * 2;
+		if (velocity.y < Physics.gravity.y)
+		{
+			velocity.y = Physics.gravity.y;
+		}
+		
+		moveController.Move (velocity * Time.deltaTime);
 	}
 	
 	private bool OnGround()
