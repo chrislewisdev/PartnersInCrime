@@ -4,23 +4,24 @@ using System.Collections.Generic;
 public class AiController : MonoBehaviour {
 	
 	public GameObject occupiedGadget;
-	public GameObject selectionCircle;
-	static float SELECTION_THRESHOLD = .5f;
+	public bool debugControls = true;
 	
+	GameObject selectionCircle;
 	
 	void Start()
 	{
 		jumpToGadget(occupiedGadget);
 		GetComponent<LineRenderer>().SetWidth(0.5f, 0.1f);
+		selectionCircle = transform.GetChild(0).gameObject;
 		selectionCircle.SetActive(false);
 	}
 	
 	void Update()
-	{
-		if (Input.GetButtonDown("Fire2"))
+	{				
+		if (debugControls)
 		{
-			jumpToGadget(GameObject.FindGameObjectWithTag("Player"));
-			return;
+			debugControlsUpdate();
+			return;	
 		}
 		
 		Vector3 input = new Vector3(Input.GetAxis("Horizontal_AI"), Input.GetAxis("Vertical_AI"), 0f);
@@ -39,12 +40,10 @@ public class AiController : MonoBehaviour {
 			{
 				selectionCircle.SetActive(true);
 				selectionCircle.transform.parent = closestGadget.transform;
-				selectionCircle.transform.localPosition = Vector3.zero;
+				selectionCircle.transform.localPosition = new Vector3(0f, 0f, -1f);
 			}
 			else
-			{
-				selectionCircle.SetActive(false);
-			}
+				selectionCircle.SetActive(false);	
 		}
 		else
 		{
@@ -53,11 +52,27 @@ public class AiController : MonoBehaviour {
 		}
 	}
 	
+	void debugControlsUpdate()
+	{
+		GameObject closestGadget = objectClosestToMouse();
+		if (closestGadget)
+		{
+			selectionCircle.SetActive(true);
+			selectionCircle.transform.parent = closestGadget.transform;
+			selectionCircle.transform.localPosition = new Vector3(0f, 0f, -1f);
+			
+			if (Input.GetMouseButtonDown(0))
+				jumpToGadget(closestGadget);
+		}
+		else
+			selectionCircle.SetActive(false);
+	}
+	
 	void jumpToGadget(GameObject gadget)
 	{
 		occupiedGadget = gadget;
 		transform.parent = occupiedGadget.transform;
-		transform.position = occupiedGadget.transform.position;
+		transform.localPosition = new Vector3(0f, 0f, 0f);
 	}
 	
 	GameObject checkForObject(Vector2 direction)
@@ -69,6 +84,25 @@ public class AiController : MonoBehaviour {
 				return hit.collider.gameObject;
 		}
 		
+		return null;
+	}
+	
+	GameObject objectClosestToMouse()
+	{
+		Camera camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<tk2dCamera>().camera;
+		RaycastHit hit;
+		
+		if (Physics.Raycast(camera.ScreenPointToRay(Input.mousePosition), out hit))
+		{
+			GameObject hitObject = hit.collider.gameObject;
+			if (hitObject.tag == "AI_Controllable" || hitObject.tag == "Player")
+			{
+				if (Physics.Raycast(new Ray(transform.position, hitObject.transform.position - transform.position), out hit)
+					&& hit.collider.gameObject == hitObject)
+					return hit.collider.gameObject;
+			}
+		}
+
 		return null;
 	}
 }
