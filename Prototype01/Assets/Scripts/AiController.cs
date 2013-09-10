@@ -18,10 +18,10 @@ public class AiController : MonoBehaviour {
 		aiActor = GetComponent<AiActor>();
 	}
 	
-	
-	
 	void Update()
 	{				
+		sendGadgetInput();
+		
 		if (debugControls)
 		{
 			debugControlsUpdate();
@@ -54,6 +54,20 @@ public class AiController : MonoBehaviour {
 			GetComponent<LineRenderer>().enabled = false;
 			selectionCircle.SetActive(false);
 		}
+	}
+	
+	void sendGadgetInput()
+	{
+		if (Input.GetButtonDown("Interact_AI"))
+			aiActor.sendGadgetButtonInput(ButtonState.BUTTON_DOWN);
+		else if (Input.GetButtonUp("Interact_AI"))
+			aiActor.sendGadgetButtonInput(ButtonState.BUTTON_UP);
+		else if (Input.GetButton("Interact_AI"))
+			aiActor.sendGadgetButtonInput(ButtonState.BUTTON_HOLD);
+		else 
+			aiActor.sendGadgetButtonInput(ButtonState.NOT_PRESSED);
+		
+		aiActor.sendGadgetDirectionInput(new Vector2(Input.GetAxis("Interact_Horizontal_AI"), Input.GetAxis("Interact_Vertical_AI")));
 	}
 	
 	void debugControlsUpdate()
@@ -96,9 +110,9 @@ public class AiController : MonoBehaviour {
 			GameObject hitObject = hit.collider.gameObject;
 			if (hitObject.tag == "AI_Controllable" || hitObject.tag == "Player")
 			{
-				if (Physics.Raycast(new Ray(transform.position, hitObject.transform.position - transform.position), out hit)
-					&& hit.collider.gameObject == hitObject)
-					return hit.collider.gameObject;
+				if (Physics.Raycast(new Ray(hitObject.transform.position, transform.position - hitObject.transform.position), out hit)
+					&& hit.collider.gameObject == aiActor.occupiedGadget)
+					return hitObject;
 			}
 		}
 

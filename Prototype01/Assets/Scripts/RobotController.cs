@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RobotController : MonoBehaviour {
+public class RobotController : GadgetControllerInterface {
 	
 	//Editor variables
 	public float speed;
@@ -11,6 +11,14 @@ public class RobotController : MonoBehaviour {
 	CharacterController moveController;
 	Vector3 velocity = Vector3.zero;
 	private bool jumped = false;
+	
+	public override void aiSendDirection (Vector2 direction)
+	{
+	}
+	
+	public override void aiSendInput (ButtonState buttonState)
+	{
+	}
 
 	// Use this for initialization
 	void Start () {
