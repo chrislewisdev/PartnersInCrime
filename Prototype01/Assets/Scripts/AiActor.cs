@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// Base class to use when implementing antivirus ai
 public class AiActor : MonoBehaviour {
 
 	public GameObject occupiedGadget;
@@ -25,6 +26,6 @@ public class AiActor : MonoBehaviour {
 	
 	void Start()
 	{
-		jumpToGadget(occupiedGadget);
+		;
 	}
 }
