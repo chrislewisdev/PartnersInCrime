@@ -1,21 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-public class AiController : MonoBehaviour {
+public class AiController : AiActor {
 	
 	
 	public bool debugControls = true;
 	
 	GameObject selectionCircle;
-	AiActor aiActor;
 	
 	void Start()
 	{
+		jumpToGadget(occupiedGadget);
+		
 		GetComponent<LineRenderer>().SetWidth(0.5f, 0.1f);
 		selectionCircle = transform.GetChild(0).gameObject;
 		selectionCircle.SetActive(false);
-		
-		aiActor = GetComponent<AiActor>();
 	}
 	
 	void Update()
@@ -33,7 +32,7 @@ public class AiController : MonoBehaviour {
 		{
 			GameObject closestGadget = checkForObject(input);
 			if (closestGadget && Input.GetButtonDown("Jump_AI"))
-				aiActor.jumpToGadget(closestGadget);
+				jumpToGadget(closestGadget);
 			
 			LineRenderer renderer = GetComponent<LineRenderer>();
 			renderer.enabled = true;
@@ -59,15 +58,15 @@ public class AiController : MonoBehaviour {
 	void sendGadgetInput()
 	{
 		if (Input.GetButtonDown("Interact_AI"))
-			aiActor.sendGadgetButtonInput(ButtonState.BUTTON_DOWN);
+			sendGadgetButtonInput(ButtonState.BUTTON_DOWN);
 		else if (Input.GetButtonUp("Interact_AI"))
-			aiActor.sendGadgetButtonInput(ButtonState.BUTTON_UP);
+			sendGadgetButtonInput(ButtonState.BUTTON_UP);
 		else if (Input.GetButton("Interact_AI"))
-			aiActor.sendGadgetButtonInput(ButtonState.BUTTON_HOLD);
+			sendGadgetButtonInput(ButtonState.BUTTON_HOLD);
 		else 
-			aiActor.sendGadgetButtonInput(ButtonState.NOT_PRESSED);
+			sendGadgetButtonInput(ButtonState.NOT_PRESSED);
 		
-		aiActor.sendGadgetDirectionInput(new Vector2(Input.GetAxis("Interact_Horizontal_AI"), Input.GetAxis("Interact_Vertical_AI")));
+		sendGadgetDirectionInput(new Vector2(Input.GetAxis("Interact_Horizontal_AI"), Input.GetAxis("Interact_Vertical_AI")));
 	}
 	
 	void debugControlsUpdate()
@@ -80,7 +79,7 @@ public class AiController : MonoBehaviour {
 			selectionCircle.transform.localPosition = new Vector3(0f, 0f, -1f);
 			
 			if (Input.GetMouseButtonDown(0))
-				aiActor.jumpToGadget(closestGadget);
+				jumpToGadget(closestGadget);
 		}
 		else
 			selectionCircle.SetActive(false);
@@ -93,7 +92,7 @@ public class AiController : MonoBehaviour {
 		RaycastHit hit;
 		if (Physics.Raycast(new Ray(transform.position, direction), out hit))
 		{
-			if (hit.collider.gameObject.tag == "AI_Controllable" || hit.collider.gameObject.tag == "Player")
+			if (hit.collider.gameObject.GetComponent<GadgetControllerInterface>() != null)
 				return hit.collider.gameObject;
 		}
 		
@@ -108,10 +107,10 @@ public class AiController : MonoBehaviour {
 		if (Physics.Raycast(camera.ScreenPointToRay(Input.mousePosition), out hit))
 		{
 			GameObject hitObject = hit.collider.gameObject;
-			if (hitObject.tag == "AI_Controllable" || hitObject.tag == "Player")
+			if (hitObject.GetComponent<GadgetControllerInterface>() != null)
 			{
 				if (Physics.Raycast(new Ray(hitObject.transform.position, transform.position - hitObject.transform.position), out hit)
-					&& hit.collider.gameObject == aiActor.occupiedGadget)
+					&& hit.collider.gameObject == occupiedGadget)
 					return hitObject;
 			}
 		}
