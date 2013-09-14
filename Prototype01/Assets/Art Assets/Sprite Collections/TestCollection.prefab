@@ -325,7 +325,7 @@ MonoBehaviour:
   userDefinedTextureSettings: 0
   mipmapEnabled: 0
   anisoLevel: 1
-  physicsDepth: .100000001
+  physicsDepth: 20
   disableTrimming: 0
   normalGenerationMode: 0
   padAmount: -1
