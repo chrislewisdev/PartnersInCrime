@@ -46,7 +46,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.98685646, y: 6.43644524, z: 10}
+  m_LocalPosition: {x: 20.9507561, y: 4.40552759, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 25
-  jumpStrength: 35
+  jumpStrength: 25
   gravityFactor: 2
 --- !u!114 &11400002
 MonoBehaviour:
@@ -211,7 +211,7 @@ MonoBehaviour:
   viewportRegion: {x: 0, y: 0, z: 100, w: 100}
   zoomFactor: 1
   forceResolutionInEditor: 1
-  forceResolution: {x: 10, y: 10}
+  forceResolution: {x: 1024, y: 768}
 --- !u!124 &12400000
 Behaviour:
   m_ObjectHideFlags: 1

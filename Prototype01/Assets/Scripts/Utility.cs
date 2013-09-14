@@ -6,6 +6,15 @@ public class Utility {
 
 	private static Dictionary<string, bool> logValues = new Dictionary<string, bool>();
 	
+	/// <summary>
+	/// Logs a value only if it's been changed from its previous value.
+	/// </summary>
+	/// <param name='valueName'>
+	/// Value name. Used to identify individual values amongst all others.
+	/// </param>
+	/// <param name='val'>
+	/// Value.
+	/// </param>
 	public static void LogChangedValue(string valueName, bool val)
 	{
 		//Check if the value already exists in our dictionary

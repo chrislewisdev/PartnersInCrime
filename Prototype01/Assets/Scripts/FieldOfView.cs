@@ -7,6 +7,7 @@ public class FieldOfView : MonoBehaviour {
 	public float fieldOfView;
 	public float range;
 	public Material material;
+	public int startingRotation;
 	
 	private float rotation = 0f;
 	public float Rotation { get { return rotation; } set { rotation = value; } }
@@ -21,8 +22,10 @@ public class FieldOfView : MonoBehaviour {
 		//Set up the renderer
 		lineRenderer.SetVertexCount(5);
 		lineRenderer.useWorldSpace = false;
-		lineRenderer.SetWidth (0.1f, 0.1f);
+		lineRenderer.SetWidth (0.2f, 0.2f);
 		lineRenderer.material = material;
+		
+		rotation = startingRotation;
 	}
 	
 	public void Update()

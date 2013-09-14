@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(CharacterController))]
 public class RobotController : GadgetControllerInterface {
 	
 	//Editor variables
@@ -55,10 +56,5 @@ public class RobotController : GadgetControllerInterface {
 		}
 		
 		moveController.Move (velocity * Time.deltaTime);
-	}
-	
-	private bool OnGround()
-	{
-		return Physics.Raycast (new Ray(transform.position, Vector3.down), 1.7f);
 	}
 }
