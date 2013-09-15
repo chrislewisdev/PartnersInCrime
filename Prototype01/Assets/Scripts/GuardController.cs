@@ -29,6 +29,9 @@ public class GuardController : MonoBehaviour {
 	{
 		if (sleepingCounter > 0) sleepingCounter -= Time.deltaTime;
 		if (patrolPath.Size () > 0 && sleepingCounter <= 0) FollowPath();
+		
+		if (sight.IsObjectInView (GameObject.FindGameObjectWithTag("Player")))
+			Application.LoadLevel (Application.loadedLevelName);
 	}
 	
 	private void FollowPath()

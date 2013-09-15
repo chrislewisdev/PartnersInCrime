@@ -49,7 +49,7 @@ public class SecurityCamera : GadgetControllerInterface {
 		if (!sightDeactivated)
 		{
 			if (sight.IsObjectInView(GameObject.FindGameObjectWithTag("Player")))
-				;// RESET LEVEL YOU HAVE BEEN SPOTTED *****************************************************
+				Application.LoadLevel (Application.loadedLevelName);
 		}
 		
 		if (Mathf.Abs(transform.eulerAngles.z - targetAim) > 0.1f)
