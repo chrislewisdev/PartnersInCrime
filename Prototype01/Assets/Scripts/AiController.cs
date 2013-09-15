@@ -90,6 +90,7 @@ public class AiController : AiActor {
 	GameObject checkForObject(Vector2 direction)
 	{
 		RaycastHit hit;
+		int i = 5;
 		if (Physics.Raycast(new Ray(transform.position, direction), out hit))
 		{
 			if (hit.collider.gameObject.GetComponent<GadgetControllerInterface>() != null)

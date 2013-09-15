@@ -1,19 +1,55 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(FieldOfView))]
 public class SecurityCamera : GadgetControllerInterface {
-
+	
+	FieldOfView sight;
+	bool sightDeactivated;
+	float targetAim;
+	
 	public override void aiSendInput (ButtonState buttonState)
-	{
-		if (buttonState == ButtonState.BUTTON_DOWN)	
-			GetComponent<MeshRenderer>().enabled = false;
-		else if (buttonState == ButtonState.BUTTON_UP)
-			GetComponent<MeshRenderer>().enabled = true;
-		
+	{	
+		if (buttonState == ButtonState.BUTTON_HOLD)
+		{
+			sightDeactivated = true;
+			sight.enabled = false;
+			GetComponent<LineRenderer>().enabled = false;
+		}
+		else
+		{
+			sightDeactivated = false;
+			sight.enabled = true;
+			GetComponent<LineRenderer>().enabled = true;
+		}
 	}
 	
 	public override void aiSendDirection (Vector2 direction)
 	{
-		transform.Translate(new Vector3(direction.x, direction.y, 0f));
+		if (direction.magnitude > 0.5f)
+		{
+			float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+			targetAim = Mathf.Clamp(angle, 0, 150);
+			
+			//transform.eulerAngles = new Vector3(0f, 0f, angle);
+		}
+	}
+
+	void Start()
+	{
+		sight = GetComponent<FieldOfView>();
+		targetAim = transform.eulerAngles.z;
+	}
+	
+	void Update()
+	{
+		if (!sightDeactivated)
+		{
+			if (sight.IsObjectInView(GameObject.FindGameObjectWithTag("Player")))
+				;// RESET LEVEL YOU HAVE BEEN SPOTTED *****************************************************
+		}
+		
+		if (Mathf.Abs(transform.eulerAngles.z - targetAim) > 0.1f)
+			transform.eulerAngles = new Vector3(0f, 0f, Mathf.Lerp(transform.eulerAngles.z, targetAim, 0.1f));
 	}
 }
