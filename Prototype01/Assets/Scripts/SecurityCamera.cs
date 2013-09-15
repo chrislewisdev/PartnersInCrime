@@ -10,17 +10,20 @@ public class SecurityCamera : GadgetControllerInterface {
 	
 	public override void aiSendInput (ButtonState buttonState)
 	{	
-		if (buttonState == ButtonState.BUTTON_HOLD)
+		if (buttonState == ButtonState.BUTTON_DOWN)
 		{
-			sightDeactivated = true;
-			sight.enabled = false;
-			GetComponent<LineRenderer>().enabled = false;
-		}
-		else
-		{
-			sightDeactivated = false;
-			sight.enabled = true;
-			GetComponent<LineRenderer>().enabled = true;
+			if (!sightDeactivated)
+			{
+				sightDeactivated = true;
+				sight.enabled = false;
+				GetComponent<LineRenderer>().enabled = false;
+			}
+			else
+			{
+				sightDeactivated = false;
+				sight.enabled = true;
+				GetComponent<LineRenderer>().enabled = true;
+			}
 		}
 	}
 	
