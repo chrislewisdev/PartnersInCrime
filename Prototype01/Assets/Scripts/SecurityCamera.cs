@@ -15,14 +15,15 @@ public class SecurityCamera : GadgetControllerInterface {
 			if (!sightDeactivated)
 			{
 				sightDeactivated = true;
+				sight.getLight().LightEnabled = false;
 				sight.enabled = false;
-				GetComponent<LineRenderer>().enabled = false;
+			
 			}
 			else
 			{
 				sightDeactivated = false;
 				sight.enabled = true;
-				GetComponent<LineRenderer>().enabled = true;
+				sight.getLight().LightEnabled = true;
 			}
 		}
 	}

@@ -11,19 +11,11 @@ public class FieldOfView : MonoBehaviour {
 	
 	private float rotation = 0f;
 	public float Rotation { get { return rotation; } set { rotation = value; } }
-	private LineRenderer lineRenderer;
+	private Light2D light;
 	
 	void Start()
 	{
-		//Make sure that a LineRenderer is attached to this object
-		lineRenderer = GetComponent<LineRenderer>();
-		if (lineRenderer == null)
-			lineRenderer = gameObject.AddComponent<LineRenderer>();
-		//Set up the renderer
-		lineRenderer.SetVertexCount(5);
-		lineRenderer.useWorldSpace = false;
-		lineRenderer.SetWidth (0.2f, 0.2f);
-		lineRenderer.material = material;
+		AddLight();
 		
 		rotation = startingRotation;
 	}
@@ -31,8 +23,9 @@ public class FieldOfView : MonoBehaviour {
 	public void Update()
 	{
 		//Utility.LogChangedValue ("EnemyInView", IsObjectInView (GameObject.Find ("AngleObject")));
-		UpdateLineRenderer();
 		//rotation += 2f;
+		
+		UpdateLight();
 	}
 	
 	//Determines whether the specified object is in view of this object.
@@ -65,18 +58,26 @@ public class FieldOfView : MonoBehaviour {
 		return Mathf.Atan2 (d.y, d.x) * Mathf.Rad2Deg;
 	}
 	
-	private void UpdateLineRenderer()
+	public Light2D getLight()
 	{
-		//Re-calculate our line points
-		float angle1 = rotation - fieldOfView/2, angle2 = rotation + fieldOfView/2;
-		Vector3 p1 = new Vector3(Mathf.Cos (angle1 * Mathf.Deg2Rad) * range, Mathf.Sin (angle1 * Mathf.Deg2Rad) * range, -1);
-		Vector3 p2 = new Vector3(Mathf.Cos (rotation * Mathf.Deg2Rad) * range, Mathf.Sin (rotation * Mathf.Deg2Rad) * range, -1);
-		Vector3 p3 = new Vector3(Mathf.Cos (angle2 * Mathf.Deg2Rad) * range, Mathf.Sin (angle2 * Mathf.Deg2Rad) * range, -1);
-		//Update our line points
-		lineRenderer.SetPosition(0, Vector3.zero + Vector3.back);
-		lineRenderer.SetPosition(1, p1);
-		lineRenderer.SetPosition(2, p2);
-		lineRenderer.SetPosition(3, p3);
-		lineRenderer.SetPosition(4, Vector3.zero + Vector3.back);
+		return light;
+	}
+	
+	private void AddLight()
+	{
+		for (int i = 0; i < transform.childCount; i++)
+		{
+			light = transform.GetChild(i).gameObject.GetComponent<Light2D>();
+			if (light)
+				return;
+		}
+		
+		light = Light2D.Create(transform.position, Color.red, range, (int)fieldOfView); 
+		light.gameObject.transform.parent = transform;
+	}
+	
+	private void UpdateLight()
+	{
+		light.gameObject.transform.eulerAngles = new Vector3(0f, 0f, rotation);
 	}
 }

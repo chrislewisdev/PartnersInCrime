@@ -1,14 +1,17 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GuardController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ICameraController.cs">
     <Files>
-      <File FileName="Assets\Scripts\GuardController.cs" Line="73" Column="35" />
-      <File FileName="Assets\Scripts\SecurityCamera.cs" Line="38" Column="4" />
+      <File FileName="Assets\Light2D\READ-ME.txt" Line="45" Column="84" />
+      <File FileName="Assets\Scripts\FieldOfView.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GuardController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SecurityCamera.cs" Line="26" Column="42" />
       <File FileName="Assets\Scripts\Utility.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PatrolPath.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\RobotController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\FieldOfView.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\AiController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Light2D\Core\Light2D.cs" Line="12" Column="35" />
+      <File FileName="Assets\Scripts\ICameraController.cs" Line="17" Column="46" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

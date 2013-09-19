@@ -37,19 +37,36 @@
     <Reference Include="System.XML" />
 	<Reference Include="System.Core" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity_4.2/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity_4.2/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Light2D\Core\Light2D.cs" />
+     <Compile Include="Assets\Light2D\Helpful Scripts\Light2DHUD.cs" />
+     <Compile Include="Assets\Light2D\Helpful Scripts\Light2D_LookAt.cs" />
+     <Compile Include="Assets\Light2D\Samples\Sample [Create Lights]\CreateAtClick_2DVLS.cs" />
+     <Compile Include="Assets\Light2D\Samples\Sample [Events]\EventSample_VLS.cs" />
+     <Compile Include="Assets\Light2D\Samples\Sample [Lite Room]\Spin_VLS.cs" />
+     <Compile Include="Assets\Light2D\Samples\Sample [Lots of Lights]\SpawnLights_VLS.cs" />
+     <Compile Include="Assets\Light2D\Samples\Sample [Rapid Instantiate]\RapidLightGenerator.cs" />
+     <Compile Include="Assets\Light2D\Samples\_Scripts\CameraPlanerMovement_VLS.cs" />
+     <Compile Include="Assets\Light2D\Samples\_Scripts\DragLight_VLS.cs" />
+     <Compile Include="Assets\Light2D\Samples\_Scripts\Orbit_VLS.cs" />
+     <Compile Include="Assets\Light2D\Samples\_Scripts\RotateLight_VLS.cs" />
+     <Compile Include="Assets\Light2D\Samples\_Scripts\ScaleObject_VLS.cs" />
+     <Compile Include="Assets\Light2D\Samples\_Scripts\SineWave_VLS.cs" />
+     <Compile Include="Assets\Light2D\Samples\_Scripts\ToggleLight_VLS.cs" />
      <Compile Include="Assets\Scripts\AiActor.cs" />
      <Compile Include="Assets\Scripts\AiController.cs" />
+     <Compile Include="Assets\Scripts\CameraControllerTwoPoint.cs" />
      <Compile Include="Assets\Scripts\Door.cs" />
      <Compile Include="Assets\Scripts\FieldOfView.cs" />
      <Compile Include="Assets\Scripts\GadgetControllerInterface.cs" />
      <Compile Include="Assets\Scripts\GuardController.cs" />
+     <Compile Include="Assets\Scripts\ICameraController.cs" />
      <Compile Include="Assets\Scripts\PatrolPath.cs" />
      <Compile Include="Assets\Scripts\PatrolPathWaypoint.cs" />
      <Compile Include="Assets\Scripts\RobotController.cs" />
@@ -125,22 +142,31 @@
      <None Include="Assets\TK2DROOT\tk2d\Shaders\goodies\PackedTextMesh.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Goodies\TexturePacker\Exporter\2dtoolkit\exporter.xml" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\Blend2TexVertexColor.shader" />
+     <None Include="Assets\Light2D\Core\Shaders\2DVLS_Light.shader" />
      <None Include="Assets\TK2DROOT\tk2dUI\Shaders\DepthMask.shader" />
      <None Include="Assets\TK2DROOT\tk2dUI\Shaders\DepthMaskSolid.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Editor\EditorUtility.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\PremulVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\AdditiveVertexColor.shader" />
+     <None Include="Assets\Light2D\Core\Shaders\2DVLS_Cutout.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\SolidVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\LitSolidVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\LitCutoutVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d_demo\democameradata\source\democamerafont.fnt" />
      <None Include="Assets\TK2DROOT\tk2dUI_demo\Assets\Font\OldSansBlack\OldSansBlack.fnt" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\BlurEffectConeTaps.shader" />
      <None Include="Assets\TK2DROOT\tk2d_demo\Credits.txt" />
+     <None Include="Assets\Light2D\Core\Shaders\2DVLS_Diffuse.shader" />
+     <None Include="Assets\Light2D\READ-ME.txt" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\resources\BlendVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\LitBlendVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\CutoutVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\LitPremulVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d_demo\demobmfont\test.fnt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{45FD7A6C-5D4B-EA5A-2325-81EE7F302B8A}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
