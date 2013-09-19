@@ -3,13 +3,15 @@ using System.Collections;
 
 public abstract class ICameraController : MonoBehaviour {
 
-	public GameObject robotPlayer;
-	public GameObject aiPlayer;
+	protected GameObject robotPlayer;
+	protected GameObject aiPlayer;
 	private tk2dCamera camera;
 	
 	void Start()
 	{
 		camera = GetComponent<tk2dCamera>();
+		robotPlayer = GameObject.FindGameObjectWithTag("Player");
+		aiPlayer = GameObject.FindGameObjectWithTag("AI_Player");
 	}
 	
 	void Update()

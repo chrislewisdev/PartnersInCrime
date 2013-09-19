@@ -4,9 +4,12 @@ using System.Collections;
 [RequireComponent(typeof(FieldOfView))]
 public class SecurityCamera : GadgetControllerInterface {
 	
+	private static float TURN_ON_TIMER = 1.5f;
+	
 	FieldOfView sight;
 	bool sightDeactivated;
 	float targetAim;
+	float turnOnTimer;
 	
 	public override void aiSendInput (ButtonState buttonState)
 	{	
@@ -43,6 +46,7 @@ public class SecurityCamera : GadgetControllerInterface {
 	{
 		sight = GetComponent<FieldOfView>();
 		targetAim = transform.eulerAngles.z;
+		turnOnTimer = 1.5f;
 	}
 	
 	void Update()
@@ -51,6 +55,17 @@ public class SecurityCamera : GadgetControllerInterface {
 		{
 			if (sight.IsObjectInView(GameObject.FindGameObjectWithTag("Player")))
 				Application.LoadLevel (Application.loadedLevelName);
+		}
+		else if (!isPossessed())
+		{
+			turnOnTimer -= Time.deltaTime;
+			if (turnOnTimer <= 0f)
+			{
+				sightDeactivated = false;
+				sight.enabled = true;
+				sight.getLight().LightEnabled = true;
+				turnOnTimer = TURN_ON_TIMER;
+			}
 		}
 		
 		if (Mathf.Abs(transform.eulerAngles.z - targetAim) > 0.1f)
