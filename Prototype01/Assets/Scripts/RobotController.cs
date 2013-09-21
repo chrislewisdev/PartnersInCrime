@@ -33,7 +33,7 @@ public class RobotController : GadgetControllerInterface {
 		float vertical = Input.GetAxis ("Vertical");
 		
 		//velocity = Physics.gravity;
-		velocity = moveController.velocity;
+		//velocity = moveController.velocity;
 		velocity.x = horizontal * speed;
 		
 		if (vertical > 0 && !jumped)
@@ -49,12 +49,23 @@ public class RobotController : GadgetControllerInterface {
 			jumped = false;
 		}
 		
-		velocity += Physics.gravity * Time.deltaTime * gravityFactor;
-		if (velocity.y < Physics.gravity.y)
-		{
-			velocity.y = Physics.gravity.y;
-		}
+		//if (!moveController.isGrounded)
+		//{
+			velocity += Physics.gravity * Time.deltaTime * gravityFactor;
+			if (velocity.y < Physics.gravity.y)
+			{
+				velocity.y = Physics.gravity.y;
+			}
+		//}
 		
-		moveController.Move (velocity * Time.deltaTime);
+		CollisionFlags collision = moveController.Move (velocity * Time.deltaTime);
+		if ((collision & CollisionFlags.Above) != 0 && velocity.y > 0)
+		{
+			velocity.y = 0;
+		}
+		if ((collision & CollisionFlags.Below) != 0 && velocity.y < 0)
+		{
+			velocity.y = 0;
+		}
 	}
 }

@@ -4408,6 +4408,14 @@ Prefab:
       propertyPath: forceResolution.y
       value: 768
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: cfccf8f9ed08cd4458ee4456664e5764, type: 2}
+      propertyPath: nativeResolutionWidth
+      value: 1366
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: cfccf8f9ed08cd4458ee4456664e5764, type: 2}
+      propertyPath: nativeResolutionHeight
+      value: 768
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cfccf8f9ed08cd4458ee4456664e5764, type: 2}
   m_RootGameObject: {fileID: 1915765266}
@@ -4499,8 +4507,8 @@ MonoBehaviour:
     autoScaleMode: 3
     fitMode: 1
   inheritSettings: {fileID: 0}
-  nativeResolutionWidth: 960
-  nativeResolutionHeight: 640
+  nativeResolutionWidth: 1366
+  nativeResolutionHeight: 768
   _unityCamera: {fileID: 1915765270}
   viewportClippingEnabled: 0
   viewportRegion: {x: 0, y: 0, z: 100, w: 100}
