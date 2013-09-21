@@ -58,6 +58,12 @@ public class FieldOfView : MonoBehaviour {
 		return Mathf.Atan2 (d.y, d.x) * Mathf.Rad2Deg;
 	}
 	
+	//Sets rotation of fieldOfView
+	public void setRotation(float angle)
+	{
+		rotation = angle;
+	}
+	
 	public Light2D getLight()
 	{
 		return light;

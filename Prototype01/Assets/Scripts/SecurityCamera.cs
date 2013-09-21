@@ -4,12 +4,16 @@ using System.Collections;
 [RequireComponent(typeof(FieldOfView))]
 public class SecurityCamera : GadgetControllerInterface {
 	
+	public float startRotation;
+	public float endRotation;
+	public float rotationSpeed;
+	
 	private static float TURN_ON_TIMER = 1.5f;
 	
 	FieldOfView sight;
 	bool sightDeactivated;
-	float targetAim;
 	float turnOnTimer;
+	bool panningRight;
 	
 	public override void aiSendInput (ButtonState buttonState)
 	{	
@@ -33,20 +37,15 @@ public class SecurityCamera : GadgetControllerInterface {
 	
 	public override void aiSendDirection (Vector2 direction)
 	{
-		if (direction.magnitude > 0.5f)
-		{
-			float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-			targetAim = Mathf.Clamp(angle, 0, 150);
-			
-			//transform.eulerAngles = new Vector3(0f, 0f, angle);
-		}
 	}
 
 	void Start()
 	{
 		sight = GetComponent<FieldOfView>();
-		targetAim = transform.eulerAngles.z;
+
+		transform.eulerAngles = new Vector3(0f, 0f, startRotation);
 		turnOnTimer = 1.5f;
+        panningRight = true;
 	}
 	
 	void Update()
@@ -55,6 +54,8 @@ public class SecurityCamera : GadgetControllerInterface {
 		{
 			if (sight.IsObjectInView(GameObject.FindGameObjectWithTag("Player")))
 				Application.LoadLevel (Application.loadedLevelName);
+
+			updateRotation();
 		}
 		else if (!isPossessed())
 		{
@@ -67,8 +68,28 @@ public class SecurityCamera : GadgetControllerInterface {
 				turnOnTimer = TURN_ON_TIMER;
 			}
 		}
+	}
+	
+	void updateRotation()
+	{
+		float angle = transform.localEulerAngles.z;
 		
-		if (Mathf.Abs(transform.eulerAngles.z - targetAim) > 0.1f)
-			transform.eulerAngles = new Vector3(0f, 0f, Mathf.Lerp(transform.eulerAngles.z, targetAim, 0.1f));
+		if (panningRight)
+		{
+			if (angle >= endRotation)
+				panningRight = false;
+			else
+				angle += Time.deltaTime * rotationSpeed;
+		}
+		else
+		{
+			if (angle <= startRotation)
+				panningRight = true;
+			else
+				angle -= Time.deltaTime * rotationSpeed;
+		}
+		
+		transform.eulerAngles = new Vector3(0f, 0f, angle);
+		sight.setRotation(angle);
 	}
 }

@@ -1,0 +1,10 @@
+C:\Users\Simon\Swinburne\Year 3 Sem 2\Games Lab\PartnersInCrime\Prototype01\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Simon\Swinburne\Year 3 Sem 2\Games Lab\PartnersInCrime\Prototype01\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\Simon\Swinburne\Year 3 Sem 2\Games Lab\PartnersInCrime\Prototype01\Temp\bin\Debug\UnityEditor.dll
+C:\Users\Simon\Swinburne\Year 3 Sem 2\Games Lab\PartnersInCrime\Prototype01\Temp\bin\Debug\UnityEngine.dll
+C:\Users\Simon\Swinburne\Year 3 Sem 2\Games Lab\PartnersInCrime\Prototype01\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\Simon\Swinburne\Year 3 Sem 2\Games Lab\PartnersInCrime\Prototype01\Temp\bin\Debug\nunit.framework.dll
+C:\Users\Simon\Swinburne\Year 3 Sem 2\Games Lab\PartnersInCrime\Prototype01\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\Simon\Swinburne\Year 3 Sem 2\Games Lab\PartnersInCrime\Prototype01\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache
+C:\Users\Simon\Swinburne\Year 3 Sem 2\Games Lab\PartnersInCrime\Prototype01\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Simon\Swinburne\Year 3 Sem 2\Games Lab\PartnersInCrime\Prototype01\obj\Debug\Assembly-CSharp-firstpass.pdb

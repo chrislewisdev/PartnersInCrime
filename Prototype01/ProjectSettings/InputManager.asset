@@ -24,10 +24,10 @@ InputManager:
     m_Name: Vertical
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: down
-    positiveButton: up
+    negativeButton: 
+    positiveButton: joystick 1 button 0
     altNegativeButton: 
-    altPositiveButton: joystick button 0
+    altPositiveButton: up
     gravity: Infinity
     dead: .00100000005
     sensitivity: Infinity
@@ -185,7 +185,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 1
+    positiveButton: joystick 2 button 1
     altNegativeButton: 
     altPositiveButton: space
     gravity: 1000
@@ -233,7 +233,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 0
+    positiveButton: joystick 2 button 0
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000

@@ -27,8 +27,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106829}
-  m_LocalPosition: {x: 15.8803539, y: 35.0101471, z: 10}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 71.2945938, y: 39.202446, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -67,7 +67,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.60000002, y: 1.04999995, z: 1}
+  m_Size: {x: 3.20000005, y: 2.0999999, z: 1}
   m_Center: {x: 0, y: .275000006, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -102,7 +102,7 @@ MonoBehaviour:
   fieldOfView: 60
   range: 10
   material: {fileID: 2100000, guid: 6c20936d7af00ad419cf3009b85e2582, type: 2}
-  startingRotation: -155
+  startingRotation: -70
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -114,6 +114,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af43ce17d31897c42bf9681cc4a9265d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startRotation: 0
+  endRotation: 0
+  rotationSpeed: 15
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
