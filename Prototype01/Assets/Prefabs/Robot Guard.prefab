@@ -14,6 +14,7 @@ GameObject:
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
   - 143: {fileID: 14300000}
+  - 114: {fileID: 11400006}
   m_Layer: 9
   m_Name: Robot Guard
   m_TagString: Untagged
@@ -68,6 +69,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e263336188340e144a199355c2ee0012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  walkSpeed: 0
   patrolPath: {fileID: 0}
 --- !u!114 &11400002
 MonoBehaviour:
@@ -83,6 +85,7 @@ MonoBehaviour:
   fieldOfView: 60
   range: 10
   material: {fileID: 2100000, guid: 6c20936d7af00ad419cf3009b85e2582, type: 2}
+  startingRotation: 0
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -102,6 +105,19 @@ MonoBehaviour:
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ce1c59978583db4391af48fbb81c188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  suspiciousThreshold: .200000003
+  aggressionThreshold: .400000006
 --- !u!143 &14300000
 CharacterController:
   m_ObjectHideFlags: 1

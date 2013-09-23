@@ -62,6 +62,7 @@
      <Compile Include="Assets\Scripts\AiActor.cs" />
      <Compile Include="Assets\Scripts\AiController.cs" />
      <Compile Include="Assets\Scripts\CameraControllerTwoPoint.cs" />
+     <Compile Include="Assets\Scripts\DelayedReactionLogic.cs" />
      <Compile Include="Assets\Scripts\Door.cs" />
      <Compile Include="Assets\Scripts\FieldOfView.cs" />
      <Compile Include="Assets\Scripts\GadgetControllerInterface.cs" />
@@ -69,6 +70,7 @@
      <Compile Include="Assets\Scripts\ICameraController.cs" />
      <Compile Include="Assets\Scripts\PatrolPath.cs" />
      <Compile Include="Assets\Scripts\PatrolPathWaypoint.cs" />
+     <Compile Include="Assets\Scripts\ReactionLogic.cs" />
      <Compile Include="Assets\Scripts\RobotController.cs" />
      <Compile Include="Assets\Scripts\SecurityCamera.cs" />
      <Compile Include="Assets\Scripts\Utility.cs" />

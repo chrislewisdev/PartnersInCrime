@@ -3,6 +3,7 @@ using System.Collections;
 
 [RequireComponent(typeof(CharacterController))]
 [RequireComponent(typeof(FieldOfView))]
+[RequireComponent(typeof(ReactionLogic))]
 public class GuardController : MonoBehaviour {
 	
 	public float walkSpeed;
@@ -10,6 +11,7 @@ public class GuardController : MonoBehaviour {
 	
 	private CharacterController moveController;
 	private FieldOfView sight;
+	private ReactionLogic reaction;
 	private int pathIndex = 0;
 	private Vector3 velocity = Vector3.zero;
 	private float sleepingCounter = 0;
@@ -17,13 +19,9 @@ public class GuardController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		if (patrolPath == null)
-		{
-			Debug.LogWarning ("Guard '" + gameObject.name + "' has no patrol path! Standing around dumbly...");
-		}
-		
 		moveController = GetComponent<CharacterController>();
 		sight = GetComponent<FieldOfView>();
+		reaction = GetComponent<ReactionLogic>();
 	}
 	
 	// Update is called once per frame
@@ -34,7 +32,10 @@ public class GuardController : MonoBehaviour {
 		else if (sleepingCounter <= 0) WalkToEdges();
 		
 		if (sight.IsObjectInView (GameObject.FindGameObjectWithTag("Player")))
-			Application.LoadLevel (Application.loadedLevelName);
+			reaction.OnIntruderInSight();
+		else
+			reaction.OnIntruderOutOfSight();
+		Debug.Log (reaction.DetermineAlertness());
 	}
 	
 	private void FollowPath()
@@ -108,14 +109,14 @@ public class GuardController : MonoBehaviour {
 	private bool FacingEdge()
 	{
 		Vector3 halfHeight = Vector3.down * collider.bounds.size.y / 1.5f;
-		Vector3 direction = Vector3.left * walkDirection * collider.bounds.size.x / 1.5f;
+		Vector3 direction = Vector3.left * -walkDirection * collider.bounds.size.x / 1.5f;
 		float distance = (halfHeight + direction).magnitude;
-		Ray ray = new Ray(transform.position, halfHeight + direction);
+		Ray ray = new Ray(transform.position, (halfHeight + direction).normalized);
 		
 		Debug.DrawRay (transform.position, halfHeight + direction, Color.red);
 		RaycastHit info;
 		
-		if (Physics.Raycast (ray, out info, distance, LayerMask.NameToLayer("Scenery")))
+		if (Physics.Raycast (ray, out info, distance))
 		{
 			return false;
 		}
@@ -125,8 +126,16 @@ public class GuardController : MonoBehaviour {
 		}
 	}
 	
-	private void Sleep(float seconds)
+	public void Sleep(float seconds)
 	{
 		sleepingCounter = seconds;
+	}
+	
+	/// <summary>
+	/// Raises the intruder in view event.
+	/// </summary>
+	private void OnIntruderInView()
+	{
+		//Application.LoadLevel (Application.loadedLevelName);
 	}
 }

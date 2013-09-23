@@ -238,6 +238,7 @@ GameObject:
   - 114: {fileID: 202794556}
   - 114: {fileID: 202794555}
   - 143: {fileID: 202794554}
+  - 114: {fileID: 202794561}
   m_Layer: 9
   m_Name: Robot Guard
   m_TagString: Untagged
@@ -348,6 +349,20 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &202794561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: 46de64d4976139148819a8adf0302d20,
+    type: 2}
+  m_PrefabInternal: {fileID: 1850892937}
+  m_GameObject: {fileID: 202794553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ce1c59978583db4391af48fbb81c188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  suspiciousThreshold: .200000003
+  aggressionThreshold: .400000006
 --- !u!1 &478456674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1271,7 +1286,7 @@ Transform:
   m_PrefabInternal: {fileID: 2043222550}
   m_GameObject: {fileID: 1804797383}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 43.1896782, y: 17.999136, z: 10}
+  m_LocalPosition: {x: 34.0916939, y: 27.0971203, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1539540742}
@@ -1342,6 +1357,7 @@ GameObject:
   - 114: {fileID: 2019956660}
   - 114: {fileID: 2019956661}
   - 143: {fileID: 2019956659}
+  - 114: {fileID: 2019956662}
   m_Layer: 9
   m_Name: Guard
   m_TagString: Untagged
@@ -1403,7 +1419,7 @@ Transform:
   m_PrefabInternal: {fileID: 2048806665}
   m_GameObject: {fileID: 2019956654}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.277853, y: 25.9436207, z: 10}
+  m_LocalPosition: {x: 17.277853, y: 3.32853889, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1452,6 +1468,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 5
   patrolPath: {fileID: 0}
+--- !u!114 &2019956662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: 46de64d4976139148819a8adf0302d20,
+    type: 2}
+  m_PrefabInternal: {fileID: 2048806665}
+  m_GameObject: {fileID: 2019956654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ce1c59978583db4391af48fbb81c188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  suspiciousThreshold: .200000003
+  aggressionThreshold: .400000006
 --- !u!1001 &2043222550
 Prefab:
   m_ObjectHideFlags: 0
@@ -1461,11 +1491,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 090733a3cc5f53e46b5f3552d4903acd, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 43.1896782
+      value: 34.0916939
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 090733a3cc5f53e46b5f3552d4903acd, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 17.999136
+      value: 27.0971203
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 090733a3cc5f53e46b5f3552d4903acd, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1525,7 +1555,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 46de64d4976139148819a8adf0302d20, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 25.9436207
+      value: 3.32853889
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 46de64d4976139148819a8adf0302d20, type: 2}
       propertyPath: m_LocalPosition.z
