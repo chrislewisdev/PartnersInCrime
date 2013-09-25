@@ -16,6 +16,7 @@ public class GuardController : MonoBehaviour {
 	private Vector3 velocity = Vector3.zero;
 	private float sleepingCounter = 0;
 	private int walkDirection = 1;
+	Alertness alertness = Alertness.Normal;
 
 	// Use this for initialization
 	void Start () {
@@ -34,8 +35,28 @@ public class GuardController : MonoBehaviour {
 		if (sight.IsObjectInView (GameObject.FindGameObjectWithTag("Player")))
 			reaction.OnIntruderInSight();
 		else
+		{
 			reaction.OnIntruderOutOfSight();
-		Debug.Log (reaction.DetermineAlertness());
+			if (reaction.DetermineAlertness() == Alertness.Suspicious && sleepingCounter <= 0)
+			{
+				Sleep (1.5f);
+			}
+		}
+		
+		alertness = reaction.DetermineAlertness();
+		if (alertness == Alertness.Aggressive)
+		{
+			//Application.LoadLevel (Application.loadedLevelName);
+			sight.getLight ().LightColor = Color.red;
+		}
+		else if (alertness == Alertness.Suspicious)
+		{
+			sight.getLight ().LightColor = Color.yellow;
+		}
+		else if (alertness == Alertness.Normal)
+		{
+			sight.getLight().LightColor = Color.blue;
+		}
 	}
 	
 	private void FollowPath()

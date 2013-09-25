@@ -15,11 +15,13 @@ public class DelayedReactionLogic : ReactionLogic {
 	public override void OnIntruderInSight()
 	{
 		detectionTimer += Time.deltaTime;
+		if (detectionTimer > aggressionThreshold) detectionTimer = 1f;
 	}
 	
 	public override void OnIntruderOutOfSight()
 	{
-		detectionTimer -= Time.deltaTime;
+		detectionTimer -= (Time.deltaTime / (int)DetermineAlertness());
+		if (detectionTimer < 0) detectionTimer = 0;
 	}
 	
 	public override Alertness DetermineAlertness()

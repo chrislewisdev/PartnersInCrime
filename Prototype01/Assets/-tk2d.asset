@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Name: -tk2d
   m_EditorClassIdentifier: 
   version: 4
-  spriteAnimationIndex: []
+  spriteAnimationIndex:
+  - assetGUID: d7bee5efc95681d4db60de448ea4219b
+    dataGUID: 
+    managed: 0
+    loadable: 0
   fontIndex: []
   spriteCollectionIndex:
   - name: TestCollection
@@ -39,6 +43,172 @@ MonoBehaviour:
     - 1378217621.63982
     - 1378217621.64282
     - 1378217621.64482
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: Robot Animations
+    spriteCollectionGUID: c23379e6a870d084992a295ee16a1aa8
+    spriteCollectionDataGUID: 8429794f6553e9344b59a38447d17ce4
+    spriteNames:
+    - el roboto run/0
+    - el roboto run/1
+    - el roboto run/2
+    - el roboto run/3
+    - el roboto run/4
+    - el roboto run/5
+    - el roboto run/6
+    - el roboto run/7
+    - el roboto run/8
+    - el roboto run/9
+    - el roboto run/10
+    - el roboto run/11
+    - el roboto run/12
+    - el roboto run/13
+    - el roboto run/14
+    - el roboto run/15
+    - el roboto run/16
+    - el roboto run/17
+    - el roboto run/18
+    - el roboto run/19
+    - el roboto run/20
+    - el roboto run/21
+    - el roboto run/22
+    - el roboto run/23
+    - el roboto run/24
+    - el roboto run/25
+    - el roboto run/26
+    - el roboto run/27
+    - el roboto run/28
+    - el roboto run/29
+    - el roboto run/30
+    - el roboto run/31
+    - el roboto run/32
+    - el roboto run/33
+    - el roboto run/34
+    - el roboto run/35
+    - el roboto run/36
+    - el roboto run/37
+    - el roboto run/38
+    - el roboto run/39
+    - el roboto run/40
+    - el roboto run/41
+    - el roboto run/42
+    - el roboto run/43
+    - el roboto run/44
+    - el roboto run/45
+    - el roboto run/46
+    - el roboto run/47
+    - el roboto run/48
+    - el roboto run/49
+    - el roboto run/50
+    - el roboto run/51
+    spriteTextureGUIDs:
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    - 53fcb878457cee3489585074ff902125
+    spriteTextureTimeStamps:
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
+    - 1380118821
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
