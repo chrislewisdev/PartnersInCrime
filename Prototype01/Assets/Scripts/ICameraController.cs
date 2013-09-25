@@ -5,19 +5,23 @@ public abstract class ICameraController : MonoBehaviour {
 
 	protected GameObject robotPlayer;
 	protected GameObject aiPlayer;
-	private tk2dCamera camera;
+	protected GameObject selectionCircle;
+	protected tk2dCamera tkCamera;
+	private AiController aiController;
 	
 	void Start()
 	{
-		camera = GetComponent<tk2dCamera>();
+		tkCamera = GetComponent<tk2dCamera>();
 		robotPlayer = GameObject.FindGameObjectWithTag("Player");
 		aiPlayer = GameObject.FindGameObjectWithTag("AI_Player");
+		aiController = aiPlayer.GetComponent<AiController>();
 	}
 	
 	void Update()
 	{
+		selectionCircle = aiController.getSelectionCircle();
 		transform.position = getNewPosition();
-		camera.ZoomFactor = getNewZoomFactor();
+		tkCamera.ZoomFactor = Mathf.Lerp(tkCamera.ZoomFactor, getNewZoomFactor(), 0.05f);
 	}
 	
 	protected abstract Vector3 getNewPosition();

@@ -8,11 +8,11 @@ public class SecurityCamera : GadgetControllerInterface {
 	public float endRotation;
 	public float rotationSpeed;
 	
-	private static float TURN_ON_TIMER = 1.5f;
+	public float turnOnTimer = 1.5f;
 	
 	FieldOfView sight;
 	bool sightDeactivated;
-	float turnOnTimer;
+	float turnOnTimerCount;
 	bool panningRight;
 	
 	public override void aiSendInput (ButtonState buttonState)
@@ -44,7 +44,7 @@ public class SecurityCamera : GadgetControllerInterface {
 		sight = GetComponent<FieldOfView>();
 
 		transform.eulerAngles = new Vector3(0f, 0f, startRotation);
-		turnOnTimer = 1.5f;
+		turnOnTimerCount = turnOnTimer; 
         panningRight = true;
 	}
 	
@@ -59,13 +59,13 @@ public class SecurityCamera : GadgetControllerInterface {
 		}
 		else if (!isPossessed())
 		{
-			turnOnTimer -= Time.deltaTime;
-			if (turnOnTimer <= 0f)
+			turnOnTimerCount -= Time.deltaTime;
+			if (turnOnTimerCount <= 0f)
 			{
 				sightDeactivated = false;
 				sight.enabled = true;
 				sight.getLight().LightEnabled = true;
-				turnOnTimer = TURN_ON_TIMER;
+				turnOnTimerCount = turnOnTimer;
 			}
 		}
 	}

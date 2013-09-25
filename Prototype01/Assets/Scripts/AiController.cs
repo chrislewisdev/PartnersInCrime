@@ -8,6 +8,15 @@ public class AiController : AiActor {
 	
 	GameObject selectionCircle;
 	
+	// Returns selection circle object or null if it is not currently active
+	public GameObject getSelectionCircle()
+	{
+		if (selectionCircle.activeSelf)
+			return selectionCircle;
+		else
+			return null;
+	}
+	
 	void Start()
 	{
 		jumpToGadget(occupiedGadget);
@@ -19,6 +28,7 @@ public class AiController : AiActor {
 	
 	void Update()
 	{				
+		updateMovement();
 		sendGadgetInput();
 		
 		if (debugControls)
@@ -90,7 +100,9 @@ public class AiController : AiActor {
 	GameObject checkForObject(Vector2 direction)
 	{
 		RaycastHit hit;
-
+		/*Vector3 position = transform.position;
+		position.z = 0f;*/
+		
 		if (Physics.Raycast(new Ray(transform.position, direction), out hit))
 		{
 			if (hit.collider.gameObject.GetComponent<GadgetControllerInterface>() != null)

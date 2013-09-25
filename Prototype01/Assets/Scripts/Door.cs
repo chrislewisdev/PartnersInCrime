@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Door : GadgetControllerInterface {
 	
-	private static float DOOR_CLOSE_TIME = 1.5f;
+	public float closeTime = 1.5f;
 	
 	bool open;
 	Vector3 targetPos;
@@ -33,7 +33,7 @@ public class Door : GadgetControllerInterface {
 		open = false;
 		targetPos = transform.position;
 		doorCollider = transform.GetChild(0).gameObject;
-		closeTimer = DOOR_CLOSE_TIME;
+		closeTimer = closeTime;
 		robotPlayer = GameObject.FindGameObjectWithTag("Player"); 
 	}
 	
@@ -49,7 +49,7 @@ public class Door : GadgetControllerInterface {
 			{
 				if (!robotPlayer.collider.bounds.Contains(transform.position + (new Vector3(-1.5f, -.2f, 0f))) && !robotPlayer.collider.bounds.Contains(transform.position + (new Vector3(1.5f, -.2f, 0f))))
 				{
-					closeTimer = DOOR_CLOSE_TIME;
+					closeTimer = closeTime;
 					open = false;
 					targetPos += (new Vector3(0f, -6.4f, 0f));
 				}

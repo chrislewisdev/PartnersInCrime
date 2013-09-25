@@ -11,7 +11,7 @@ public class FieldOfView : MonoBehaviour {
 	
 	private float rotation = 0f;
 	public float Rotation { get { return rotation; } set { rotation = value; } }
-	private Light2D light;
+	private Light2D light2d;
 	
 	void Start()
 	{
@@ -66,24 +66,24 @@ public class FieldOfView : MonoBehaviour {
 	
 	public Light2D getLight()
 	{
-		return light;
+		return light2d;
 	}
 	
 	private void AddLight()
 	{
 		for (int i = 0; i < transform.childCount; i++)
 		{
-			light = transform.GetChild(i).gameObject.GetComponent<Light2D>();
-			if (light)
+			light2d = transform.GetChild(i).gameObject.GetComponent<Light2D>();
+			if (light2d)
 				return;
 		}
 		
-		light = Light2D.Create(transform.position, Color.red, range, (int)fieldOfView); 
-		light.gameObject.transform.parent = transform;
+		light2d = Light2D.Create(transform.position, Color.red, range, (int)fieldOfView); 
+		light2d.gameObject.transform.parent = transform;
 	}
 	
 	private void UpdateLight()
 	{
-		light.gameObject.transform.eulerAngles = new Vector3(0f, 0f, rotation);
+		light2d.gameObject.transform.eulerAngles = new Vector3(0f, 0f, rotation);
 	}
 }
