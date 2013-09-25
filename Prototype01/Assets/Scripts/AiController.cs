@@ -54,6 +54,8 @@ public class AiController : AiActor {
 				selectionCircle.SetActive(true);
 				selectionCircle.transform.parent = closestGadget.transform;
 				selectionCircle.transform.localPosition = new Vector3(0f, 0f, -1f);
+				selectionCircle.transform.localScale = Vector3.one;
+				selectionCircle.transform.localRotation = Quaternion.identity;
 			}
 			else
 				selectionCircle.SetActive(false);	

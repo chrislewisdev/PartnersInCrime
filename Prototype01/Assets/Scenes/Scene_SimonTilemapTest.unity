@@ -4606,7 +4606,7 @@ Prefab:
       objectReference: {fileID: 366451453}
     - target: {fileID: 11400000, guid: cfccf8f9ed08cd4458ee4456664e5764, type: 2}
       propertyPath: forceResolution.x
-      value: 1024
+      value: 1366
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: cfccf8f9ed08cd4458ee4456664e5764, type: 2}
       propertyPath: forceResolution.y
@@ -4619,6 +4619,10 @@ Prefab:
     - target: {fileID: 11400000, guid: cfccf8f9ed08cd4458ee4456664e5764, type: 2}
       propertyPath: nativeResolutionHeight
       value: 768
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: cfccf8f9ed08cd4458ee4456664e5764, type: 2}
+      propertyPath: forceResolutionInEditor
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cfccf8f9ed08cd4458ee4456664e5764, type: 2}
@@ -4718,7 +4722,7 @@ MonoBehaviour:
   viewportRegion: {x: 0, y: 0, z: 100, w: 100}
   zoomFactor: 1
   forceResolutionInEditor: 1
-  forceResolution: {x: 1024, y: 768}
+  forceResolution: {x: 1366, y: 768}
 --- !u!20 &1915765270
 Camera:
   m_ObjectHideFlags: 0

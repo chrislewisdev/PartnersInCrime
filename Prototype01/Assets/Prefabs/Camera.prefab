@@ -121,7 +121,7 @@ MonoBehaviour:
   viewportClippingEnabled: 0
   viewportRegion: {x: 0, y: 0, z: 100, w: 100}
   zoomFactor: 1
-  forceResolutionInEditor: 1
+  forceResolutionInEditor: 0
   forceResolution: {x: 1024, y: 768}
 --- !u!114 &11400002
 MonoBehaviour:
@@ -134,8 +134,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33321d5bd66858f478437352121c0be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  robotPlayer: {fileID: 0}
-  aiPlayer: {fileID: 0}
 --- !u!124 &12400000
 Behaviour:
   m_ObjectHideFlags: 1
