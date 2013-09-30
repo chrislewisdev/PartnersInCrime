@@ -67,7 +67,9 @@
      <Compile Include="Assets\Scripts\Door.cs" />
      <Compile Include="Assets\Scripts\FieldOfView.cs" />
      <Compile Include="Assets\Scripts\GadgetControllerInterface.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\GuardController.cs" />
+     <Compile Include="Assets\Scripts\GuardSpawner.cs" />
      <Compile Include="Assets\Scripts\ICameraController.cs" />
      <Compile Include="Assets\Scripts\PatrolPath.cs" />
      <Compile Include="Assets\Scripts\PatrolPathWaypoint.cs" />

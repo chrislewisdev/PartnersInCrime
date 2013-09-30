@@ -16,9 +16,9 @@ public class Door : GadgetControllerInterface {
 		if (buttonState == ButtonState.BUTTON_DOWN)
 		{
 			if (open)
-				targetPos += (new Vector3(0f, -6.4f, 0f));
+				targetPos += (new Vector3(0f, -9.6f, 0f));
 			else
-				targetPos += (new Vector3(0f, 6.4f, 0f));
+				targetPos += (new Vector3(0f, 9.6f, 0f));
 			
 			open = !open;
 		}
@@ -51,7 +51,7 @@ public class Door : GadgetControllerInterface {
 				{
 					closeTimer = closeTime;
 					open = false;
-					targetPos += (new Vector3(0f, -6.4f, 0f));
+					targetPos += (new Vector3(0f, -9.6f, 0f));
 				}
 			}
 		}
