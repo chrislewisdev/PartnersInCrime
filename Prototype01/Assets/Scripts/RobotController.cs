@@ -15,6 +15,7 @@ public class RobotController : GadgetControllerInterface {
 	private bool jumped = false;
 	private tk2dSpriteAnimator animations;
 	private GameObject attachedLadder = null;
+	private float timeSinceLastHit = 0f;
 	
 	public override void aiSendDirection (Vector2 direction)
 	{
@@ -30,9 +31,23 @@ public class RobotController : GadgetControllerInterface {
 		animations = GetComponent<tk2dSpriteAnimator>();
 	}
 	
+	public void Damage()
+	{
+		if (timeSinceLastHit < 5f)
+		{
+			Debug.LogError ("GameOver");
+		}
+		else
+		{
+			timeSinceLastHit = 0f;
+		}
+	}
+	
 	// Update is called once per frame
 	void Update () 
 	{
+		if (timeSinceLastHit < 5f) timeSinceLastHit += Time.deltaTime;
+		
 		float horizontal = Input.GetAxis ("Horizontal");
 		float vertical = Input.GetAxis ("Vertical");
 		float jump = Input.GetAxis ("Jump");
@@ -41,7 +56,7 @@ public class RobotController : GadgetControllerInterface {
 		//velocity = moveController.velocity;
 		velocity.x = horizontal * speed;
 		
-		if (jump > 0) attachedLadder = null;
+		if (jump > 0 || horizontal != 0) attachedLadder = null;
 	
 		if (attachedLadder != null)
 		{

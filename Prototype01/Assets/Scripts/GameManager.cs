@@ -7,18 +7,10 @@ public class GameManager : MonoBehaviour {
 	
 	public static GameManager gameManager;
 	
-	GameObject robotPlayer;
-	GameObject aiPlayer;
-	
-	public GameObject getRobotPlayer()
-	{
-		return robotPlayer;
-	}
-	
-	public GameObject getAiPlayer()
-	{
-		return aiPlayer;
-	}
+	private RobotController robotPlayer;
+	public RobotController Robot { get { return robotPlayer; } }
+	private AiController aiPlayer;
+	public AiController AI { get { return aiPlayer; } }
 	
 	void Awake()
 	{
@@ -44,7 +36,7 @@ public class GameManager : MonoBehaviour {
 	// Called when a new level is loaded and updates handles to robot and player objects
 	void updateHandles()
 	{
-		robotPlayer = GameObject.FindGameObjectWithTag("Player");
-		aiPlayer = GameObject.FindGameObjectWithTag("AI_Player");
+		robotPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<RobotController>();
+		aiPlayer = GameObject.FindGameObjectWithTag("AI_Player").GetComponent<AiController>();
 	}
 }
