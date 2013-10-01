@@ -49,9 +49,12 @@ public class GameManager : MonoBehaviour {
 			Destroy(gameObject);
 		}
 		else
+		{
 			updateHandles();
+			gameManager = this;
+		}
 		
-		gameManager = this;
+		
 	}
 	
 	// Called when a new level is loaded and updates handles to robot and player objects
