@@ -14,6 +14,7 @@ public class SecurityCamera : GadgetControllerInterface {
 	bool sightDeactivated;
 	float turnOnTimerCount;
 	bool panningRight;
+	private ReactionLogic reaction;
 	
 	public override void aiSendInput (ButtonState buttonState)
 	{	
@@ -42,6 +43,7 @@ public class SecurityCamera : GadgetControllerInterface {
 	void Start()
 	{
 		sight = GetComponent<FieldOfView>();
+		reaction = GetComponent<ReactionLogic>();
 
 		transform.eulerAngles = new Vector3(0f, 0f, startRotation);
 		turnOnTimerCount = turnOnTimer; 
@@ -52,8 +54,25 @@ public class SecurityCamera : GadgetControllerInterface {
 	{
 		if (!sightDeactivated)
 		{
-			if (sight.IsObjectInView(GameManager.gameManager.Robot.gameObject))
-				Application.LoadLevel (Application.loadedLevelName);
+			if (sight.IsObjectInView(GameObject.FindGameObjectWithTag("Player")))
+				reaction.OnIntruderInSight ();
+			else
+				reaction.OnIntruderOutOfSight();
+			
+			Alertness alertness = reaction.DetermineAlertness();
+			if (alertness == Alertness.Aggressive)
+			{
+				//Application.LoadLevel (Application.loadedLevelName);
+				sight.getLight ().LightColor = Color.red;
+			}
+			else if (alertness == Alertness.Suspicious)
+			{
+				sight.getLight ().LightColor = Color.yellow;
+			}
+			else if (alertness == Alertness.Normal)
+			{
+				sight.getLight().LightColor = Color.blue;
+			}
 
 			updateRotation();
 		}

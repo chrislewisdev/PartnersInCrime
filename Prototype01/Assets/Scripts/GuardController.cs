@@ -30,6 +30,7 @@ public class GuardController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+		if (shotTimer > 0) shotTimer -= Time.deltaTime;
 		if (sleepingCounter > 0) sleepingCounter -= Time.deltaTime;
 		if (patrolPath != null && patrolPath.Size () > 0 && sleepingCounter <= 0) FollowPath();
 		else if (sleepingCounter <= 0) WalkToEdges();
@@ -66,7 +67,6 @@ public class GuardController : MonoBehaviour {
 	{
 		if (sight.IsObjectInView(GameManager.gameManager.Robot.gameObject))
 		{
-			shotTimer -= Time.deltaTime;
 			if (shotTimer <= 0) 
 			{
 				GameManager.gameManager.Robot.Damage();

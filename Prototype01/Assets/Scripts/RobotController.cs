@@ -9,12 +9,14 @@ public class RobotController : GadgetControllerInterface {
 	public float jumpStrength;
 	public float gravityFactor;
 	public LayerMask ladderMask;
+	public tk2dTileMap ladderMap;
 	
 	CharacterController moveController;
 	Vector3 velocity = Vector3.zero;
 	private bool jumped = false;
 	private tk2dSpriteAnimator animations;
 	private GameObject attachedLadder = null;
+	private bool attachedToLadder = false;
 	private float timeSinceLastHit = 0f;
 	
 	public override void aiSendDirection (Vector2 direction)
@@ -56,30 +58,40 @@ public class RobotController : GadgetControllerInterface {
 		//velocity = moveController.velocity;
 		velocity.x = horizontal * speed;
 		
-		if (jump > 0 || horizontal != 0) attachedLadder = null;
+		if (jump > 0) attachedToLadder = false;
 	
-		if (attachedLadder != null)
+		if (attachedToLadder)
 		{
-			velocity.x = 0;
+			//velocity.x = 0;
 		}
 		
 		RaycastHit info;
-		bool nextToLadder = Physics.Raycast (new Ray(transform.position, Vector3.forward), out info, 10f, ladderMask);
+		bool nextToLadder;
+		if (ladderMap != null)
+			nextToLadder = (ladderMap.GetTileIdAtPosition (transform.position, 0) != -1);
+		else
+			nextToLadder = false;
+		Debug.DrawRay (transform.position, Vector3.forward * 10f, Color.yellow);
+		Utility.LogChangedValue("NextToLadder", nextToLadder);
 		
 		if (vertical != 0 && nextToLadder)
 		{
-			attachedLadder = info.collider.gameObject;
-			Vector3 newPosition = transform.position;
-			newPosition.x = attachedLadder.transform.position.x;
-			transform.position = newPosition;
+			//attachedLadder = info.collider.gameObject;
+			//Vector3 newPosition = transform.position;
+			//newPosition.x = attachedLadder.transform.position.x;
+			//newPosition.x = info.collider.bounds.center.x;
+			//transform.position = newPosition;
+			attachedToLadder = true;
 			velocity.y = 0;
 		}
+		if (!nextToLadder) attachedToLadder = false;
 		
-		if (attachedLadder != null)
+		if (attachedToLadder)
 		{
 			velocity.y = vertical * speed;
 			//If moving in this direction would take us away from a ladder, cancel it
-			if (!Physics.Raycast(new Ray(transform.position + velocity * Time.deltaTime, Vector3.forward), 10f, ladderMask))
+			//if (!Physics.Raycast(new Ray(transform.position + velocity * Time.deltaTime, Vector3.forward), 10f, ladderMask))
+			if (ladderMap.GetTileIdAtPosition (transform.position + velocity * Time.deltaTime, 0) == -1)
 			{
 				velocity.y = 0;
 			}
@@ -98,7 +110,7 @@ public class RobotController : GadgetControllerInterface {
 			jumped = false;
 		}
 		
-		if (attachedLadder == null)
+		if (!attachedToLadder)
 		{
 			velocity += Physics.gravity * Time.deltaTime * gravityFactor;
 			if (velocity.y < Physics.gravity.y)
@@ -127,6 +139,14 @@ public class RobotController : GadgetControllerInterface {
 		else
 		{
 			animations.Play (animations.Library.GetClipByName("Idle"));
+		}
+		if (velocity.y > 0)
+		{
+			animations.Play (animations.Library.GetClipByName ("Jump_Start"));
+		}
+		else if (velocity.y < 0)
+		{
+			animations.Play (animations.Library.GetClipByName ("Jump_End"));
 		}
 	}
 }
