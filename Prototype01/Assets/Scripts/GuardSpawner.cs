@@ -22,13 +22,11 @@ public class GuardSpawner : MonoBehaviour {
 	void Start()
 	{
 		_spawning = false;
+		GameManager.gameManager.registerSpawner(this);
 	}
 	
 	void Update()
-	{
-		if (Input.GetKeyDown(KeyCode.S))
-			spawnGuards();
-		
+	{	
 		if (_spawning)
 		{
 			_spawnTimer += Time.deltaTime;

@@ -6,8 +6,6 @@ public class AntiVirus : AiActor {
 	public float jumpTime;
 	public GameObject[] patrolPath;
 	
-	GameObject aiPlayer;
-	
 	float timer;
 	int pathIndex;
 	
@@ -20,14 +18,12 @@ public class AntiVirus : AiActor {
 		
 		timer = jumpTime;
 		pathIndex = 1;
-		
-		aiPlayer = GameObject.FindGameObjectWithTag("AI_Player");
 	}
 	
 	void Update () {
 		updateMovement();
 		
-		if (aiPlayer.GetComponent<AiController>().occupiedGadget == occupiedGadget)
+		if (GameManager.gameManager.AI.occupiedGadget == occupiedGadget)
 				Debug.Log("CAUGHT BY ANTIVIRUS!!!!!!!!!!!");
 		
 		timer -= Time.deltaTime;

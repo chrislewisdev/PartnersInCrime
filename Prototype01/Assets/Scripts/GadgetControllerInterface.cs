@@ -14,6 +14,6 @@ public abstract class GadgetControllerInterface : MonoBehaviour {
 	// Returns true if ai player is currently possesing object
 	protected bool isPossessed()
 	{
-		return (GameObject.FindGameObjectWithTag("AI_Player").GetComponent<AiController>().occupiedGadget == gameObject);
+		return (GameManager.gameManager.AI.GetComponent<AiController>().occupiedGadget == gameObject);
 	}
 }

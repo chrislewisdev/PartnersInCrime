@@ -78,7 +78,7 @@ public class FieldOfView : MonoBehaviour {
 				return;
 		}
 		
-		light2d = Light2D.Create(transform.position, Color.red, range + 2f, (int)fieldOfView); 
+		light2d = Light2D.Create(transform.position, Color.red, range, (int)fieldOfView); 
 		light2d.gameObject.transform.parent = transform;
 	}
 	

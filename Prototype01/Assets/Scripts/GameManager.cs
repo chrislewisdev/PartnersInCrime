@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 
 /* Singleton class for managing global variables, functions etc. of game. Will remain
  * loaded throughout multiple scenes */
@@ -11,6 +11,27 @@ public class GameManager : MonoBehaviour {
 	public RobotController Robot { get { return robotPlayer; } }
 	private AiController aiPlayer;
 	public AiController AI { get { return aiPlayer; } }
+	
+	private List<GuardSpawner> spawners = new List<GuardSpawner>();
+	private bool alarmTriggered;
+	
+	// Triggers alarm, including triggering all registered guard spawners
+	public void triggerAlarm()
+	{
+		if (!alarmTriggered)
+		{
+			foreach (GuardSpawner spawner in spawners)
+				spawner.spawnGuards();
+			
+			alarmTriggered = true;
+		}
+	}
+	
+	// Registers a guard spawner that will be triggered when the alarm goes off
+	public void registerSpawner(GuardSpawner spawner)
+	{
+		spawners.Add(spawner);
+	}
 	
 	void Awake()
 	{
@@ -38,5 +59,6 @@ public class GameManager : MonoBehaviour {
 	{
 		robotPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<RobotController>();
 		aiPlayer = GameObject.FindGameObjectWithTag("AI_Player").GetComponent<AiController>();
+		alarmTriggered = false;
 	}
 }

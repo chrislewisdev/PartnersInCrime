@@ -8,7 +8,6 @@ public class Door : GadgetControllerInterface {
 	bool open;
 	Vector3 targetPos;
 	GameObject doorCollider;
-	GameObject robotPlayer;
 	float closeTimer;
 	
 	public override void aiSendInput (ButtonState buttonState)
@@ -34,7 +33,6 @@ public class Door : GadgetControllerInterface {
 		targetPos = transform.position;
 		doorCollider = transform.GetChild(0).gameObject;
 		closeTimer = closeTime;
-		robotPlayer = GameObject.FindGameObjectWithTag("Player"); 
 	}
 	
 	void Update()
@@ -47,7 +45,8 @@ public class Door : GadgetControllerInterface {
 			closeTimer -= Time.deltaTime;
 			if (closeTimer <= 0f)
 			{
-				if (!robotPlayer.collider.bounds.Contains(transform.position + (new Vector3(-1.5f, -.2f, 0f))) && !robotPlayer.collider.bounds.Contains(transform.position + (new Vector3(1.5f, -.2f, 0f))))
+				if (!GameManager.gameManager.Robot.gameObject.collider.bounds.Contains(transform.position + 
+					(new Vector3(-1.5f, -.2f, 0f))) && !GameManager.gameManager.Robot.gameObject.collider.bounds.Contains(transform.position + (new Vector3(1.5f, -.2f, 0f))))
 				{
 					closeTimer = closeTime;
 					open = false;

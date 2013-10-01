@@ -52,7 +52,7 @@ public class SecurityCamera : GadgetControllerInterface {
 	{
 		if (!sightDeactivated)
 		{
-			if (sight.IsObjectInView(GameObject.FindGameObjectWithTag("Player")))
+			if (sight.IsObjectInView(GameManager.gameManager.Robot.gameObject))
 				Application.LoadLevel (Application.loadedLevelName);
 
 			updateRotation();

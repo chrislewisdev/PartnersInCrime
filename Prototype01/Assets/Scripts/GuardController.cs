@@ -34,7 +34,7 @@ public class GuardController : MonoBehaviour {
 		if (patrolPath != null && patrolPath.Size () > 0 && sleepingCounter <= 0) FollowPath();
 		else if (sleepingCounter <= 0) WalkToEdges();
 		
-		if (sight.IsObjectInView (GameObject.FindGameObjectWithTag("Player")))
+		if (sight.IsObjectInView (GameManager.gameManager.Robot.gameObject))
 			reaction.OnIntruderInSight();
 		else
 		{
