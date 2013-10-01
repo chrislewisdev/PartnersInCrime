@@ -8,6 +8,7 @@ public class Door : GadgetControllerInterface {
 	bool open;
 	Vector3 targetPos;
 	GameObject doorCollider;
+	BoxCollider collider;
 	float closeTimer;
 	
 	public override void aiSendInput (ButtonState buttonState)
@@ -15,9 +16,16 @@ public class Door : GadgetControllerInterface {
 		if (buttonState == ButtonState.BUTTON_DOWN)
 		{
 			if (open)
+			{
 				targetPos += (new Vector3(0f, -9.6f, 0f));
+				collider.enabled = true;
+			}
 			else
+			{
 				targetPos += (new Vector3(0f, 9.6f, 0f));
+				collider.enabled = false;
+			}
+			
 			
 			open = !open;
 		}
@@ -33,6 +41,7 @@ public class Door : GadgetControllerInterface {
 		targetPos = transform.position;
 		doorCollider = transform.GetChild(0).gameObject;
 		closeTimer = closeTime;
+		collider = GetComponent<BoxCollider>();
 	}
 	
 	void Update()
@@ -50,6 +59,7 @@ public class Door : GadgetControllerInterface {
 				{
 					closeTimer = closeTime;
 					open = false;
+					collider.enabled = true;
 					targetPos += (new Vector3(0f, -9.6f, 0f));
 				}
 			}

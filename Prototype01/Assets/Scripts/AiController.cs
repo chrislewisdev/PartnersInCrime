@@ -123,10 +123,12 @@ public class AiController : AiActor {
 		{
 			GameObject hitObject = hit.collider.gameObject;
 			if (hitObject.GetComponent<GadgetControllerInterface>() != null)
-			{
-				if (Physics.Raycast(new Ray(hitObject.transform.position, transform.position - hitObject.transform.position), out hit)
-					&& hit.collider.gameObject == occupiedGadget)
-					return hitObject;
+			{		
+				if (Physics.Raycast(new Ray(transform.position, hitObject.transform.position - transform.position), out hit))
+				{
+					if (hit.collider.gameObject == hitObject)
+						return hitObject;
+				}
 			}
 		}
 
