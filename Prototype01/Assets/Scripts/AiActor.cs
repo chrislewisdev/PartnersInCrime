@@ -20,7 +20,6 @@ public class AiActor : MonoBehaviour {
 		moving = true;
 		moveTimer = 0f;
 		beginPosition = transform.position;
-		transform.parent = null;
 	}
 	
 	//Sends button input to currently occupied gadget
@@ -45,14 +44,12 @@ public class AiActor : MonoBehaviour {
 			{
 				moveTimer = 1f;
 				moving = false;
-				transform.parent = occupiedGadget.transform;
-				transform.localPosition = Vector3.zero;
-				transform.localScale = Vector3.one;
-				transform.localRotation = Quaternion.identity;
 			}
 			else
 				transform.position = Vector3.Lerp(beginPosition, occupiedGadget.transform.position, moveTimer);
 		}
+		else
+			transform.position = occupiedGadget.transform.position;
 		
 	}
 }
