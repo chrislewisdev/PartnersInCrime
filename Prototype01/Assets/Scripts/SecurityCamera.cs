@@ -10,10 +10,11 @@ public class SecurityCamera : GadgetControllerInterface {
 	
 	public float turnOnTimer = 1.5f;
 	
-	FieldOfView sight;
-	bool sightDeactivated;
-	float turnOnTimerCount;
-	bool panningRight;
+	private FieldOfView sight;
+	private bool sightDeactivated;
+	private float turnOnTimerCount;
+	private bool panningRight;
+	private tk2dSprite sprite;
 	private ReactionLogic reaction;
 	
 	public override void aiSendInput (ButtonState buttonState)
@@ -44,6 +45,7 @@ public class SecurityCamera : GadgetControllerInterface {
 	{
 		sight = GetComponent<FieldOfView>();
 		reaction = GetComponent<ReactionLogic>();
+		sprite = GetComponent<tk2dSprite>();
 
 		transform.eulerAngles = new Vector3(0f, 0f, startRotation);
 		turnOnTimerCount = turnOnTimer; 
@@ -109,6 +111,11 @@ public class SecurityCamera : GadgetControllerInterface {
 		}
 		
 		transform.eulerAngles = new Vector3(0f, 0f, angle);
+		if (angle > 90f && angle < 270f)
+			sprite.SetSprite(3);
+		else
+			sprite.SetSprite(2);
+		
 		sight.setRotation(angle);
 	}
 }

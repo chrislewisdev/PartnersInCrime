@@ -58,10 +58,10 @@ MonoBehaviour:
     normals: []
     tangents: []
     uvs:
-    - {x: .0312656239, y: .601570308}
-    - {x: .499984384, y: .601570308}
-    - {x: .0312656239, y: .874992192}
-    - {x: .499984384, y: .874992192}
+    - {x: .0312656239, y: .500007808}
+    - {x: .0312656239, y: .734367192}
+    - {x: .578109384, y: .500007808}
+    - {x: .578109384, y: .734367192}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 5c77fda378c138c489ec024af734c058, type: 2}
     materialId: 0
@@ -71,7 +71,7 @@ MonoBehaviour:
     regionY: 64
     regionW: 64
     regionH: 64
-    flipped: 0
+    flipped: 1
     complexGeometry: 0
     colliderType: 0
     colliderVertices: []
@@ -96,10 +96,10 @@ MonoBehaviour:
     normals: []
     tangents: []
     uvs:
-    - {x: .0312656239, y: .335945308}
-    - {x: .593734384, y: .335945308}
-    - {x: .0312656239, y: .570304692}
-    - {x: .593734384, y: .570304692}
+    - {x: .0312656239, y: .234382808}
+    - {x: .593734384, y: .234382808}
+    - {x: .0312656239, y: .468742192}
+    - {x: .593734384, y: .468742192}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 5c77fda378c138c489ec024af734c058, type: 2}
     materialId: 0
@@ -120,24 +120,24 @@ MonoBehaviour:
     attachPoints: []
   - name: Security Cameras/2
     boundsData:
-    - {x: .598958373, y: -.546875, z: 0}
-    - {x: 1.92708325, y: 2.23958325, z: 0}
+    - {x: .182291627, y: -2.98023224e-08, z: 0}
+    - {x: 2.44791651, y: 1.25, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
-    - {x: 3.33333325, y: 3.33333325, z: 0}
+    - {x: .46874994, y: .62499994, z: 0}
+    - {x: 3.33333302, y: 3.33333302, z: 0}
     texelSize: {x: .0520833321, y: .0520833321}
     positions:
-    - {x: -.364583313, y: -1.66666663, z: 0}
-    - {x: 1.5625, y: -1.66666663, z: 0}
-    - {x: -.364583313, y: .572916627, z: 0}
-    - {x: 1.5625, y: .572916627, z: 0}
+    - {x: -1.04166663, y: -.625, z: 0}
+    - {x: 1.40624988, y: -.625, z: 0}
+    - {x: -1.04166663, y: .62499994, z: 0}
+    - {x: 1.40624988, y: .62499994, z: 0}
     normals: []
     tangents: []
     uvs:
     - {x: .0312656239, y: .0156328119}
-    - {x: .0312656239, y: .304679692}
-    - {x: .703109384, y: .0156328119}
-    - {x: .703109384, y: .304679692}
+    - {x: .765609384, y: .0156328119}
+    - {x: .0312656239, y: .203117192}
+    - {x: .765609384, y: .203117192}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 5c77fda378c138c489ec024af734c058, type: 2}
     materialId: 0
@@ -147,7 +147,7 @@ MonoBehaviour:
     regionY: 0
     regionW: 64
     regionH: 64
-    flipped: 1
+    flipped: 0
     complexGeometry: 0
     colliderType: 0
     colliderVertices: []
@@ -169,7 +169,7 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: .0500000007
   halfTargetHeight: 384
-  buildKey: 2136179223
+  buildKey: 1230929841
   dataGuid: 734c8e76ae1c996468cf053777b55d2c
   managedSpriteCollection: 0
   hasPlatformData: 0
