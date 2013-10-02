@@ -8,7 +8,6 @@ public class RobotController : GadgetControllerInterface {
 	public float speed;
 	public float jumpStrength;
 	public float gravityFactor;
-	public LayerMask ladderMask;
 	public tk2dTileMap ladderMap;
 	
 	CharacterController moveController;
