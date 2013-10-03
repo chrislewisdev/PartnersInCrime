@@ -37,10 +37,10 @@
     <Reference Include="System.XML" />
 	<Reference Include="System.Core" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity_4.2/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity_4.2/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -59,25 +59,28 @@
      <Compile Include="Assets\Light2D\Samples\_Scripts\ScaleObject_VLS.cs" />
      <Compile Include="Assets\Light2D\Samples\_Scripts\SineWave_VLS.cs" />
      <Compile Include="Assets\Light2D\Samples\_Scripts\ToggleLight_VLS.cs" />
-     <Compile Include="Assets\Scripts\AiActor.cs" />
-     <Compile Include="Assets\Scripts\AiController.cs" />
-     <Compile Include="Assets\Scripts\AlarmTrigger.cs" />
-     <Compile Include="Assets\Scripts\AntiVirus.cs" />
-     <Compile Include="Assets\Scripts\CameraControllerTwoPoint.cs" />
-     <Compile Include="Assets\Scripts\DelayedReactionLogic.cs" />
-     <Compile Include="Assets\Scripts\Door.cs" />
-     <Compile Include="Assets\Scripts\FieldOfView.cs" />
-     <Compile Include="Assets\Scripts\GadgetControllerInterface.cs" />
-     <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Scripts\GuardController.cs" />
-     <Compile Include="Assets\Scripts\GuardSpawner.cs" />
-     <Compile Include="Assets\Scripts\ICameraController.cs" />
-     <Compile Include="Assets\Scripts\PatrolPath.cs" />
-     <Compile Include="Assets\Scripts\PatrolPathWaypoint.cs" />
-     <Compile Include="Assets\Scripts\ReactionLogic.cs" />
-     <Compile Include="Assets\Scripts\RobotController.cs" />
-     <Compile Include="Assets\Scripts\SecurityCamera.cs" />
-     <Compile Include="Assets\Scripts\Utility.cs" />
+     <Compile Include="Assets\Scripts\Detection Systems\AlarmTrigger.cs" />
+     <Compile Include="Assets\Scripts\Detection Systems\DelayedReactionLogic.cs" />
+     <Compile Include="Assets\Scripts\Detection Systems\FieldOfView.cs" />
+     <Compile Include="Assets\Scripts\Detection Systems\ReactionLogic.cs" />
+     <Compile Include="Assets\Scripts\Detection Systems\ReactionMethod.cs" />
+     <Compile Include="Assets\Scripts\Detection Systems\ShootReactionMethod.cs" />
+     <Compile Include="Assets\Scripts\General\CameraControllerTwoPoint.cs" />
+     <Compile Include="Assets\Scripts\General\GameManager.cs" />
+     <Compile Include="Assets\Scripts\General\ICameraController.cs" />
+     <Compile Include="Assets\Scripts\General\Utility.cs" />
+     <Compile Include="Assets\Scripts\Movement\PatrolPath.cs" />
+     <Compile Include="Assets\Scripts\Movement\PatrolPathWaypoint.cs" />
+     <Compile Include="Assets\Scripts\Movement\RobotMovement.cs" />
+     <Compile Include="Assets\Scripts\NPCs\AntiVirus.cs" />
+     <Compile Include="Assets\Scripts\NPCs\GuardController.cs" />
+     <Compile Include="Assets\Scripts\NPCs\SecurityCamera.cs" />
+     <Compile Include="Assets\Scripts\Player Characters\AiActor.cs" />
+     <Compile Include="Assets\Scripts\Player Characters\AiController.cs" />
+     <Compile Include="Assets\Scripts\Player Characters\GadgetControllerInterface.cs" />
+     <Compile Include="Assets\Scripts\Player Characters\RobotController.cs" />
+     <Compile Include="Assets\Scripts\Props\Door.cs" />
+     <Compile Include="Assets\Scripts\Props\GuardSpawner.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCamera.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCameraAnchor.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCameraUtil.cs" />

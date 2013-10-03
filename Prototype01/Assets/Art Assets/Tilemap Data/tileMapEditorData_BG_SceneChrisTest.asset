@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6d684e2fc9429264aaebbc8638086829, type: 3}
-  m_Name: tileMapEditorData
+  m_Name: tileMapEditorData_BG_SceneChrisTest
   m_EditorClassIdentifier: 
   editMode: 0
   brushColor: {r: 1, g: 1, b: 1, a: 1}
@@ -23,40 +23,30 @@ MonoBehaviour:
     paintMode: 0
     tiles:
     - x: 0
-      y: 1
-      layer: 0
-      spriteId: 17
-      blendAmount: 0
-    - x: 0
       y: 0
       layer: 0
-      spriteId: 30
+      spriteId: 0
       blendAmount: 0
-    multiSelectTiles: 110000001e000000
+    multiSelectTiles: 
     edgeMode: 0
     multiLayer: 0
     overrideWithSpriteBounds: 0
-    brushHash: -277680831
+    brushHash: 108678400
   activeBrush:
     name: 
     type: 0
     paintMode: 0
     tiles:
     - x: 0
-      y: 1
-      layer: 0
-      spriteId: 17
-      blendAmount: 0
-    - x: 0
       y: 0
       layer: 0
-      spriteId: 30
+      spriteId: 32
       blendAmount: 0
-    multiSelectTiles: 110000001e000000
+    multiSelectTiles: 20000000
     edgeMode: 0
     multiLayer: 0
     overrideWithSpriteBounds: 0
-    brushHash: -277680831
+    brushHash: -381487936
   brushes: []
   paletteBrush:
     name: 
@@ -437,7 +427,7 @@ MonoBehaviour:
     edgeMode: 0
     multiLayer: 0
     overrideWithSpriteBounds: 1
-    brushHash: 35575484
+    brushHash: 490846076
   paletteTilesPerRow: 13
   setupMode: 4
   showBrush: 1

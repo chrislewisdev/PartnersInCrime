@@ -9,7 +9,7 @@ public class AlarmTrigger : MonoBehaviour {
 		if (collider.gameObject == GameManager.gameManager.Robot.gameObject)
 		{
 			GameManager.gameManager.triggerAlarm();
-			Destroy(gameObject);	
+			Destroy(gameObject);
 		}
 	}
 }

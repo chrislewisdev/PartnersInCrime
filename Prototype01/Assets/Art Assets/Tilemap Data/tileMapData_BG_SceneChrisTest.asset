@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e54cba72f922ec2479d2c8a6e4e3fb62, type: 3}
-  m_Name: tileMapData
+  m_Name: tileMapData_BG_SceneChrisTest
   m_EditorClassIdentifier: 
   tileSize: {x: 3.20000005, y: 3.20000005, z: 0}
   tileOrigin: {x: -1.60000002, y: -1.60000002, z: 0}
@@ -112,31 +112,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  tileInfo:
-  - stringVal: 
-    intVal: 0
-    floatVal: 0
-    enablePrefabOffset: 0
-  - stringVal: 
-    intVal: 0
-    floatVal: 0
-    enablePrefabOffset: 0
-  - stringVal: 
-    intVal: 0
-    floatVal: 0
-    enablePrefabOffset: 0
-  - stringVal: 
-    intVal: 0
-    floatVal: 0
-    enablePrefabOffset: 0
-  - stringVal: 
-    intVal: 0
-    floatVal: 0
-    enablePrefabOffset: 0
-  - stringVal: 
-    intVal: 0
-    floatVal: 0
-    enablePrefabOffset: 0
+  tileInfo: []
   tileMapLayers:
   - name: Layer 0
     hash: 1892887448

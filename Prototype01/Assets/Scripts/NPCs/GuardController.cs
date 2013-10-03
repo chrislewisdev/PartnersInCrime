@@ -4,6 +4,7 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController))]
 [RequireComponent(typeof(FieldOfView))]
 [RequireComponent(typeof(ReactionLogic))]
+[RequireComponent(typeof(ReactionMethod))]
 public class GuardController : MonoBehaviour {
 	
 	public float walkSpeed;
@@ -13,6 +14,7 @@ public class GuardController : MonoBehaviour {
 	private CharacterController moveController;
 	private FieldOfView sight;
 	private ReactionLogic reaction;
+	private ReactionMethod reactionMethod;
 	private int pathIndex = 0;
 	private Vector3 velocity = Vector3.zero;
 	private float sleepingCounter = 0;
@@ -25,6 +27,7 @@ public class GuardController : MonoBehaviour {
 		moveController = GetComponent<CharacterController>();
 		sight = GetComponent<FieldOfView>();
 		reaction = GetComponent<ReactionLogic>();
+		reactionMethod = GetComponent<ReactionMethod>();
 	}
 	
 	// Update is called once per frame
@@ -49,29 +52,15 @@ public class GuardController : MonoBehaviour {
 		alertness = reaction.DetermineAlertness();
 		if (alertness == Alertness.Aggressive)
 		{
-			//Application.LoadLevel (Application.loadedLevelName);
-			sight.getLight ().LightColor = Color.red;
-			AttackPlayer();
+			reactionMethod.OnAggressive();
 		}
 		else if (alertness == Alertness.Suspicious)
 		{
-			sight.getLight ().LightColor = Color.yellow;
+			reactionMethod.OnSuspicious();
 		}
 		else if (alertness == Alertness.Normal)
 		{
-			sight.getLight().LightColor = Color.blue;
-		}
-	}
-	
-	private void AttackPlayer()
-	{
-		if (sight.IsObjectInView(GameManager.gameManager.Robot.gameObject))
-		{
-			if (shotTimer <= 0) 
-			{
-				GameManager.gameManager.Robot.Damage();
-				shotTimer = shotDelay;
-			}
+			reactionMethod.OnNormal ();
 		}
 	}
 	
@@ -166,13 +155,5 @@ public class GuardController : MonoBehaviour {
 	public void Sleep(float seconds)
 	{
 		sleepingCounter = seconds;
-	}
-	
-	/// <summary>
-	/// Raises the intruder in view event.
-	/// </summary>
-	private void OnIntruderInView()
-	{
-		//Application.LoadLevel (Application.loadedLevelName);
 	}
 }

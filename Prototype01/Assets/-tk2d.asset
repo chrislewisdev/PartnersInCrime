@@ -281,3 +281,298 @@ MonoBehaviour:
     loadable: 0
     assetName: 
     version: 3
+  - name: Environment Tileset
+    spriteCollectionGUID: 73ca12d8cea1f3e49836edd3a8ae8af0
+    spriteCollectionDataGUID: 5b2cfdb1f5483a543a1362a6eb67fb46
+    spriteNames:
+    - Level Design Prototype 1 - 64x transparent/0
+    - Level Design Prototype 1 - 64x transparent/1
+    - Level Design Prototype 1 - 64x transparent/2
+    - Level Design Prototype 1 - 64x transparent/3
+    - Level Design Prototype 1 - 64x transparent/4
+    - Level Design Prototype 1 - 64x transparent/5
+    - Level Design Prototype 1 - 64x transparent/6
+    - Level Design Prototype 1 - 64x transparent/7
+    - Level Design Prototype 1 - 64x transparent/8
+    - Level Design Prototype 1 - 64x transparent/9
+    - Level Design Prototype 1 - 64x transparent/10
+    - Level Design Prototype 1 - 64x transparent/11
+    - Level Design Prototype 1 - 64x transparent/12
+    - Level Design Prototype 1 - 64x transparent/13
+    - Level Design Prototype 1 - 64x transparent/14
+    - Level Design Prototype 1 - 64x transparent/15
+    - Level Design Prototype 1 - 64x transparent/16
+    - Level Design Prototype 1 - 64x transparent/17
+    - Level Design Prototype 1 - 64x transparent/18
+    - Level Design Prototype 1 - 64x transparent/19
+    - 
+    - 
+    - Level Design Prototype 1 - 64x transparent/22
+    - Level Design Prototype 1 - 64x transparent/23
+    - Level Design Prototype 1 - 64x transparent/24
+    - Level Design Prototype 1 - 64x transparent/25
+    - 
+    - 
+    - 
+    - 
+    - Level Design Prototype 1 - 64x transparent/30
+    - Level Design Prototype 1 - 64x transparent/31
+    - Level Design Prototype 1 - 64x transparent/32
+    - 
+    - 
+    - Level Design Prototype 1 - 64x transparent/35
+    - Level Design Prototype 1 - 64x transparent/36
+    - Level Design Prototype 1 - 64x transparent/37
+    - Level Design Prototype 1 - 64x transparent/38
+    - 
+    - 
+    - 
+    - 
+    - 
+    - Level Design Prototype 1 - 64x transparent/44
+    - Level Design Prototype 1 - 64x transparent/45
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - Level Design Prototype 2/0
+    - Level Design Prototype 2/1
+    - Level Design Prototype 2/2
+    - Level Design Prototype 2/3
+    - Level Design Prototype 2/4
+    - Level Design Prototype 2/5
+    - Level Design Prototype 2/6
+    - Level Design Prototype 2/7
+    - Level Design Prototype 2/8
+    - Level Design Prototype 2/9
+    - Level Design Prototype 2/10
+    - Level Design Prototype 2/11
+    - Level Design Prototype 2/12
+    - Level Design Prototype 2/13
+    - Level Design Prototype 2/14
+    - Level Design Prototype 2/15
+    - Level Design Prototype 2/16
+    - Level Design Prototype 2/17
+    - Level Design Prototype 2/18
+    - Level Design Prototype 2/19
+    - Level Design Prototype 2/20
+    - Level Design Prototype 2/21
+    - Level Design Prototype 2/22
+    - Level Design Prototype 2/23
+    - Level Design Prototype 2/24
+    - Level Design Prototype 2/25
+    - Level Design Prototype 2/26
+    - Level Design Prototype 2/27
+    - Level Design Prototype 2/28
+    - Level Design Prototype 2/29
+    - Level Design Prototype 2/30
+    - Level Design Prototype 2/31
+    - Level Design Prototype 2/32
+    - Level Design Prototype 2/33
+    - 
+    - 
+    - Level Design Prototype 2/36
+    - Level Design Prototype 2/37
+    - Level Design Prototype 2/38
+    - Level Design Prototype 2/39
+    - Level Design Prototype 2/40
+    - Level Design Prototype 2/41
+    - Level Design Prototype 2/42
+    spriteTextureGUIDs:
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - 
+    - 
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - 
+    - 
+    - 
+    - 
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - 
+    - 
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - 
+    - 
+    - 
+    - 
+    - 
+    - abb15df79d75cf54bb96d97c75f86c82
+    - abb15df79d75cf54bb96d97c75f86c82
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - 
+    - 
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    - dfaaec3c639edf445b3ba03fe187a287
+    spriteTextureTimeStamps:
+    - 1380637434
+    - 1380637434
+    - 1380637434
+    - 1380637434
+    - 1380637434
+    - 1380637434
+    - 1380637434
+    - 1380637434
+    - 1380637434
+    - 1380637434
+    - 1380637434
+    - 1380637434
+    - 1380637434
+    - 1380637434
+    - 1380637434
+    - 1380637434
+    - 1380637434
+    - 1380637434
+    - 1380637434
+    - 1380637434
+    - 0
+    - 0
+    - 1380637434
+    - 1380637434
+    - 1380637434
+    - 1380637434
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1380637434
+    - 1380637434
+    - 1380637434
+    - 0
+    - 0
+    - 1380637434
+    - 1380637434
+    - 1380637434
+    - 1380637434
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1380637434
+    - 1380637434
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 0
+    - 0
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    - 1380836453.45909
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
