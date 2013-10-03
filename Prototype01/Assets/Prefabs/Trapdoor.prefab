@@ -30,7 +30,7 @@ GameObject:
   - 65: {fileID: 6500002}
   - 114: {fileID: 11400002}
   m_Layer: 0
-  m_Name: Door
+  m_Name: Trapdoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68,8 +68,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 67.2852631, y: 6.39672089, z: 10}
+  m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106829}
+  m_LocalPosition: {x: 51.2934036, y: 41.576252, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400004}
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 11400000, guid: 272c20a8fc79a9b4390a7951e52e766e, type: 2}
-  _color: {r: .779411793, g: .206314892, b: .206314892, a: 1}
+  _color: {r: .368363082, g: .206314936, b: .779411793, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 2
   boxCollider: {fileID: 6500000}

@@ -118,6 +118,7 @@ public class AiController : AiActor {
 		if (Physics.Raycast(camera.ScreenPointToRay(Input.mousePosition), out hit))
 		{
 			GameObject hitObject = hit.collider.gameObject;
+			
 			if (hitObject.GetComponent<GadgetControllerInterface>() != null)
 			{		
 				if (Physics.Raycast(new Ray(transform.position, hitObject.transform.position - transform.position), out hit))

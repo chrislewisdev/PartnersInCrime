@@ -58,10 +58,10 @@ MonoBehaviour:
     normals: []
     tangents: []
     uvs:
-    - {x: .0312656239, y: .500007808}
-    - {x: .0312656239, y: .734367192}
-    - {x: .578109384, y: .500007808}
-    - {x: .578109384, y: .734367192}
+    - {x: .0312656239, y: .718757808}
+    - {x: .0312656239, y: .953117192}
+    - {x: .578109384, y: .718757808}
+    - {x: .578109384, y: .953117192}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 5c77fda378c138c489ec024af734c058, type: 2}
     materialId: 0
@@ -96,10 +96,10 @@ MonoBehaviour:
     normals: []
     tangents: []
     uvs:
-    - {x: .0312656239, y: .234382808}
-    - {x: .593734384, y: .234382808}
-    - {x: .0312656239, y: .468742192}
-    - {x: .593734384, y: .468742192}
+    - {x: .0312656239, y: .453132808}
+    - {x: .593734384, y: .453132808}
+    - {x: .0312656239, y: .687492192}
+    - {x: .593734384, y: .687492192}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 5c77fda378c138c489ec024af734c058, type: 2}
     materialId: 0
@@ -120,17 +120,17 @@ MonoBehaviour:
     attachPoints: []
   - name: Security Cameras/2
     boundsData:
-    - {x: .182291627, y: -2.98023224e-08, z: 0}
+    - {x: 1.11979151, y: -2.98023224e-08, z: 0}
     - {x: 2.44791651, y: 1.25, z: 0}
     untrimmedBoundsData:
-    - {x: .46874994, y: .62499994, z: 0}
-    - {x: 3.33333302, y: 3.33333302, z: 0}
+    - {x: 1.40624988, y: .62499994, z: 0}
+    - {x: 3.33333325, y: 3.33333302, z: 0}
     texelSize: {x: .0520833321, y: .0520833321}
     positions:
-    - {x: -1.04166663, y: -.625, z: 0}
-    - {x: 1.40624988, y: -.625, z: 0}
-    - {x: -1.04166663, y: .62499994, z: 0}
-    - {x: 1.40624988, y: .62499994, z: 0}
+    - {x: -.104166664, y: -.625, z: 0}
+    - {x: 2.34374976, y: -.625, z: 0}
+    - {x: -.104166664, y: .62499994, z: 0}
+    - {x: 2.34374976, y: .62499994, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -156,6 +156,44 @@ MonoBehaviour:
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
     attachPoints: []
+  - name: Security Cameras/3
+    boundsData:
+    - {x: 1.11979163, y: -2.98023224e-08, z: 0}
+    - {x: 2.44791675, y: 1.25, z: 0}
+    untrimmedBoundsData:
+    - {x: 1.19791663, y: .62499994, z: 0}
+    - {x: 3.33333325, y: 3.33333302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -.104166672, y: -.625, z: 0}
+    - {x: 2.34375, y: -.625, z: 0}
+    - {x: -.104166672, y: .62499994, z: 0}
+    - {x: 2.34375, y: .62499994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .0312656239, y: .234382808}
+    - {x: .765609384, y: .234382808}
+    - {x: .0312656239, y: .421867192}
+    - {x: .765609384, y: .421867192}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 5c77fda378c138c489ec024af734c058, type: 2}
+    materialId: 0
+    sourceTextureGUID: ce2b669e8997cf34db659d6825670a7b
+    extractRegion: 1
+    regionX: 64
+    regionY: 0
+    regionW: 64
+    regionH: 64
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
   premultipliedAlpha: 0
   material: {fileID: 0}
   materials:
@@ -169,7 +207,7 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: .0500000007
   halfTargetHeight: 384
-  buildKey: 1230929841
+  buildKey: 431304138
   dataGuid: 734c8e76ae1c996468cf053777b55d2c
   managedSpriteCollection: 0
   hasPlatformData: 0

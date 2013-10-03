@@ -266,11 +266,14 @@ MonoBehaviour:
     - Security Cameras/0
     - Security Cameras/1
     - Security Cameras/2
+    - Security Cameras/3
     spriteTextureGUIDs:
     - ce2b669e8997cf34db659d6825670a7b
     - ce2b669e8997cf34db659d6825670a7b
     - ce2b669e8997cf34db659d6825670a7b
+    - ce2b669e8997cf34db659d6825670a7b
     spriteTextureTimeStamps:
+    - 1380730188.6775
     - 1380730188.6775
     - 1380730188.6775
     - 1380730188.6775

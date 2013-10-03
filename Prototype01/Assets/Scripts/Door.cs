@@ -6,7 +6,7 @@ public class Door : GadgetControllerInterface {
 	public float closeTime = 1.5f;
 	
 	bool open;
-	Vector3 targetPos;
+	float targetScale;
 	GameObject doorCollider;
 	BoxCollider collider;
 	float closeTimer;
@@ -17,12 +17,12 @@ public class Door : GadgetControllerInterface {
 		{
 			if (open)
 			{
-				targetPos += (new Vector3(0f, -9.6f, 0f));
+				targetScale = 3f;
 				collider.enabled = true;
 			}
 			else
 			{
-				targetPos += (new Vector3(0f, 9.6f, 0f));
+				targetScale = 0f;
 				collider.enabled = false;
 			}
 			
@@ -38,7 +38,7 @@ public class Door : GadgetControllerInterface {
 	void Start()
 	{
 		open = false;
-		targetPos = transform.position;
+		targetScale = 3f;
 		doorCollider = transform.GetChild(0).gameObject;
 		closeTimer = closeTime;
 		collider = GetComponent<BoxCollider>();
@@ -46,8 +46,11 @@ public class Door : GadgetControllerInterface {
 	
 	void Update()
 	{
-		if (doorCollider.transform.position != targetPos)
-			doorCollider.transform.position = Vector3.Lerp(doorCollider.transform.position, targetPos, 0.1f);
+		if (doorCollider.transform.localScale.z != targetScale)
+		{
+			float y = Mathf.Lerp(doorCollider.transform.localScale.y, targetScale, 0.1f);
+			doorCollider.transform.localScale = new Vector3(1f, y, 1f);
+		}
 		
 		if (open && !isPossessed())
 		{
@@ -60,7 +63,7 @@ public class Door : GadgetControllerInterface {
 					closeTimer = closeTime;
 					open = false;
 					collider.enabled = true;
-					targetPos += (new Vector3(0f, -9.6f, 0f));
+					targetScale = 3f;
 				}
 			}
 		}
