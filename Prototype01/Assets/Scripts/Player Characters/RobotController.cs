@@ -15,7 +15,7 @@ public class RobotController : GadgetControllerInterface {
 	public override void aiSendInput (ButtonState buttonState)
 	{
 	}
-
+	
 	// Use this for initialization
 	void Start () {
 		animations = GetComponent<tk2dSpriteAnimator>();
@@ -60,5 +60,12 @@ public class RobotController : GadgetControllerInterface {
 		{
 			animations.Play (animations.Library.GetClipByName ("Jump_End"));
 		}
+	}
+	
+	void OnControllerColliderHit(ControllerColliderHit col)
+	{
+		// UGLY workaround code, don't look at me!! 
+		if (col.collider.gameObject.GetComponent<MovingPlatform>() != null)
+			col.collider.gameObject.GetComponent<MovingPlatform>().characterCollision(gameObject);
 	}
 }

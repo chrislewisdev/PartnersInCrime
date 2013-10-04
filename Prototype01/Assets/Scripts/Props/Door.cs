@@ -8,7 +8,7 @@ public class Door : GadgetControllerInterface {
 	bool open;
 	float targetScale;
 	GameObject doorCollider;
-	BoxCollider collider;
+	BoxCollider boxCollider;
 	float closeTimer;
 	
 	public override void aiSendInput (ButtonState buttonState)
@@ -18,12 +18,12 @@ public class Door : GadgetControllerInterface {
 			if (open)
 			{
 				targetScale = 3f;
-				collider.enabled = true;
+				boxCollider.enabled = true;
 			}
 			else
 			{
 				targetScale = 0f;
-				collider.enabled = false;
+				boxCollider.enabled = false;
 			}
 			
 			
@@ -41,7 +41,7 @@ public class Door : GadgetControllerInterface {
 		targetScale = 3f;
 		doorCollider = transform.GetChild(0).gameObject;
 		closeTimer = closeTime;
-		collider = GetComponent<BoxCollider>();
+		boxCollider = GetComponent<BoxCollider>();
 	}
 	
 	void Update()
@@ -62,7 +62,7 @@ public class Door : GadgetControllerInterface {
 				{
 					closeTimer = closeTime;
 					open = false;
-					collider.enabled = true;
+					boxCollider.enabled = true;
 					targetScale = 3f;
 				}
 			}
