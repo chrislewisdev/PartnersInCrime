@@ -7,6 +7,7 @@ public class AiController : AiActor {
 	public bool debugControls = true;
 	
 	GameObject selectionCircle;
+	List<GameObject> _visibleObjects;
 	
 	// Returns selection circle object or null if it is not currently active
 	public GameObject getSelectionCircle()
@@ -40,7 +41,7 @@ public class AiController : AiActor {
 		Vector3 input = new Vector3(Input.GetAxis("Horizontal_AI"), Input.GetAxis("Vertical_AI"), 0f);
 		if (input.magnitude > 0.2f)
 		{
-			GameObject closestGadget = checkForObject(input);
+			GameObject closestGadget = snapToClosestGadget(Mathf.Atan2(input.y, input.x));
 			if (closestGadget && Input.GetButtonDown("Jump_AI"))
 				jumpToGadget(closestGadget);
 			
@@ -95,11 +96,11 @@ public class AiController : AiActor {
 	
 	
 	
-	GameObject checkForObject(Vector2 direction)
+	/*GameObject checkForObject(Vector2 direction)
 	{
 		RaycastHit hit;
 		/*Vector3 position = transform.position;
-		position.z = 0f;*/
+		position.z = 0f;*
 		
 		if (Physics.Raycast(new Ray(transform.position, direction), out hit))
 		{
@@ -108,7 +109,7 @@ public class AiController : AiActor {
 		}
 		
 		return null;
-	}
+	}*/
 	
 	GameObject objectClosestToMouse()
 	{
@@ -130,5 +131,52 @@ public class AiController : AiActor {
 		}
 
 		return null;
+	}
+	
+	List<GameObject> getVisibleGadgets()
+	{
+		GadgetControllerInterface[] gadgets = (GadgetControllerInterface[])Object.FindObjectsOfType(typeof(GadgetControllerInterface));
+		List<GameObject> visibleObjects = new List<GameObject>();
+		_visibleObjects = visibleObjects;
+		
+		foreach (GadgetControllerInterface g in gadgets)
+		{
+			if (g.gameObject != occupiedGadget)
+			{
+				RaycastHit hit;
+				Physics.Raycast(new Ray(transform.position, g.gameObject.transform.position - transform.position), out hit);
+				if (hit.collider.gameObject == g.gameObject)
+					visibleObjects.Add(g.gameObject);
+			}
+		}
+		
+		return visibleObjects;
+	}
+	
+	//Finds gadget at closest angle to inputAngle and returns the object
+	GameObject snapToClosestGadget(float inputAngle)
+	{
+		List<GameObject> visibleGadgets = getVisibleGadgets();
+		float[] angles = new float[visibleGadgets.Count];
+		for (int i = 0; i < visibleGadgets.Count; ++i)
+			angles[i] = Mathf.Atan2(visibleGadgets[i].transform.position.y - transform.position.y, 
+				visibleGadgets[i].transform.position.x - transform.position.x);
+	
+		GameObject closestGadget = null;
+		float smallestAngle = float.MaxValue;
+		for (int i = 0; i < visibleGadgets.Count; ++i)
+		{
+			float deltaAngle = Mathf.Abs(Mathf.DeltaAngle(inputAngle * Mathf.Rad2Deg, angles[i] * Mathf.Rad2Deg) * Mathf.Deg2Rad);
+			if (deltaAngle < smallestAngle)
+			{
+				smallestAngle = deltaAngle;
+				closestGadget = visibleGadgets[i];
+			}
+		}
+		
+		if (smallestAngle < 20f * Mathf.Deg2Rad)
+			return closestGadget;
+		else
+			return null;
 	}
 }
