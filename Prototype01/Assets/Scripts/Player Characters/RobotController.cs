@@ -5,7 +5,7 @@ using System.Collections;
 public class RobotController : GadgetControllerInterface {
 	
 	private tk2dSpriteAnimator animations;
-	private float timeSinceLastHit = 0f;
+	private float timeSinceLastHit = 5f;
 	private RobotMovement movement;
 	
 	public override void aiSendDirection (Vector2 direction)
@@ -26,12 +26,18 @@ public class RobotController : GadgetControllerInterface {
 	{
 		if (timeSinceLastHit < 5f)
 		{
-			Debug.LogError ("GameOver");
+			Application.LoadLevel (Application.loadedLevelName);
 		}
 		else
 		{
 			timeSinceLastHit = 0f;
+			Flash (Color.red);
 		}
+	}
+	
+	public void Flash(Color colour)
+	{
+		GetComponent<SpriteEffects>().FlashColour (colour, 0.5f);
 	}
 	
 	// Update is called once per frame

@@ -8,7 +8,6 @@ using System.Collections;
 public class GuardController : MonoBehaviour {
 	
 	public float walkSpeed;
-	public float shotDelay;
 	public PatrolPath patrolPath;
 	
 	private CharacterController moveController;
@@ -20,7 +19,6 @@ public class GuardController : MonoBehaviour {
 	private float sleepingCounter = 0;
 	private int walkDirection = 1;
 	Alertness alertness = Alertness.Normal;
-	private float shotTimer = 0f;
 
 	// Use this for initialization
 	void Start () {
@@ -33,35 +31,35 @@ public class GuardController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if (shotTimer > 0) shotTimer -= Time.deltaTime;
 		if (sleepingCounter > 0) sleepingCounter -= Time.deltaTime;
-		if (patrolPath != null && patrolPath.Size () > 0 && sleepingCounter <= 0) FollowPath();
-		else if (sleepingCounter <= 0) WalkToEdges();
 		
 		if (sight.IsObjectInView (GameManager.gameManager.Robot.gameObject))
 			reaction.OnIntruderInSight();
 		else
 		{
 			reaction.OnIntruderOutOfSight();
-			if (reaction.DetermineAlertness() == Alertness.Suspicious && sleepingCounter <= 0)
-			{
-				Sleep (1.5f);
-			}
 		}
 		
 		alertness = reaction.DetermineAlertness();
 		if (alertness == Alertness.Aggressive)
 		{
 			reactionMethod.OnAggressive();
+			//Return so we don't move
+			return;
 		}
 		else if (alertness == Alertness.Suspicious)
 		{
 			reactionMethod.OnSuspicious();
+			//Don't move if intruder is still in sight
+			if (sight.IsObjectInView (GameManager.gameManager.Robot.gameObject)) return;
 		}
 		else if (alertness == Alertness.Normal)
 		{
 			reactionMethod.OnNormal ();
 		}
+		
+		if (patrolPath != null && patrolPath.Size () > 0 && sleepingCounter <= 0) FollowPath();
+		else if (sleepingCounter <= 0) WalkToEdges();
 	}
 	
 	private void FollowPath()

@@ -71,7 +71,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 5
-  shotDelay: 2
   patrolPath: {fileID: 0}
 --- !u!114 &11400002
 MonoBehaviour:

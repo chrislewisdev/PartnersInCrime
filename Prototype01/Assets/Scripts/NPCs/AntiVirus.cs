@@ -24,7 +24,10 @@ public class AntiVirus : AiActor {
 		updateMovement();
 		
 		if (GameManager.gameManager.AI.occupiedGadget == occupiedGadget)
-				Debug.Log("CAUGHT BY ANTIVIRUS!!!!!!!!!!!");
+		{
+			Debug.Log("CAUGHT BY ANTIVIRUS!!!!!!!!!!!");
+			Application.LoadLevel (Application.loadedLevelName);	
+		}
 		
 		timer -= Time.deltaTime;
 		if (timer < 0f)

@@ -31,16 +31,18 @@ public class FieldOfView : MonoBehaviour {
 	//Determines whether the specified object is in view of this object.
 	public bool IsObjectInView(GameObject target)
 	{
-		float distance = Vector3.Distance (target.transform.position, transform.position);
+		Vector3 position = target.collider.ClosestPointOnBounds (transform.position);
+		
+		float distance = Vector3.Distance (position, transform.position);
 		if (distance > range) return false;
 		
 		//Calculate the angle between our viewpoint and the target
 		//Make sure we're Z-aligned so the angle is purely in 2D space
-		float deltaAngle = Mathf.Abs (Mathf.DeltaAngle (rotation, AngleToPoint (target.transform.position)));
+		float deltaAngle = Mathf.Abs (Mathf.DeltaAngle (rotation, AngleToPoint (position)));
 		if (deltaAngle > fieldOfView / 2) return false;
 		
 		//If target is both in range and in view, check that line of sight is not blocked
-		Ray lineOfSight = new Ray(transform.position, target.transform.position - transform.position);
+		Ray lineOfSight = new Ray(transform.position, position - transform.position);
 		RaycastHit hitInfo;
 		if (Physics.Raycast (lineOfSight, out hitInfo, range, LayerMask.NameToLayer("Characters")))
 		{

@@ -53,8 +53,11 @@ public class GameManager : MonoBehaviour {
 			updateHandles();
 			gameManager = this;
 		}
-		
-		
+	}
+	
+	void OnLevelWasLoaded(int level)
+	{
+		updateHandles ();
 	}
 	
 	// Called when a new level is loaded and updates handles to robot and player objects

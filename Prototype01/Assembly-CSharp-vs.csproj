@@ -68,6 +68,7 @@
      <Compile Include="Assets\Scripts\General\CameraControllerTwoPoint.cs" />
      <Compile Include="Assets\Scripts\General\GameManager.cs" />
      <Compile Include="Assets\Scripts\General\ICameraController.cs" />
+     <Compile Include="Assets\Scripts\General\SpriteEffects.cs" />
      <Compile Include="Assets\Scripts\General\Utility.cs" />
      <Compile Include="Assets\Scripts\Movement\PatrolPath.cs" />
      <Compile Include="Assets\Scripts\Movement\PatrolPathWaypoint.cs" />
@@ -81,6 +82,7 @@
      <Compile Include="Assets\Scripts\Player Characters\RobotController.cs" />
      <Compile Include="Assets\Scripts\Props\Door.cs" />
      <Compile Include="Assets\Scripts\Props\GuardSpawner.cs" />
+     <Compile Include="Assets\Scripts\Props\MovingPlatform.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCamera.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCameraAnchor.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCameraUtil.cs" />
