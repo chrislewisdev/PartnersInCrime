@@ -16,6 +16,14 @@ public class RobotController : GadgetControllerInterface {
 	{
 	}
 	
+	public override void aiArrived ()
+	{
+	}
+	
+	public override void aiLeft ()
+	{
+	}
+	
 	// Use this for initialization
 	void Start () {
 		animations = GetComponent<tk2dSpriteAnimator>();

@@ -37,12 +37,12 @@ MonoBehaviour:
     - 37507ff05d9943547b9c9c7620a7027e
     - 668ea8b1a81ec1d4f99dc72d627db848
     spriteTextureTimeStamps:
-    - 1363648831.59672
-    - 1377976368.10852
-    - 1377976378.04909
-    - 1378217621.63982
-    - 1378217621.64282
-    - 1378217621.64482
+    - 1380111096.92982
+    - 1380111096.88782
+    - 1380111096.94082
+    - 1380111096.88482
+    - 1380111096.92682
+    - 1381154853.90679
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
@@ -572,6 +572,22 @@ MonoBehaviour:
     - 1380836453.45909
     - 1380836453.45909
     - 1380836453.45909
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: GUI Collection
+    spriteCollectionGUID: 80f96c74bdc006d49b16f3a0381d3f07
+    spriteCollectionDataGUID: 71f5123ee30b16a4fbaee849199395af
+    spriteNames:
+    - b-button
+    - up-down-arrows
+    spriteTextureGUIDs:
+    - c41633ed8467a0f4bb7c0079442cb6a4
+    - 54177c8aa9808b24091633bdc8b94375
+    spriteTextureTimeStamps:
+    - 1381150226.29411
+    - 1381152474.15968
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

@@ -11,6 +11,7 @@ public class MovingPlatform : GadgetControllerInterface
 	private bool updatingPositions = false;
 	private float maxHeight;
 	private float minHeight;
+	private GameObject arrows;
 	
 	public override void aiSendInput (ButtonState buttonState)
 	{
@@ -29,6 +30,20 @@ public class MovingPlatform : GadgetControllerInterface
 		transform.position += lastMovement;
 	}
 	
+	public override void aiArrived ()
+	{
+		arrows = Instantiate(Resources.Load("UpDownArrows") as GameObject, transform.position + new Vector3(2f, 0f, -1f), Quaternion.identity) as GameObject;	
+	}
+	
+	public override void aiLeft ()
+	{
+		if (arrows)
+		{
+			Destroy(arrows);
+			arrows = null;
+		}
+	}
+	
 	public void characterCollision(GameObject character)
 	{
 		if (!updatingPositions)
@@ -41,6 +56,7 @@ public class MovingPlatform : GadgetControllerInterface
 	{
 		maxHeight = transform.position.y + 3.2f * riseNumberOfBlocks;
 		minHeight = transform.position.y - 3.2f * fallNumberOfBlocks;
+		arrows = null;
 	}
 	
 	void LateUpdate()

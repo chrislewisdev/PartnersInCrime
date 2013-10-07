@@ -10,6 +10,7 @@ public class Door : GadgetControllerInterface {
 	GameObject doorCollider;
 	BoxCollider boxCollider;
 	float closeTimer;
+	GameObject controllerButton;
 	
 	public override void aiSendInput (ButtonState buttonState)
 	{
@@ -33,6 +34,26 @@ public class Door : GadgetControllerInterface {
 	
 	public override void aiSendDirection (Vector2 direction)
 	{
+	}
+	
+	public override void aiLeft ()
+	{
+		if (controllerButton)
+		{
+			Destroy(controllerButton);
+			controllerButton = null;
+		}	
+		
+		if (open)
+		{
+			GameObject lightTimer = Instantiate(Resources.Load("LightTimer") as GameObject, transform.position, Quaternion.identity) as GameObject;
+			lightTimer.GetComponent<TimerLight>().revealTime = closeTime;
+		}
+	}
+	
+	public override void aiArrived()
+	{
+		controllerButton = Instantiate(Resources.Load("B Button") as GameObject, transform.position + new Vector3(0f, 3.5f, -1f), Quaternion.identity) as GameObject;
 	}
 	
 	void Start()

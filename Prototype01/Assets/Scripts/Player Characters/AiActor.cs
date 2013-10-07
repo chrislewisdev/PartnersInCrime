@@ -9,6 +9,7 @@ public class AiActor : MonoBehaviour {
 	private float moveTimer = 0f;
 	private bool moving = false;
 	private Vector3 beginPosition;
+	private ParticleSystem particles;
 	
 	//Moves ai player to new gadget
 	protected void jumpToGadget(GameObject gadget)
@@ -20,6 +21,8 @@ public class AiActor : MonoBehaviour {
 		moving = true;
 		moveTimer = 0f;
 		beginPosition = transform.position;
+		if (particles)
+			particles.enableEmission = true;
 	}
 	
 	//Sends button input to currently occupied gadget
@@ -44,12 +47,31 @@ public class AiActor : MonoBehaviour {
 			{
 				moveTimer = 1f;
 				moving = false;
+				if (particles)
+					particles.enableEmission = false;
 			}
 			else
 				transform.position = Vector3.Lerp(beginPosition, occupiedGadget.transform.position, moveTimer);
 		}
 		else
 			transform.position = occupiedGadget.transform.position;
+	}
+	
+	//Initilizes ai actor and partile systems
+	protected void initilize()
+	{
+		particles = null;
 		
+		for (int i = 0; i < transform.childCount; i++)
+		{
+			if (transform.GetChild(i).gameObject.name == "Particle System")
+			{
+				particles = transform.GetChild(i).gameObject.GetComponent<ParticleSystem>();
+				break;
+			}
+		}
+		
+		if (particles)
+			particles.enableEmission = false;
 	}
 }

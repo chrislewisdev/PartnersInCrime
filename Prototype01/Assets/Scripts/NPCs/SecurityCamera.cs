@@ -16,6 +16,7 @@ public class SecurityCamera : GadgetControllerInterface {
 	private bool panningRight;
 	private tk2dSprite sprite;
 	private ReactionLogic reaction;
+	private GameObject controllerButton;
 	
 	public override void aiSendInput (ButtonState buttonState)
 	{	
@@ -40,6 +41,26 @@ public class SecurityCamera : GadgetControllerInterface {
 	public override void aiSendDirection (Vector2 direction)
 	{
 	}
+	
+	public override void aiLeft ()
+	{
+		if (controllerButton)
+		{
+			Destroy(controllerButton);
+			controllerButton = null;
+		}	
+		
+		if (sightDeactivated)
+		{
+			GameObject lightTimer = Instantiate(Resources.Load("LightTimer") as GameObject, transform.position, Quaternion.identity) as GameObject;
+			lightTimer.GetComponent<TimerLight>().revealTime = turnOnTimer;
+		}
+	}
+	
+	public override void aiArrived()
+	{
+		controllerButton = Instantiate(Resources.Load("B Button") as GameObject, transform.position + new Vector3(0f, 2f, -1f), Quaternion.identity) as GameObject;
+	}
 
 	void Start()
 	{
@@ -50,6 +71,14 @@ public class SecurityCamera : GadgetControllerInterface {
 		transform.eulerAngles = new Vector3(0f, 0f, startRotation);
 		turnOnTimerCount = turnOnTimer; 
         panningRight = true;
+		controllerButton = null;
+		
+		//Check parent is not rotated
+		if (transform.parent.eulerAngles.z != 0f)
+			Debug.LogError("Security camera's rotation is not set to 0, you can rotate the 'base' object that is a child of " +
+				"the security camera object so that it lines up with the wall but the parent 'security camera' object must have" +
+				"a rotation of 0 and is only used for positioning.");
+			
 	}
 	
 	void Update()

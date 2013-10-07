@@ -7,7 +7,6 @@ public class AiController : AiActor {
 	public bool debugControls = true;
 	
 	GameObject selectionCircle;
-	List<GameObject> _visibleObjects;
 	
 	// Returns selection circle object or null if it is not currently active
 	public GameObject getSelectionCircle()
@@ -20,10 +19,20 @@ public class AiController : AiActor {
 	
 	void Start()
 	{
+		initilize();
 		jumpToGadget(occupiedGadget);
+		occupiedGadget.GetComponent<GadgetControllerInterface>().aiArrived();
 		
 		GetComponent<LineRenderer>().SetWidth(0.5f, 0.1f);
-		selectionCircle = transform.GetChild(0).gameObject;
+		for (int i = 0; i < transform.childCount; i++)
+		{
+			if (transform.GetChild(i).gameObject.name == "SelectionCircle")
+			{
+				selectionCircle = transform.GetChild(i).gameObject;
+				break;	
+			}
+		}
+		
 		selectionCircle.SetActive(false);
 	}
 	
@@ -43,7 +52,11 @@ public class AiController : AiActor {
 		{
 			GameObject closestGadget = snapToClosestGadget(Mathf.Atan2(input.y, input.x));
 			if (closestGadget && Input.GetButtonDown("Jump_AI"))
+			{
+				occupiedGadget.GetComponent<GadgetControllerInterface>().aiLeft();
 				jumpToGadget(closestGadget);
+				closestGadget.GetComponent<GadgetControllerInterface>().aiArrived();
+			}
 			
 			LineRenderer renderer = GetComponent<LineRenderer>();
 			renderer.enabled = true;
@@ -88,7 +101,11 @@ public class AiController : AiActor {
 			selectionCircle.transform.position = closestGadget.transform.position;
 			
 			if (Input.GetMouseButtonDown(0))
+			{
+				occupiedGadget.GetComponent<GadgetControllerInterface>().aiLeft();
 				jumpToGadget(closestGadget);
+				occupiedGadget.GetComponent<GadgetControllerInterface>().aiArrived();
+			}
 		}
 		else
 			selectionCircle.SetActive(false);
@@ -137,7 +154,6 @@ public class AiController : AiActor {
 	{
 		GadgetControllerInterface[] gadgets = (GadgetControllerInterface[])Object.FindObjectsOfType(typeof(GadgetControllerInterface));
 		List<GameObject> visibleObjects = new List<GameObject>();
-		_visibleObjects = visibleObjects;
 		
 		foreach (GadgetControllerInterface g in gadgets)
 		{
