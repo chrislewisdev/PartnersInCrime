@@ -12,7 +12,7 @@ public class RobotController : GadgetControllerInterface {
 	{
 	}
 	
-	public override void aiSendInput (ButtonState buttonState)
+	public override void triggerGadget ()
 	{
 	}
 	
@@ -82,4 +82,7 @@ public class RobotController : GadgetControllerInterface {
 		if (col.collider.gameObject.GetComponent<MovingPlatform>() != null)
 			col.collider.gameObject.GetComponent<MovingPlatform>().characterCollision(gameObject);
 	}
+	
+	//Attack robot for takedown
+	//void attack()
 }

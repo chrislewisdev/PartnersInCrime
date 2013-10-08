@@ -18,23 +18,20 @@ public class SecurityCamera : GadgetControllerInterface {
 	private ReactionLogic reaction;
 	private GameObject controllerButton;
 	
-	public override void aiSendInput (ButtonState buttonState)
+	public override void triggerGadget()
 	{	
-		if (buttonState == ButtonState.BUTTON_DOWN)
+		if (!sightDeactivated)
 		{
-			if (!sightDeactivated)
-			{
-				sightDeactivated = true;
-				sight.getLight().LightEnabled = false;
-				sight.enabled = false;
-			
-			}
-			else
-			{
-				sightDeactivated = false;
-				sight.enabled = true;
-				sight.getLight().LightEnabled = true;
-			}
+			sightDeactivated = true;
+			sight.getLight().LightEnabled = false;
+			sight.enabled = false;
+		
+		}
+		else
+		{
+			sightDeactivated = false;
+			sight.enabled = true;
+			sight.getLight().LightEnabled = true;
 		}
 	}
 	
@@ -67,11 +64,19 @@ public class SecurityCamera : GadgetControllerInterface {
 		sight = GetComponent<FieldOfView>();
 		reaction = GetComponent<ReactionLogic>();
 		sprite = GetComponent<tk2dSprite>();
+	
 
 		transform.eulerAngles = new Vector3(0f, 0f, startRotation);
 		turnOnTimerCount = turnOnTimer; 
         panningRight = true;
 		controllerButton = null;
+		
+		if (startRotation > endRotation)
+		{
+			float temp = startRotation;
+			startRotation = endRotation;
+			endRotation = temp;
+		}
 		
 		//Check parent is not rotated
 		if (transform.parent.eulerAngles.z != 0f)
@@ -126,14 +131,14 @@ public class SecurityCamera : GadgetControllerInterface {
 		
 		if (panningRight)
 		{
-			if (angle >= endRotation)
+			if (Mathf.Abs(Mathf.DeltaAngle(angle, endRotation)) <= rotationSpeed * Time.deltaTime)
 				panningRight = false;
 			else
 				angle += Time.deltaTime * rotationSpeed;
 		}
 		else
 		{
-			if (angle <= startRotation)
+			if (Mathf.Abs(Mathf.DeltaAngle(angle, startRotation)) <= rotationSpeed * Time.deltaTime)
 				panningRight = true;
 			else
 				angle -= Time.deltaTime * rotationSpeed;

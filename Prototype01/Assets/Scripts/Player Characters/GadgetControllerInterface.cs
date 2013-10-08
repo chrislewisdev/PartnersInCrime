@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 
 public enum ButtonState 
 {
@@ -7,8 +7,18 @@ public enum ButtonState
 }
 
 public abstract class GadgetControllerInterface : MonoBehaviour {
-	public abstract void aiSendInput(ButtonState buttonState);
+	public List<GadgetControllerInterface> triggerGadgets = new List<GadgetControllerInterface>();
 	
+	public void aiSendInput(ButtonState buttonState)
+	{
+		if (buttonState == ButtonState.BUTTON_DOWN)
+		{
+			triggerGadget();
+			tiggerAllGadgets();
+		}
+	}
+		
+	public abstract void triggerGadget();
 	public abstract void aiSendDirection(Vector2 direction);
 	
 	// Called when the ai player possesses this object
@@ -21,5 +31,14 @@ public abstract class GadgetControllerInterface : MonoBehaviour {
 	protected bool isPossessed()
 	{
 		return (GameManager.gameManager.AI.GetComponent<AiController>().occupiedGadget == gameObject);
+	}
+	
+	// Triggers all connected gadgets 
+	private void tiggerAllGadgets()
+	{
+		foreach (GadgetControllerInterface gadget in triggerGadgets)
+		{
+			gadget.triggerGadget();
+		}
 	}
 }

@@ -12,24 +12,20 @@ public class Door : GadgetControllerInterface {
 	float closeTimer;
 	GameObject controllerButton;
 	
-	public override void aiSendInput (ButtonState buttonState)
+	public override void triggerGadget ()
 	{
-		if (buttonState == ButtonState.BUTTON_DOWN)
+		if (open)
 		{
-			if (open)
-			{
-				targetScale = 3f;
-				boxCollider.enabled = true;
-			}
-			else
-			{
-				targetScale = 0f;
-				boxCollider.enabled = false;
-			}
-			
-			
-			open = !open;
+			targetScale = 3f;
+			boxCollider.enabled = true;
 		}
+		else
+		{
+			targetScale = 0f;
+			boxCollider.enabled = false;
+		}
+		
+		open = !open;
 	}
 	
 	public override void aiSendDirection (Vector2 direction)
@@ -46,8 +42,8 @@ public class Door : GadgetControllerInterface {
 		
 		if (open)
 		{
-			GameObject lightTimer = Instantiate(Resources.Load("LightTimer") as GameObject, transform.position, Quaternion.identity) as GameObject;
-			lightTimer.GetComponent<TimerLight>().revealTime = closeTime;
+			GameObject closeLight = Instantiate(Resources.Load("LightTimer") as GameObject, transform.position, Quaternion.identity) as GameObject;
+			closeLight.GetComponent<TimerLight>().revealTime = closeTime;
 		}
 	}
 	
@@ -79,7 +75,7 @@ public class Door : GadgetControllerInterface {
 			if (closeTimer <= 0f)
 			{
 				if (!GameManager.gameManager.Robot.gameObject.collider.bounds.Contains(transform.position + 
-					(new Vector3(-1.5f, -.2f, 0f))) && !GameManager.gameManager.Robot.gameObject.collider.bounds.Contains(transform.position + (new Vector3(1.5f, -.2f, 0f))))
+					(new Vector3(-1.5f, -.6f, 0f))) && !GameManager.gameManager.Robot.gameObject.collider.bounds.Contains(transform.position + (new Vector3(1.5f, -.6f, 0f))))
 				{
 					closeTimer = closeTime;
 					open = false;

@@ -13,7 +13,7 @@ public class MovingPlatform : GadgetControllerInterface
 	private float minHeight;
 	private GameObject arrows;
 	
-	public override void aiSendInput (ButtonState buttonState)
+	public override void triggerGadget ()
 	{
 	}
 	

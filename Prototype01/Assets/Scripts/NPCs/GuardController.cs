@@ -5,7 +5,7 @@ using System.Collections;
 [RequireComponent(typeof(FieldOfView))]
 [RequireComponent(typeof(ReactionLogic))]
 [RequireComponent(typeof(ReactionMethod))]
-public class GuardController : MonoBehaviour {
+public class GuardController : GadgetControllerInterface {
 	
 	public float walkSpeed;
 	public PatrolPath patrolPath;
@@ -19,18 +19,45 @@ public class GuardController : MonoBehaviour {
 	private float sleepingCounter = 0;
 	private int walkDirection = 1;
 	Alertness alertness = Alertness.Normal;
-
+	private bool isActive;
+	
+	public override void aiArrived ()
+	{
+		isActive = false;
+		sight.enabled = false;
+		sight.getLight().LightEnabled = false;
+	}
+	
+	public override void aiLeft ()
+	{
+		isActive = true;
+		sight.enabled = true;
+		sight.getLight().LightEnabled = true;
+	}
+	
+	public override void aiSendDirection (Vector2 direction)
+	{
+	}
+	
+	public override void triggerGadget ()
+	{
+	}
+	
 	// Use this for initialization
 	void Start () {
 		moveController = GetComponent<CharacterController>();
 		sight = GetComponent<FieldOfView>();
 		reaction = GetComponent<ReactionLogic>();
 		reactionMethod = GetComponent<ReactionMethod>();
+		isActive = true;
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
+		if (!isActive) // Do nothing if currently occupied by ai
+			return;
+		
 		if (sleepingCounter > 0) sleepingCounter -= Time.deltaTime;
 		
 		if (sight.IsObjectInView (GameManager.gameManager.Robot.gameObject))
