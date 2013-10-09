@@ -65,7 +65,9 @@
      <Compile Include="Assets\Scripts\Detection Systems\ReactionLogic.cs" />
      <Compile Include="Assets\Scripts\Detection Systems\ReactionMethod.cs" />
      <Compile Include="Assets\Scripts\Detection Systems\ShootReactionMethod.cs" />
+     <Compile Include="Assets\Scripts\General\ActivatableGadget.cs" />
      <Compile Include="Assets\Scripts\General\CameraControllerTwoPoint.cs" />
+     <Compile Include="Assets\Scripts\General\GadgetInterface.cs" />
      <Compile Include="Assets\Scripts\General\GameManager.cs" />
      <Compile Include="Assets\Scripts\General\ICameraController.cs" />
      <Compile Include="Assets\Scripts\General\Pulse.cs" />
@@ -79,12 +81,13 @@
      <Compile Include="Assets\Scripts\NPCs\GuardController.cs" />
      <Compile Include="Assets\Scripts\NPCs\SecurityCamera.cs" />
      <Compile Include="Assets\Scripts\Player Characters\AiActor.cs" />
+     <Compile Include="Assets\Scripts\Player Characters\AiControllable.cs" />
      <Compile Include="Assets\Scripts\Player Characters\AiController.cs" />
-     <Compile Include="Assets\Scripts\Player Characters\GadgetControllerInterface.cs" />
      <Compile Include="Assets\Scripts\Player Characters\RobotController.cs" />
      <Compile Include="Assets\Scripts\Props\Door.cs" />
      <Compile Include="Assets\Scripts\Props\GuardSpawner.cs" />
      <Compile Include="Assets\Scripts\Props\MovingPlatform.cs" />
+     <Compile Include="Assets\Scripts\Props\Trigger.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCamera.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCameraAnchor.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCameraUtil.cs" />

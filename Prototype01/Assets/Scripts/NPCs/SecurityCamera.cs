@@ -2,7 +2,7 @@
 using System.Collections;
 
 [RequireComponent(typeof(FieldOfView))]
-public class SecurityCamera : GadgetControllerInterface {
+public class SecurityCamera : AiControllable {
 	
 	public float startRotation;
 	public float endRotation;
@@ -18,7 +18,7 @@ public class SecurityCamera : GadgetControllerInterface {
 	private ReactionLogic reaction;
 	private GameObject controllerButton;
 	
-	public override void triggerGadget()
+	public override void activateGadget (bool triggeredByAi)
 	{	
 		if (!sightDeactivated)
 		{
@@ -98,8 +98,8 @@ public class SecurityCamera : GadgetControllerInterface {
 			Alertness alertness = reaction.DetermineAlertness();
 			if (alertness == Alertness.Aggressive)
 			{
-				//Application.LoadLevel (Application.loadedLevelName);
 				sight.getLight ().LightColor = Color.red;
+				activateConnectedGadgets();
 			}
 			else if (alertness == Alertness.Suspicious)
 			{

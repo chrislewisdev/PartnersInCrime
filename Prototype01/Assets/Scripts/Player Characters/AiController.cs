@@ -21,7 +21,7 @@ public class AiController : AiActor {
 	{
 		initilize();
 		jumpToGadget(occupiedGadget);
-		occupiedGadget.GetComponent<GadgetControllerInterface>().aiArrived();
+		occupiedGadget.GetComponent<AiControllable>().aiArrived();
 		
 		GetComponent<LineRenderer>().SetWidth(0.5f, 0.1f);
 		for (int i = 0; i < transform.childCount; i++)
@@ -53,9 +53,9 @@ public class AiController : AiActor {
 			GameObject closestGadget = snapToClosestGadget(Mathf.Atan2(input.y, input.x));
 			if (closestGadget && Input.GetButtonDown("Jump_AI"))
 			{
-				occupiedGadget.GetComponent<GadgetControllerInterface>().aiLeft();
+				occupiedGadget.GetComponent<AiControllable>().aiLeft();
 				jumpToGadget(closestGadget);
-				closestGadget.GetComponent<GadgetControllerInterface>().aiArrived();
+				closestGadget.GetComponent<AiControllable>().aiArrived();
 			}
 			
 			LineRenderer renderer = GetComponent<LineRenderer>();
@@ -102,9 +102,9 @@ public class AiController : AiActor {
 			
 			if (Input.GetMouseButtonDown(0))
 			{
-				occupiedGadget.GetComponent<GadgetControllerInterface>().aiLeft();
+				occupiedGadget.GetComponent<AiControllable>().aiLeft();
 				jumpToGadget(closestGadget);
-				occupiedGadget.GetComponent<GadgetControllerInterface>().aiArrived();
+				occupiedGadget.GetComponent<AiControllable>().aiArrived();
 			}
 		}
 		else
@@ -121,7 +121,7 @@ public class AiController : AiActor {
 		
 		if (Physics.Raycast(new Ray(transform.position, direction), out hit))
 		{
-			if (hit.collider.gameObject.GetComponent<GadgetControllerInterface>() != null)
+			if (hit.collider.gameObject.GetComponent<AiControllable>() != null)
 				return hit.collider.gameObject;
 		}
 		
@@ -137,7 +137,7 @@ public class AiController : AiActor {
 		{
 			GameObject hitObject = hit.collider.gameObject;
 			
-			if (hitObject.GetComponent<GadgetControllerInterface>() != null)
+			if (hitObject.GetComponent<AiControllable>() != null)
 			{		
 				if (Physics.Raycast(new Ray(transform.position, hitObject.transform.position - transform.position), out hit))
 				{
@@ -152,10 +152,10 @@ public class AiController : AiActor {
 	
 	List<GameObject> getVisibleGadgets()
 	{
-		GadgetControllerInterface[] gadgets = (GadgetControllerInterface[])Object.FindObjectsOfType(typeof(GadgetControllerInterface));
+		AiControllable[] gadgets = (AiControllable[])Object.FindObjectsOfType(typeof(AiControllable));
 		List<GameObject> visibleObjects = new List<GameObject>();
 		
-		foreach (GadgetControllerInterface g in gadgets)
+		foreach (AiControllable g in gadgets)
 		{
 			if (g.gameObject != occupiedGadget)
 			{

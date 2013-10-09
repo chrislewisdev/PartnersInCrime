@@ -5,7 +5,7 @@ using System.Collections;
 [RequireComponent(typeof(FieldOfView))]
 [RequireComponent(typeof(ReactionLogic))]
 [RequireComponent(typeof(ReactionMethod))]
-public class GuardController : GadgetControllerInterface {
+public class GuardController : AiControllable {
 	
 	public float walkSpeed;
 	public PatrolPath patrolPath;
@@ -39,7 +39,7 @@ public class GuardController : GadgetControllerInterface {
 	{
 	}
 	
-	public override void triggerGadget ()
+	public override void activateGadget(bool triggeredByAi)
 	{
 	}
 	
@@ -71,6 +71,7 @@ public class GuardController : GadgetControllerInterface {
 		if (alertness == Alertness.Aggressive)
 		{
 			reactionMethod.OnAggressive();
+			activateConnectedGadgets();
 			//Return so we don't move
 			return;
 		}

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-public class MovingPlatform : GadgetControllerInterface
+public class MovingPlatform : AiControllable
 {
 	public float riseNumberOfBlocks;
 	public float fallNumberOfBlocks;
@@ -13,7 +13,7 @@ public class MovingPlatform : GadgetControllerInterface
 	private float minHeight;
 	private GameObject arrows;
 	
-	public override void triggerGadget ()
+	public override void activateGadget (bool triggeredByAi)
 	{
 	}
 	
@@ -28,6 +28,9 @@ public class MovingPlatform : GadgetControllerInterface
 			lastMovement.y += minHeight - newY;
 		
 		transform.position += lastMovement;
+		
+		if (lastMovement.magnitude > 0.2f)
+			activateConnectedGadgets();
 	}
 	
 	public override void aiArrived ()

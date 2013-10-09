@@ -2,7 +2,7 @@
 using System.Collections;
 
 [RequireComponent(typeof(RobotMovement))]
-public class RobotController : GadgetControllerInterface {
+public class RobotController : AiControllable {
 	
 	private tk2dSpriteAnimator animations;
 	private float timeSinceLastHit = 5f;
@@ -12,7 +12,7 @@ public class RobotController : GadgetControllerInterface {
 	{
 	}
 	
-	public override void triggerGadget ()
+	public override void activateGadget (bool triggeredByAi)
 	{
 	}
 	

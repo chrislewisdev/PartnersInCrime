@@ -28,13 +28,13 @@ public class AiActor : MonoBehaviour {
 	//Sends button input to currently occupied gadget
 	protected void sendGadgetButtonInput(ButtonState buttonState)
 	{
-		occupiedGadget.GetComponent<GadgetControllerInterface>().aiSendInput(buttonState);
+		occupiedGadget.GetComponent<AiControllable>().aiSendInput(buttonState);
 	}
 	
 	//Sends direction input to currently occupied gadget
 	protected void sendGadgetDirectionInput(Vector2 direction)
 	{
-		occupiedGadget.GetComponent<GadgetControllerInterface>().aiSendDirection(direction);
+		occupiedGadget.GetComponent<AiControllable>().aiSendDirection(direction);
 	}
 	
 	//Updates movement of ai actor

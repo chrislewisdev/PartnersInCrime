@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Door : GadgetControllerInterface {
+public class Door : AiControllable {
 	
 	public float closeTime = 1.5f;
+	
+	// If true, connected gadgets to the door will only be triggered when the ai opens the door, otherwise they will be triggered whenever the door opens
+	public bool triggerGadgetsOnlyOnAiOpen = true;
 	
 	bool open;
 	float targetScale;
@@ -12,20 +15,33 @@ public class Door : GadgetControllerInterface {
 	float closeTimer;
 	GameObject controllerButton;
 	
-	public override void triggerGadget ()
+	public override void activateGadget(bool triggeredByAi)
 	{
-		if (open)
+		if (triggeredByAi)
 		{
-			targetScale = 3f;
-			boxCollider.enabled = true;
+			if (open)
+			{
+				targetScale = 3f;
+				boxCollider.enabled = true;
+			}
+			else
+			{
+				targetScale = 0f;
+				boxCollider.enabled = false;
+				activateConnectedGadgets();
+			}
+			
+			open = !open;
 		}
 		else
 		{
+			open = true;
 			targetScale = 0f;
 			boxCollider.enabled = false;
+			
+			if (!triggerGadgetsOnlyOnAiOpen)
+				activateConnectedGadgets();
 		}
-		
-		open = !open;
 	}
 	
 	public override void aiSendDirection (Vector2 direction)
