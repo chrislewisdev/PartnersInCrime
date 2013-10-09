@@ -18,7 +18,7 @@ public class TimerLight : MonoBehaviour {
 	void Update()
 	{
 		timer += Time.deltaTime;
-		if (timer > revealTime + .4f)
+		if (timer > revealTime )
 		{
 			Destroy(gameObject);
 			return;

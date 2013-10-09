@@ -42,7 +42,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 4872e55d3e634564881455d24d9f2e97, type: 2}
+  - {fileID: 2100000, guid: be14c59207bb66b4f985824b82999666, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -86,7 +86,7 @@ MonoBehaviour:
   sweepSize: 280
   lightColor: {r: 0, g: 0, b: 1, a: 0}
   lightDetail: 499
-  lightMaterial: {fileID: 2100000, guid: 4872e55d3e634564881455d24d9f2e97, type: 2}
+  lightMaterial: {fileID: 2100000, guid: be14c59207bb66b4f985824b82999666, type: 2}
   shadowLayer:
     serializedVersion: 2
     m_Bits: 4294967295

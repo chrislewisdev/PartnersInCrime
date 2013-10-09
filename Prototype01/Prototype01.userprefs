@@ -1,18 +1,20 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Props\MovingPlatform.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\General\TimerLight.cs">
     <Files>
-      <File FileName="Assets\Scripts\NPCs\SecurityCamera.cs" Line="21" Column="8" />
+      <File FileName="Assets\Scripts\General\TimerLight.cs" Line="21" Column="26" />
+      <File FileName="Assets\Scripts\NPCs\SecurityCamera.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Detection Systems\DelayedReactionLogic.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Detection Systems\ReactionLogic.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\General\GadgetInterface.cs" Line="12" Column="1" />
-      <File FileName="Assets\Scripts\Props\GuardSpawner.cs" Line="16" Column="8" />
-      <File FileName="Assets\Scripts\NPCs\GuardController.cs" Line="42" Column="8" />
-      <File FileName="Assets\Scripts\Player Characters\AiControllable.cs" Line="9" Column="103" />
-      <File FileName="Assets\Scripts\General\ActivatableGadget.cs" Line="6" Column="8" />
-      <File FileName="Assets\Scripts\Props\Door.cs" Line="18" Column="8" />
-      <File FileName="Assets\Scripts\Player Characters\RobotController.cs" Line="15" Column="8" />
-      <File FileName="Assets\Scripts\Props\MovingPlatform.cs" Line="33" Column="31" />
+      <File FileName="Assets\Scripts\General\GadgetInterface.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Props\GuardSpawner.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\NPCs\GuardController.cs" Line="74" Column="31" />
+      <File FileName="Assets\Scripts\Player Characters\AiControllable.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\General\ActivatableGadget.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Props\Door.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player Characters\RobotController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Props\MovingPlatform.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Props\Trigger.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
