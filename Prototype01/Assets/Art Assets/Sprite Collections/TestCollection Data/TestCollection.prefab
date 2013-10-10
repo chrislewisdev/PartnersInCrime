@@ -212,10 +212,10 @@ MonoBehaviour:
     normals: []
     tangents: []
     uvs:
-    - {x: .00781640597, y: .804691434}
-    - {x: .00781640597, y: .929683566}
-    - {x: .0898398459, y: .804691434}
-    - {x: .0898398459, y: .929683566}
+    - {x: .117191404, y: .804691434}
+    - {x: .117191404, y: .929683566}
+    - {x: .199214846, y: .804691434}
+    - {x: .199214846, y: .929683566}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 52e9cd63982a2794aa4879cb36fdf2f4, type: 2}
     materialId: 0
@@ -272,6 +272,44 @@ MonoBehaviour:
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
     attachPoints: []
+  - name: turret
+    boundsData:
+    - {x: 1.07500017, y: 0, z: 0}
+    - {x: 2.35000014, y: 1.20000005, z: 0}
+    untrimmedBoundsData:
+    - {x: 1.07500017, y: 0, z: 0}
+    - {x: 2.35000014, y: 1.20000005, z: 0}
+    texelSize: {x: .0500000007, y: .0500000007}
+    positions:
+    - {x: -.100000001, y: -.600000024, z: 0}
+    - {x: 2.25000024, y: -.600000024, z: 0}
+    - {x: -.100000001, y: .600000024, z: 0}
+    - {x: 2.25000024, y: .600000024, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00781640597, y: .804691434}
+    - {x: .00781640597, y: .988277316}
+    - {x: .101558596, y: .804691434}
+    - {x: .101558596, y: .988277316}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 52e9cd63982a2794aa4879cb36fdf2f4, type: 2}
+    materialId: 0
+    sourceTextureGUID: c2e2dc7b29a72ee46bebab9c8e4d490e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
   premultipliedAlpha: 0
   material: {fileID: 0}
   materials:
@@ -285,7 +323,7 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: 2
   halfTargetHeight: 10
-  buildKey: 2107029302
+  buildKey: 2001662275
   dataGuid: 272c20a8fc79a9b4390a7951e52e766e
   managedSpriteCollection: 0
   hasPlatformData: 0

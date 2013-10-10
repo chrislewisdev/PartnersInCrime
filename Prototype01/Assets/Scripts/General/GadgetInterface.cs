@@ -9,7 +9,14 @@ public abstract class GadgetInterface : ActivatableGadget {
 	{
 		foreach (ActivatableGadget gadget in triggerGadgets)
 		{
-			gadget.activateGadget(false);
+			AiControllable aiCont = gadget.GetComponent<AiControllable>();
+			if (aiCont != null)
+			{
+				if (!aiCont.isPossessed())
+					gadget.activateGadget(false);
+			}
+			else
+				gadget.activateGadget(false);
 		}
 	}
 	

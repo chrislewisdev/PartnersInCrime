@@ -26,7 +26,7 @@ public abstract class AiControllable : GadgetInterface {
 	public abstract void aiLeft();
 	
 	// Returns true if ai player is currently possesing object
-	protected bool isPossessed()
+	public bool isPossessed()
 	{
 		return (GameManager.gameManager.AI.GetComponent<AiController>().occupiedGadget == gameObject);
 	}

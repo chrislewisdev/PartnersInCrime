@@ -84,10 +84,12 @@
      <Compile Include="Assets\Scripts\Player Characters\AiControllable.cs" />
      <Compile Include="Assets\Scripts\Player Characters\AiController.cs" />
      <Compile Include="Assets\Scripts\Player Characters\RobotController.cs" />
+     <Compile Include="Assets\Scripts\Props\Bullet.cs" />
      <Compile Include="Assets\Scripts\Props\Door.cs" />
      <Compile Include="Assets\Scripts\Props\GuardSpawner.cs" />
      <Compile Include="Assets\Scripts\Props\MovingPlatform.cs" />
      <Compile Include="Assets\Scripts\Props\Trigger.cs" />
+     <Compile Include="Assets\Scripts\Props\Turret.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCamera.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCameraAnchor.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCameraUtil.cs" />

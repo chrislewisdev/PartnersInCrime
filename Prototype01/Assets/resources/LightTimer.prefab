@@ -84,7 +84,7 @@ MonoBehaviour:
   sweepStart: 0
   coneStart: -140
   sweepSize: 280
-  lightColor: {r: 0, g: 0, b: 1, a: 0}
+  lightColor: {r: 1, g: .972413778, b: 0, a: 0}
   lightDetail: 499
   lightMaterial: {fileID: 2100000, guid: be14c59207bb66b4f985824b82999666, type: 2}
   shadowLayer:

@@ -29,6 +29,7 @@ MonoBehaviour:
     - AI
     - camera
     - selectionCircle
+    - turret
     spriteTextureGUIDs:
     - 101d05d62a8d4fb45877bfa284eba7da
     - 3f1eedef69f77074f8d52d9546880bf8
@@ -36,13 +37,15 @@ MonoBehaviour:
     - 31c97032d07ff9b4fb3df5d17a6b89dc
     - 37507ff05d9943547b9c9c7620a7027e
     - 668ea8b1a81ec1d4f99dc72d627db848
+    - c2e2dc7b29a72ee46bebab9c8e4d490e
     spriteTextureTimeStamps:
-    - 1380111096.92982
-    - 1380111096.88782
-    - 1380111096.94082
-    - 1380111096.88482
-    - 1380111096.92682
-    - 1381154853.90679
+    - 1380894466.641
+    - 1380894466.631
+    - 1380894466.643
+    - 1380894466.63
+    - 1380894466.639
+    - 1381331807.70846
+    - 1381408410.07094
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
