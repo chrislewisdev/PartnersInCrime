@@ -37,13 +37,13 @@ InputManager:
     axis: 1
     joyNum: 1
   - serializedVersion: 3
-    m_Name: Fire1
+    m_Name: Attack
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: left ctrl
+    positiveButton: joystick 1 button 1
     altNegativeButton: 
-    altPositiveButton: mouse 0
+    altPositiveButton: x
     gravity: 1000
     dead: .00100000005
     sensitivity: 1000

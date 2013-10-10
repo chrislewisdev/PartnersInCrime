@@ -67,4 +67,9 @@ public class GameManager : MonoBehaviour {
 		aiPlayer = GameObject.FindGameObjectWithTag("AI_Player").GetComponent<AiController>();
 		alarmTriggered = false;
 	}
+	
+	void OnDestroy()
+	{
+		gameManager = null;
+	}
 }

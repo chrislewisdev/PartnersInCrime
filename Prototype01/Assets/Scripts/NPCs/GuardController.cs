@@ -49,6 +49,8 @@ public class GuardController : AiControllable {
 		health -= amount;
 		if (health <= 0)
 		{
+			if (isPossessed())
+				GameManager.gameManager.AI.occupiedGadgetDestroyed();
 			Destroy(gameObject);
 		}
 	}

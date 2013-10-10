@@ -51,6 +51,11 @@ public class RobotController : AiControllable {
 	// Update is called once per frame
 	void Update () 
 	{
+		if (Input.GetButtonDown("Attack"))
+			attack();
+
+
+			
 		if (timeSinceLastHit < 5f) timeSinceLastHit += Time.deltaTime;
 		
 		movement.UpdateMovement ();
@@ -84,5 +89,21 @@ public class RobotController : AiControllable {
 	}
 	
 	//Attack robot for takedown
-	//void attack()
+	void attack()
+	{
+		RaycastHit hit;
+		Debug.Log("Punch");
+		if (Physics.Raycast(new Ray(transform.position, new Vector3(animations.Sprite.FlipX ? 0.0f : 1.0f, -.5f, 0.0f)), out hit))
+		{
+			if (hit.distance < 1.5f)
+			{
+				GuardController guard = hit.collider.GetComponent<GuardController>();
+				if (guard != null)
+				{
+					if (guard.isPossessed())
+						guard.Damage(10);
+				}
+			}
+		}
+	}
 }

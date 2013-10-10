@@ -11,6 +11,12 @@ public class AiActor : MonoBehaviour {
 	private Vector3 beginPosition;
 	private ParticleSystem particles;
 	
+	//Called when occupied gadget is destroyed
+	public void occupiedGadgetDestroyed()
+	{
+		jumpToGadget(GameManager.gameManager.Robot.gameObject);
+	}
+	
 	//Moves ai player to new gadget
 	protected void jumpToGadget(GameObject gadget)
 	{
