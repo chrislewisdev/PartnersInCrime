@@ -36,6 +36,10 @@ public class Bullet : MonoBehaviour {
 			RobotController robot = hit.collider.GetComponent<RobotController>();
 			if (robot != null && Random.Range(0f, 1.0f) < HIT_CHANCE)
 				robot.Damage();
+			
+			GuardController guard = hit.collider.GetComponent<GuardController>();
+			if (guard != null)
+				guard.Damage(1);
 		
 			LineRenderer lineRenderer = GetComponent<LineRenderer>();
 			lineRenderer.SetVertexCount(2);

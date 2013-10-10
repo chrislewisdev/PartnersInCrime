@@ -20,6 +20,7 @@ public class GuardController : AiControllable {
 	private int walkDirection = 1;
 	Alertness alertness = Alertness.Normal;
 	private bool isActive;
+	private int health = 3;
 	
 	public override void aiArrived ()
 	{
@@ -41,6 +42,15 @@ public class GuardController : AiControllable {
 	
 	public override void activateGadget(bool triggeredByAi)
 	{
+	}
+	
+	public void Damage(int amount)
+	{
+		health -= amount;
+		if (health <= 0)
+		{
+			Destroy(gameObject);
+		}
 	}
 	
 	// Use this for initialization

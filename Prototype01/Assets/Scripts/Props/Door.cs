@@ -90,14 +90,15 @@ public class Door : AiControllable {
 			closeTimer -= Time.deltaTime;
 			if (closeTimer <= 0f)
 			{
-				if (!GameManager.gameManager.Robot.gameObject.collider.bounds.Contains(transform.position + 
-					(new Vector3(-1.5f, -.6f, 0f))) && !GameManager.gameManager.Robot.gameObject.collider.bounds.Contains(transform.position + (new Vector3(1.5f, -.6f, 0f))))
+				boxCollider.enabled = true;
+				if (!boxCollider.bounds.Contains(GameManager.gameManager.Robot.transform.position))
 				{
 					closeTimer = closeTime;
 					open = false;
-					boxCollider.enabled = true;
 					targetScale = 3f;
 				}
+				else
+					boxCollider.enabled = false;
 			}
 		}
 	}
