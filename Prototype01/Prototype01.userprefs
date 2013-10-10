@@ -1,15 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Props\Door.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Movement\GuardMovement.cs">
     <Files>
-      <File FileName="Assets\Scripts\Player Characters\RobotController.cs" Line="104" Column="15" />
-      <File FileName="Assets\TK2DROOT\tk2d\Code\Sprites\tk2dSpriteAnimator.cs" Line="131" Column="1" />
-      <File FileName="Assets\Scripts\Player Characters\AiActor.cs" Line="82" Column="3" />
-      <File FileName="Assets\Scripts\Player Characters\AiControllable.cs" Line="32" Column="3" />
-      <File FileName="Assets\Scripts\General\GameManager.cs" Line="73" Column="22" />
-      <File FileName="Assets\Scripts\NPCs\GuardController.cs" Line="53" Column="58" />
-      <File FileName="Assets\Scripts\Props\Door.cs" Line="90" Column="1" />
-      <File FileName="Assets\Scripts\General\GadgetInterface.cs" Line="16" Column="1" />
+      <File FileName="Assets\Scripts\NPCs\GuardController.cs" Line="59" Column="51" />
+      <File FileName="Assets\Scripts\Movement\GuardMovement.cs" Line="33" Column="2" />
+      <File FileName="Assets\Scripts\Player Characters\RobotController.cs" Line="15" Column="31" />
+      <File FileName="Assets\Scripts\Props\Door.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\General\GadgetInterface.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Detection Systems\ShootReactionMethod.cs" Line="20" Column="20" />
+      <File FileName="Assets\Scripts\Props\Bullet.cs" Line="34" Column="53" />
+      <File FileName="Assets\Scripts\Props\Turret.cs" Line="25" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

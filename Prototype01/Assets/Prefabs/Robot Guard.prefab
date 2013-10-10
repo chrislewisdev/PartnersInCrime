@@ -16,6 +16,8 @@ GameObject:
   - 143: {fileID: 14300000}
   - 114: {fileID: 11400006}
   - 114: {fileID: 11400008}
+  - 114: {fileID: 11400012}
+  - 114: {fileID: 11400010}
   m_Layer: 9
   m_Name: Robot Guard
   m_TagString: Untagged
@@ -30,7 +32,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 36.9175453, y: 25.9436207, z: 10}
+  m_LocalPosition: {x: 17.277853, y: 4.52346611, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -46,7 +48,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 52e9cd63982a2794aa4879cb36fdf2f4, type: 2}
+  - {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -70,8 +72,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e263336188340e144a199355c2ee0012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 5
-  patrolPath: {fileID: 0}
+  triggerGadgets: []
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -83,7 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c64a35c7c2a5d264c8e3a537571be29c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fieldOfView: 60
+  fieldOfView: 90
   range: 10
   material: {fileID: 2100000, guid: 6c20936d7af00ad419cf3009b85e2582, type: 2}
   startingRotation: 0
@@ -98,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66614e98694c3224598e6f0d216b52c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collection: {fileID: 11400000, guid: 272c20a8fc79a9b4390a7951e52e766e, type: 2}
+  collection: {fileID: 11400000, guid: b5cef71c885d0ec47a23223f922aae05, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
@@ -131,6 +132,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotDelay: 2
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76a1542971a70064587428e3b8c9da94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 5
+  patrolPath: {fileID: 0}
+--- !u!114 &11400012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b64967f279ec1594abe2582b505ad49c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  library: {fileID: 11400000, guid: 65105607644a78e4f8eed31d7d271ffb, type: 2}
+  defaultClipId: 0
+  playAutomatically: 1
 --- !u!143 &14300000
 CharacterController:
   m_ObjectHideFlags: 1
@@ -138,7 +166,7 @@ CharacterController:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   serializedVersion: 2
-  m_Height: 3.20000005
+  m_Height: 5
   m_Radius: 1.60000002
   m_SlopeLimit: 45
   m_StepOffset: .300000012

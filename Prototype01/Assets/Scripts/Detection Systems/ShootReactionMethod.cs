@@ -8,6 +8,7 @@ public class ShootReactionMethod : ReactionMethod {
 	
 	private FieldOfView sight;
 	private float shotTimer = 0;
+	public float ShotTimer { get { return shotTimer; } }
 	
 	void Start()
 	{
@@ -41,6 +42,8 @@ public class ShootReactionMethod : ReactionMethod {
 		{
 			if (shotTimer <= 0) 
 			{
+				//Bullet.createBullet (transform.position, GameManager.gameManager.Robot.transform.position - transform.position);
+				//Debug.Break ();
 				GameManager.gameManager.Robot.Damage();
 				shotTimer = shotDelay;
 			}

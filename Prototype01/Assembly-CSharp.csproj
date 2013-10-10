@@ -37,10 +37,10 @@
     <Reference Include="System.XML" />
 	<Reference Include="System.Core" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity_4.2/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity_4.2/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -74,6 +74,7 @@
      <Compile Include="Assets\Scripts\General\SpriteEffects.cs" />
      <Compile Include="Assets\Scripts\General\TimerLight.cs" />
      <Compile Include="Assets\Scripts\General\Utility.cs" />
+     <Compile Include="Assets\Scripts\Movement\GuardMovement.cs" />
      <Compile Include="Assets\Scripts\Movement\PatrolPath.cs" />
      <Compile Include="Assets\Scripts\Movement\PatrolPathWaypoint.cs" />
      <Compile Include="Assets\Scripts\Movement\RobotMovement.cs" />

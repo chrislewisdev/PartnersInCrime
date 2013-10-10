@@ -1,0 +1,3039 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: Drone Sprites
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67a65bd6ac06df547bd4e8847d3c9006, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: Sentry_move/0
+    boundsData:
+    - {x: -.0520832539, y: -.286458373, z: 0}
+    - {x: 6.04166698, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.07291675, y: -2.86458325, z: 0}
+    - {x: 2.96875024, y: -2.86458325, z: 0}
+    - {x: -3.07291675, y: 2.29166651, z: 0}
+    - {x: 2.96875024, y: 2.29166651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .542969704, y: .408204108}
+    - {x: .656249046, y: .408204108}
+    - {x: .542969704, y: .504881859}
+    - {x: .656249046, y: .504881859}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 0
+    regionY: 915
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/1
+    boundsData:
+    - {x: -.0520832539, y: -.234375119, z: 0}
+    - {x: 6.04166698, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.07291675, y: -2.8125, z: 0}
+    - {x: 2.96875024, y: -2.8125, z: 0}
+    - {x: -3.07291675, y: 2.34374976, z: 0}
+    - {x: 2.96875024, y: 2.34374976, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .660157204, y: .408204108}
+    - {x: .773436546, y: .408204108}
+    - {x: .660157204, y: .504881859}
+    - {x: .773436546, y: .504881859}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 120
+    regionY: 915
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/2
+    boundsData:
+    - {x: -.0260416269, y: -.182291627, z: 0}
+    - {x: 6.09375, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.07291675, y: -2.76041651, z: 0}
+    - {x: 3.02083349, y: -2.76041651, z: 0}
+    - {x: -3.07291675, y: 2.39583325, z: 0}
+    - {x: 3.02083349, y: 2.39583325, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .777344704, y: .306641608}
+    - {x: .891600609, y: .306641608}
+    - {x: .777344704, y: .403319329}
+    - {x: .891600609, y: .403319329}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 240
+    regionY: 915
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/3
+    boundsData:
+    - {x: -.0260416269, y: -.130208373, z: 0}
+    - {x: 6.09375, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.07291675, y: -2.70833325, z: 0}
+    - {x: 3.02083349, y: -2.70833325, z: 0}
+    - {x: -3.07291675, y: 2.44791651, z: 0}
+    - {x: 3.02083349, y: 2.44791651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .777344704, y: .306641608}
+    - {x: .891600609, y: .306641608}
+    - {x: .777344704, y: .403319329}
+    - {x: .891600609, y: .403319329}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 360
+    regionY: 915
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/4
+    boundsData:
+    - {x: -.0260416269, y: -.078125, z: 0}
+    - {x: 6.09375, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.07291675, y: -2.65625, z: 0}
+    - {x: 3.02083349, y: -2.65625, z: 0}
+    - {x: -3.07291675, y: 2.5, z: 0}
+    - {x: 3.02083349, y: 2.5, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .895508766, y: .306641608}
+    - {x: .895508766, y: .420897454}
+    - {x: .992186546, y: .306641608}
+    - {x: .992186546, y: .420897454}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 480
+    regionY: 915
+    regionW: 120
+    regionH: 109
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/5
+    boundsData:
+    - {x: 1.1920929e-07, y: -1.1920929e-07, z: 0}
+    - {x: 6.04166698, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.02083325, y: -2.60416651, z: 0}
+    - {x: 3.02083349, y: -2.60416651, z: 0}
+    - {x: -3.02083325, y: 2.60416627, z: 0}
+    - {x: 3.02083349, y: 2.60416627, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .542969704, y: .306641608}
+    - {x: .656249046, y: .306641608}
+    - {x: .542969704, y: .404295892}
+    - {x: .656249046, y: .404295892}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 600
+    regionY: 915
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/6
+    boundsData:
+    - {x: 1.1920929e-07, y: .0520832539, z: 0}
+    - {x: 6.04166698, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.02083325, y: -2.55208325, z: 0}
+    - {x: 3.02083349, y: -2.55208325, z: 0}
+    - {x: -3.02083325, y: 2.65624976, z: 0}
+    - {x: 3.02083349, y: 2.65624976, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .660157204, y: .306641608}
+    - {x: .773436546, y: .306641608}
+    - {x: .660157204, y: .404295892}
+    - {x: .773436546, y: .404295892}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 720
+    regionY: 915
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/7
+    boundsData:
+    - {x: .0260417461, y: .104166508, z: 0}
+    - {x: 6.09375, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.02083325, y: -2.5, z: 0}
+    - {x: 3.07291675, y: -2.5, z: 0}
+    - {x: -3.02083325, y: 2.70833302, z: 0}
+    - {x: 3.07291675, y: 2.70833302, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .306641608, y: .306641608}
+    - {x: .420897454, y: .306641608}
+    - {x: .306641608, y: .404295892}
+    - {x: .420897454, y: .404295892}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 840
+    regionY: 915
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/8
+    boundsData:
+    - {x: .0260417461, y: .156249881, z: 0}
+    - {x: 6.09375, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.02083325, y: -2.44791675, z: 0}
+    - {x: 3.07291675, y: -2.44791675, z: 0}
+    - {x: -3.02083325, y: 2.76041651, z: 0}
+    - {x: 3.07291675, y: 2.76041651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .306641608, y: .306641608}
+    - {x: .420897454, y: .306641608}
+    - {x: .306641608, y: .404295892}
+    - {x: .420897454, y: .404295892}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 0
+    regionY: 806
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/9
+    boundsData:
+    - {x: .0260417461, y: .234374881, z: 0}
+    - {x: 6.09375, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.02083325, y: -2.34375, z: 0}
+    - {x: 3.07291675, y: -2.34375, z: 0}
+    - {x: -3.02083325, y: 2.81249976, z: 0}
+    - {x: 3.07291675, y: 2.81249976, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .777344704, y: .407227546}
+    - {x: .891600609, y: .407227546}
+    - {x: .777344704, y: .503905296}
+    - {x: .891600609, y: .503905296}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 120
+    regionY: 806
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/10
+    boundsData:
+    - {x: .0260417461, y: .182291627, z: 0}
+    - {x: 6.09375, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.02083325, y: -2.39583325, z: 0}
+    - {x: 3.07291675, y: -2.39583325, z: 0}
+    - {x: -3.02083325, y: 2.76041651, z: 0}
+    - {x: 3.07291675, y: 2.76041651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .895508766, y: .424805671}
+    - {x: .895508766, y: .539061546}
+    - {x: .992186546, y: .424805671}
+    - {x: .992186546, y: .539061546}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 240
+    regionY: 806
+    regionW: 120
+    regionH: 109
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/11
+    boundsData:
+    - {x: .0260417461, y: .130208135, z: 0}
+    - {x: 6.09375, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.02083325, y: -2.44791675, z: 0}
+    - {x: 3.07291675, y: -2.44791675, z: 0}
+    - {x: -3.02083325, y: 2.70833302, z: 0}
+    - {x: 3.07291675, y: 2.70833302, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .306641608, y: .408204108}
+    - {x: .420897454, y: .408204108}
+    - {x: .306641608, y: .504881859}
+    - {x: .420897454, y: .504881859}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 360
+    regionY: 806
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/12
+    boundsData:
+    - {x: 1.1920929e-07, y: .0781248808, z: 0}
+    - {x: 6.04166698, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.02083325, y: -2.5, z: 0}
+    - {x: 3.02083349, y: -2.5, z: 0}
+    - {x: -3.02083325, y: 2.65624976, z: 0}
+    - {x: 3.02083349, y: 2.65624976, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .777344704, y: .507813454}
+    - {x: .890624046, y: .507813454}
+    - {x: .777344704, y: .604491234}
+    - {x: .890624046, y: .604491234}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 480
+    regionY: 806
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/13
+    boundsData:
+    - {x: 1.1920929e-07, y: .0260415077, z: 0}
+    - {x: 6.04166698, y: 5.15624952, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.02083325, y: -2.55208325, z: 0}
+    - {x: 3.02083349, y: -2.55208325, z: 0}
+    - {x: -3.02083325, y: 2.60416627, z: 0}
+    - {x: 3.02083349, y: 2.60416627, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .894532204, y: .542969704}
+    - {x: .894532204, y: .656249046}
+    - {x: .991209984, y: .542969704}
+    - {x: .991209984, y: .656249046}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 600
+    regionY: 806
+    regionW: 120
+    regionH: 109
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/14
+    boundsData:
+    - {x: -.0260416269, y: -.0260417461, z: 0}
+    - {x: 6.09375, y: 5.15624952, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.07291675, y: -2.60416651, z: 0}
+    - {x: 3.02083349, y: -2.60416651, z: 0}
+    - {x: -3.07291675, y: 2.55208302, z: 0}
+    - {x: 3.02083349, y: 2.55208302, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .424805671, y: .408204108}
+    - {x: .539061546, y: .408204108}
+    - {x: .424805671, y: .504881859}
+    - {x: .539061546, y: .504881859}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 720
+    regionY: 806
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/15
+    boundsData:
+    - {x: -.0260416269, y: -.078125, z: 0}
+    - {x: 6.09375, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.07291675, y: -2.65625, z: 0}
+    - {x: 3.02083349, y: -2.65625, z: 0}
+    - {x: -3.07291675, y: 2.5, z: 0}
+    - {x: 3.02083349, y: 2.5, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .895508766, y: .306641608}
+    - {x: .895508766, y: .420897454}
+    - {x: .992186546, y: .306641608}
+    - {x: .992186546, y: .420897454}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 840
+    regionY: 806
+    regionW: 120
+    regionH: 109
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/16
+    boundsData:
+    - {x: -.0260416269, y: -.130208373, z: 0}
+    - {x: 6.09375, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.07291675, y: -2.70833325, z: 0}
+    - {x: 3.02083349, y: -2.70833325, z: 0}
+    - {x: -3.07291675, y: 2.44791651, z: 0}
+    - {x: 3.02083349, y: 2.44791651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .777344704, y: .306641608}
+    - {x: .891600609, y: .306641608}
+    - {x: .777344704, y: .403319329}
+    - {x: .891600609, y: .403319329}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 0
+    regionY: 697
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/17
+    boundsData:
+    - {x: -.0520832539, y: -.182291627, z: 0}
+    - {x: 6.04166698, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.07291675, y: -2.76041651, z: 0}
+    - {x: 2.96875024, y: -2.76041651, z: 0}
+    - {x: -3.07291675, y: 2.39583325, z: 0}
+    - {x: 2.96875024, y: 2.39583325, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .660157204, y: .408204108}
+    - {x: .773436546, y: .408204108}
+    - {x: .660157204, y: .504881859}
+    - {x: .773436546, y: .504881859}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 120
+    regionY: 697
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/18
+    boundsData:
+    - {x: -.0520832539, y: -.208333373, z: 0}
+    - {x: 6.04166698, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.07291675, y: -2.8125, z: 0}
+    - {x: 2.96875024, y: -2.8125, z: 0}
+    - {x: -3.07291675, y: 2.39583325, z: 0}
+    - {x: 2.96875024, y: 2.39583325, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .660157204, y: .306641608}
+    - {x: .773436546, y: .306641608}
+    - {x: .660157204, y: .404295892}
+    - {x: .773436546, y: .404295892}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 240
+    regionY: 697
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/19
+    boundsData:
+    - {x: -.0520832539, y: -.286458373, z: 0}
+    - {x: 6.04166698, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.07291675, y: -2.86458325, z: 0}
+    - {x: 2.96875024, y: -2.86458325, z: 0}
+    - {x: -3.07291675, y: 2.29166651, z: 0}
+    - {x: 2.96875024, y: 2.29166651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .542969704, y: .408204108}
+    - {x: .656249046, y: .408204108}
+    - {x: .542969704, y: .504881859}
+    - {x: .656249046, y: .504881859}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 360
+    regionY: 697
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/20
+    boundsData:
+    - {x: -.0520832539, y: -.234375119, z: 0}
+    - {x: 6.04166698, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.07291675, y: -2.8125, z: 0}
+    - {x: 2.96875024, y: -2.8125, z: 0}
+    - {x: -3.07291675, y: 2.34374976, z: 0}
+    - {x: 2.96875024, y: 2.34374976, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .660157204, y: .408204108}
+    - {x: .773436546, y: .408204108}
+    - {x: .660157204, y: .504881859}
+    - {x: .773436546, y: .504881859}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 480
+    regionY: 697
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/21
+    boundsData:
+    - {x: -.0520832539, y: -.182291627, z: 0}
+    - {x: 6.04166698, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.07291675, y: -2.76041651, z: 0}
+    - {x: 2.96875024, y: -2.76041651, z: 0}
+    - {x: -3.07291675, y: 2.39583325, z: 0}
+    - {x: 2.96875024, y: 2.39583325, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .777344704, y: .507813454}
+    - {x: .890624046, y: .507813454}
+    - {x: .777344704, y: .604491234}
+    - {x: .890624046, y: .604491234}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 600
+    regionY: 697
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/22
+    boundsData:
+    - {x: -.0260416269, y: -.130208373, z: 0}
+    - {x: 6.09375, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.07291675, y: -2.70833325, z: 0}
+    - {x: 3.02083349, y: -2.70833325, z: 0}
+    - {x: -3.07291675, y: 2.44791651, z: 0}
+    - {x: 3.02083349, y: 2.44791651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .306641608, y: .408204108}
+    - {x: .420897454, y: .408204108}
+    - {x: .306641608, y: .504881859}
+    - {x: .420897454, y: .504881859}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 720
+    regionY: 697
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/23
+    boundsData:
+    - {x: -.0260416269, y: -.078125, z: 0}
+    - {x: 6.09375, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.07291675, y: -2.65625, z: 0}
+    - {x: 3.02083349, y: -2.65625, z: 0}
+    - {x: -3.07291675, y: 2.5, z: 0}
+    - {x: 3.02083349, y: 2.5, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .424805671, y: .408204108}
+    - {x: .539061546, y: .408204108}
+    - {x: .424805671, y: .504881859}
+    - {x: .539061546, y: .504881859}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 840
+    regionY: 697
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/24
+    boundsData:
+    - {x: 1.1920929e-07, y: -.0260417461, z: 0}
+    - {x: 6.04166698, y: 5.15624952, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.02083325, y: -2.60416651, z: 0}
+    - {x: 3.02083349, y: -2.60416651, z: 0}
+    - {x: -3.02083325, y: 2.55208302, z: 0}
+    - {x: 3.02083349, y: 2.55208302, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .894532204, y: .542969704}
+    - {x: .894532204, y: .656249046}
+    - {x: .991209984, y: .542969704}
+    - {x: .991209984, y: .656249046}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 0
+    regionY: 588
+    regionW: 120
+    regionH: 109
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/25
+    boundsData:
+    - {x: 1.1920929e-07, y: .0260415077, z: 0}
+    - {x: 6.04166698, y: 5.15624952, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.02083325, y: -2.55208325, z: 0}
+    - {x: 3.02083349, y: -2.55208325, z: 0}
+    - {x: -3.02083325, y: 2.60416627, z: 0}
+    - {x: 3.02083349, y: 2.60416627, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .306641608, y: .608399391}
+    - {x: .306641608, y: .721678734}
+    - {x: .403319329, y: .608399391}
+    - {x: .403319329, y: .721678734}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 120
+    regionY: 588
+    regionW: 120
+    regionH: 109
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/26
+    boundsData:
+    - {x: 1.1920929e-07, y: .0781248808, z: 0}
+    - {x: 6.04166698, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.02083325, y: -2.5, z: 0}
+    - {x: 3.02083349, y: -2.5, z: 0}
+    - {x: -3.02083325, y: 2.65624976, z: 0}
+    - {x: 3.02083349, y: 2.65624976, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .407227546, y: .508790016}
+    - {x: .520506859, y: .508790016}
+    - {x: .407227546, y: .605467796}
+    - {x: .520506859, y: .605467796}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 240
+    regionY: 588
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/27
+    boundsData:
+    - {x: .0260417461, y: .130208135, z: 0}
+    - {x: 6.09375, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.02083325, y: -2.44791675, z: 0}
+    - {x: 3.07291675, y: -2.44791675, z: 0}
+    - {x: -3.02083325, y: 2.70833302, z: 0}
+    - {x: 3.07291675, y: 2.70833302, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .895508766, y: .424805671}
+    - {x: .895508766, y: .539061546}
+    - {x: .992186546, y: .424805671}
+    - {x: .992186546, y: .539061546}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 360
+    regionY: 588
+    regionW: 120
+    regionH: 109
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/28
+    boundsData:
+    - {x: .0260417461, y: .156249881, z: 0}
+    - {x: 6.09375, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.02083325, y: -2.44791675, z: 0}
+    - {x: 3.07291675, y: -2.44791675, z: 0}
+    - {x: -3.02083325, y: 2.76041651, z: 0}
+    - {x: 3.07291675, y: 2.76041651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .306641608, y: .306641608}
+    - {x: .420897454, y: .306641608}
+    - {x: .306641608, y: .404295892}
+    - {x: .420897454, y: .404295892}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 480
+    regionY: 588
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/29
+    boundsData:
+    - {x: .0260417461, y: .234374881, z: 0}
+    - {x: 6.09375, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.02083325, y: -2.34375, z: 0}
+    - {x: 3.07291675, y: -2.34375, z: 0}
+    - {x: -3.02083325, y: 2.81249976, z: 0}
+    - {x: 3.07291675, y: 2.81249976, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .777344704, y: .407227546}
+    - {x: .891600609, y: .407227546}
+    - {x: .777344704, y: .503905296}
+    - {x: .891600609, y: .503905296}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 600
+    regionY: 588
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/30
+    boundsData:
+    - {x: .0260417461, y: .182291627, z: 0}
+    - {x: 6.09375, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.02083325, y: -2.39583325, z: 0}
+    - {x: 3.07291675, y: -2.39583325, z: 0}
+    - {x: -3.02083325, y: 2.76041651, z: 0}
+    - {x: 3.07291675, y: 2.76041651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .895508766, y: .424805671}
+    - {x: .895508766, y: .539061546}
+    - {x: .992186546, y: .424805671}
+    - {x: .992186546, y: .539061546}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 720
+    regionY: 588
+    regionW: 120
+    regionH: 109
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/31
+    boundsData:
+    - {x: .0260417461, y: .130208135, z: 0}
+    - {x: 6.09375, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.02083325, y: -2.44791675, z: 0}
+    - {x: 3.07291675, y: -2.44791675, z: 0}
+    - {x: -3.02083325, y: 2.70833302, z: 0}
+    - {x: 3.07291675, y: 2.70833302, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .306641608, y: .408204108}
+    - {x: .420897454, y: .408204108}
+    - {x: .306641608, y: .504881859}
+    - {x: .420897454, y: .504881859}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 840
+    regionY: 588
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/32
+    boundsData:
+    - {x: 1.1920929e-07, y: .0781248808, z: 0}
+    - {x: 6.04166698, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.02083325, y: -2.5, z: 0}
+    - {x: 3.02083349, y: -2.5, z: 0}
+    - {x: -3.02083325, y: 2.65624976, z: 0}
+    - {x: 3.02083349, y: 2.65624976, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .777344704, y: .507813454}
+    - {x: .890624046, y: .507813454}
+    - {x: .777344704, y: .604491234}
+    - {x: .890624046, y: .604491234}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 0
+    regionY: 479
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/33
+    boundsData:
+    - {x: 1.1920929e-07, y: .0260415077, z: 0}
+    - {x: 6.04166698, y: 5.15624952, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.02083325, y: -2.55208325, z: 0}
+    - {x: 3.02083349, y: -2.55208325, z: 0}
+    - {x: -3.02083325, y: 2.60416627, z: 0}
+    - {x: 3.02083349, y: 2.60416627, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .894532204, y: .542969704}
+    - {x: .894532204, y: .656249046}
+    - {x: .991209984, y: .542969704}
+    - {x: .991209984, y: .656249046}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 120
+    regionY: 479
+    regionW: 120
+    regionH: 109
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/34
+    boundsData:
+    - {x: -.0260416269, y: -.0260417461, z: 0}
+    - {x: 6.09375, y: 5.15624952, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.07291675, y: -2.60416651, z: 0}
+    - {x: 3.02083349, y: -2.60416651, z: 0}
+    - {x: -3.07291675, y: 2.55208302, z: 0}
+    - {x: 3.02083349, y: 2.55208302, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .424805671, y: .408204108}
+    - {x: .539061546, y: .408204108}
+    - {x: .424805671, y: .504881859}
+    - {x: .539061546, y: .504881859}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 240
+    regionY: 479
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/35
+    boundsData:
+    - {x: -.0260416269, y: -.078125, z: 0}
+    - {x: 6.09375, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.07291675, y: -2.65625, z: 0}
+    - {x: 3.02083349, y: -2.65625, z: 0}
+    - {x: -3.07291675, y: 2.5, z: 0}
+    - {x: 3.02083349, y: 2.5, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .895508766, y: .306641608}
+    - {x: .895508766, y: .420897454}
+    - {x: .992186546, y: .306641608}
+    - {x: .992186546, y: .420897454}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 360
+    regionY: 479
+    regionW: 120
+    regionH: 109
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/36
+    boundsData:
+    - {x: -.0260416269, y: -.130208373, z: 0}
+    - {x: 6.09375, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.07291675, y: -2.70833325, z: 0}
+    - {x: 3.02083349, y: -2.70833325, z: 0}
+    - {x: -3.07291675, y: 2.44791651, z: 0}
+    - {x: 3.02083349, y: 2.44791651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .777344704, y: .306641608}
+    - {x: .891600609, y: .306641608}
+    - {x: .777344704, y: .403319329}
+    - {x: .891600609, y: .403319329}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 480
+    regionY: 479
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/37
+    boundsData:
+    - {x: -.0520832539, y: -.182291627, z: 0}
+    - {x: 6.04166698, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.07291675, y: -2.76041651, z: 0}
+    - {x: 2.96875024, y: -2.76041651, z: 0}
+    - {x: -3.07291675, y: 2.39583325, z: 0}
+    - {x: 2.96875024, y: 2.39583325, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .660157204, y: .408204108}
+    - {x: .773436546, y: .408204108}
+    - {x: .660157204, y: .504881859}
+    - {x: .773436546, y: .504881859}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 600
+    regionY: 479
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/38
+    boundsData:
+    - {x: -.0520832539, y: -.208333373, z: 0}
+    - {x: 6.04166698, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.07291675, y: -2.8125, z: 0}
+    - {x: 2.96875024, y: -2.8125, z: 0}
+    - {x: -3.07291675, y: 2.39583325, z: 0}
+    - {x: 2.96875024, y: 2.39583325, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .660157204, y: .306641608}
+    - {x: .773436546, y: .306641608}
+    - {x: .660157204, y: .404295892}
+    - {x: .773436546, y: .404295892}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 720
+    regionY: 479
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_move/39
+    boundsData:
+    - {x: -.0520832539, y: -.286458373, z: 0}
+    - {x: 6.04166698, y: 5.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.0260417461, z: 0}
+    - {x: 6.25, y: 5.67708302, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.07291675, y: -2.86458325, z: 0}
+    - {x: 2.96875024, y: -2.86458325, z: 0}
+    - {x: -3.07291675, y: 2.29166651, z: 0}
+    - {x: 2.96875024, y: 2.29166651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .542969704, y: .408204108}
+    - {x: .656249046, y: .408204108}
+    - {x: .542969704, y: .504881859}
+    - {x: .656249046, y: .504881859}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e8ec4e96d040b040bb86e64ac1cf64f
+    extractRegion: 1
+    regionX: 840
+    regionY: 479
+    regionW: 120
+    regionH: 109
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/0
+    boundsData:
+    - {x: 1.11979198, y: -1.1920929e-07, z: 0}
+    - {x: 6.09375, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -1.92708302, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -1.92708302, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .424805671, y: .306641608}
+    - {x: .539061546, y: .306641608}
+    - {x: .424805671, y: .404295892}
+    - {x: .539061546, y: .404295892}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 0
+    regionY: 922
+    regionW: 159
+    regionH: 102
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/1
+    boundsData:
+    - {x: 1.09375036, y: -1.1920929e-07, z: 0}
+    - {x: 6.14583302, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -1.97916627, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -1.97916627, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .205079108, y: .546875954}
+    - {x: .205079108, y: .662108421}
+    - {x: .302733392, y: .546875954}
+    - {x: .302733392, y: .662108421}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 159
+    regionY: 922
+    regionW: 159
+    regionH: 102
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/2
+    boundsData:
+    - {x: 1.06770873, y: -1.1920929e-07, z: 0}
+    - {x: 6.19791651, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.03124952, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.03124952, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .205079108, y: .306641608}
+    - {x: .205079108, y: .422850579}
+    - {x: .302733392, y: .306641608}
+    - {x: .302733392, y: .422850579}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 318
+    regionY: 922
+    regionW: 159
+    regionH: 102
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/3
+    boundsData:
+    - {x: 1.04166698, y: -1.1920929e-07, z: 0}
+    - {x: 6.25, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.08333302, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.08333302, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .571290016, y: .205079108}
+    - {x: .688475609, y: .205079108}
+    - {x: .571290016, y: .302733392}
+    - {x: .688475609, y: .302733392}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 477
+    regionY: 922
+    regionW: 159
+    regionH: 102
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/4
+    boundsData:
+    - {x: 1.01562524, y: -1.1920929e-07, z: 0}
+    - {x: 6.30208349, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.13541651, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.13541651, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .205079108, y: .205079108}
+    - {x: .323241204, y: .205079108}
+    - {x: .205079108, y: .302733392}
+    - {x: .323241204, y: .302733392}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 636
+    regionY: 922
+    regionW: 159
+    regionH: 102
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/5
+    boundsData:
+    - {x: 1.01562524, y: -1.1920929e-07, z: 0}
+    - {x: 6.30208349, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.13541651, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.13541651, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .327149421, y: .205079108}
+    - {x: .445311517, y: .205079108}
+    - {x: .327149421, y: .302733392}
+    - {x: .445311517, y: .302733392}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 795
+    regionY: 922
+    regionW: 159
+    regionH: 102
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/6
+    boundsData:
+    - {x: .989583611, y: -1.1920929e-07, z: 0}
+    - {x: 6.35416698, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.18749976, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.18749976, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .103516601, y: .577149391}
+    - {x: .103516601, y: .696288109}
+    - {x: .201170892, y: .577149391}
+    - {x: .201170892, y: .696288109}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 0
+    regionY: 820
+    regionW: 159
+    regionH: 102
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/7
+    boundsData:
+    - {x: .963541985, y: -1.1920929e-07, z: 0}
+    - {x: 6.40625, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.23958302, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.23958302, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .853516579, y: .103516601}
+    - {x: .973631859, y: .103516601}
+    - {x: .853516579, y: .201170892}
+    - {x: .973631859, y: .201170892}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 159
+    regionY: 820
+    regionW: 159
+    regionH: 102
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/8
+    boundsData:
+    - {x: .963541985, y: -1.1920929e-07, z: 0}
+    - {x: 6.40625, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.23958302, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.23958302, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .103516601, y: .205079108}
+    - {x: .103516601, y: .325194329}
+    - {x: .201170892, y: .205079108}
+    - {x: .201170892, y: .325194329}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 318
+    regionY: 820
+    regionW: 159
+    regionH: 102
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/9
+    boundsData:
+    - {x: .937500238, y: -1.1920929e-07, z: 0}
+    - {x: 6.45833349, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.29166651, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.29166651, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .103516601, y: .103516601}
+    - {x: .224608392, y: .103516601}
+    - {x: .103516601, y: .201170892}
+    - {x: .224608392, y: .201170892}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 477
+    regionY: 820
+    regionW: 159
+    regionH: 102
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/10
+    boundsData:
+    - {x: .937500238, y: -1.1920929e-07, z: 0}
+    - {x: 6.45833349, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.29166651, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.29166651, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .228516608, y: .103516601}
+    - {x: .349608392, y: .103516601}
+    - {x: .228516608, y: .201170892}
+    - {x: .349608392, y: .201170892}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 636
+    regionY: 820
+    regionW: 159
+    regionH: 102
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/11
+    boundsData:
+    - {x: .937500238, y: -1.1920929e-07, z: 0}
+    - {x: 6.45833349, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.29166651, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.29166651, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .353516608, y: .103516601}
+    - {x: .474608392, y: .103516601}
+    - {x: .353516608, y: .201170892}
+    - {x: .474608392, y: .201170892}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 795
+    regionY: 820
+    regionW: 159
+    regionH: 102
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/12
+    boundsData:
+    - {x: .911458611, y: -1.1920929e-07, z: 0}
+    - {x: 6.51041698, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.34374976, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.34374976, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .361329108}
+    - {x: .00195410149, y: .483397454}
+    - {x: .099608399, y: .361329108}
+    - {x: .099608399, y: .483397454}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 0
+    regionY: 718
+    regionW: 159
+    regionH: 102
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/13
+    boundsData:
+    - {x: .911458611, y: -1.1920929e-07, z: 0}
+    - {x: 6.51041698, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.34374976, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.34374976, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .487305671}
+    - {x: .00195410149, y: .609374046}
+    - {x: .099608399, y: .487305671}
+    - {x: .099608399, y: .609374046}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 159
+    regionY: 718
+    regionW: 159
+    regionH: 102
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/14
+    boundsData:
+    - {x: .781250238, y: -1.1920929e-07, z: 0}
+    - {x: 6.77083349, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.60416651, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.60416651, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .103516601}
+    - {x: .00195410149, y: .230467767}
+    - {x: .099608399, y: .103516601}
+    - {x: .099608399, y: .230467767}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 318
+    regionY: 718
+    regionW: 159
+    regionH: 102
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/15
+    boundsData:
+    - {x: .520833611, y: -1.1920929e-07, z: 0}
+    - {x: 7.29166698, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.12499976, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -3.12499976, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .782227516, y: .00195410149}
+    - {x: .918944359, y: .00195410149}
+    - {x: .782227516, y: .099608399}
+    - {x: .918944359, y: .099608399}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 477
+    regionY: 718
+    regionW: 159
+    regionH: 102
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/16
+    boundsData:
+    - {x: .338541985, y: -1.1920929e-07, z: 0}
+    - {x: 7.65625, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -3.48958302, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -3.48958302, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .634766579, y: .00195410149}
+    - {x: .778319359, y: .00195410149}
+    - {x: .634766579, y: .099608399}
+    - {x: .778319359, y: .099608399}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 636
+    regionY: 718
+    regionW: 159
+    regionH: 102
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/17
+    boundsData:
+    - {x: .0520837307, y: -1.1920929e-07, z: 0}
+    - {x: 8.22916603, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -4.06249952, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -4.06249952, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .00195410149}
+    - {x: .156249017, y: .00195410149}
+    - {x: .00195410149, y: .099608399}
+    - {x: .156249017, y: .099608399}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 795
+    regionY: 718
+    regionW: 159
+    regionH: 102
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/18
+    boundsData:
+    - {x: .0520837307, y: -1.1920929e-07, z: 0}
+    - {x: 8.22916603, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -4.06249952, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -4.06249952, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .160157233, y: .00195410149}
+    - {x: .314452142, y: .00195410149}
+    - {x: .160157233, y: .099608399}
+    - {x: .314452142, y: .099608399}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 0
+    regionY: 616
+    regionW: 159
+    regionH: 102
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/19
+    boundsData:
+    - {x: .0520837307, y: -1.1920929e-07, z: 0}
+    - {x: 8.22916603, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -4.06249952, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -4.06249952, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .318360358, y: .00195410149}
+    - {x: .472655267, y: .00195410149}
+    - {x: .318360358, y: .099608399}
+    - {x: .472655267, y: .099608399}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 159
+    regionY: 616
+    regionW: 159
+    regionH: 102
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/20
+    boundsData:
+    - {x: .0520837307, y: -1.1920929e-07, z: 0}
+    - {x: 8.22916603, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -4.06249952, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -4.06249952, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .476563483, y: .00195410149}
+    - {x: .630858421, y: .00195410149}
+    - {x: .476563483, y: .099608399}
+    - {x: .630858421, y: .099608399}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 318
+    regionY: 616
+    regionW: 159
+    regionH: 102
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/21
+    boundsData:
+    - {x: .911458611, y: -1.1920929e-07, z: 0}
+    - {x: 6.51041698, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.34374976, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.34374976, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .613282204}
+    - {x: .00195410149, y: .735350609}
+    - {x: .099608399, y: .613282204}
+    - {x: .099608399, y: .735350609}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 477
+    regionY: 616
+    regionW: 159
+    regionH: 102
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/22
+    boundsData:
+    - {x: .885416985, y: -1.1920929e-07, z: 0}
+    - {x: 6.5625, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.39583302, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.39583302, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .234375983}
+    - {x: .00195410149, y: .357420892}
+    - {x: .099608399, y: .234375983}
+    - {x: .099608399, y: .357420892}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 636
+    regionY: 616
+    regionW: 159
+    regionH: 102
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/23
+    boundsData:
+    - {x: .911458611, y: -1.1920929e-07, z: 0}
+    - {x: 6.51041698, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.34374976, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.34374976, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .739258766}
+    - {x: .00195410149, y: .861327171}
+    - {x: .099608399, y: .739258766}
+    - {x: .099608399, y: .861327171}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 795
+    regionY: 616
+    regionW: 159
+    regionH: 102
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/24
+    boundsData:
+    - {x: .911458611, y: -1.1920929e-07, z: 0}
+    - {x: 6.51041698, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.34374976, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.34374976, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .865235329}
+    - {x: .00195410149, y: .987303734}
+    - {x: .099608399, y: .865235329}
+    - {x: .099608399, y: .987303734}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 0
+    regionY: 514
+    regionW: 159
+    regionH: 102
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/25
+    boundsData:
+    - {x: .937500238, y: -1.1920929e-07, z: 0}
+    - {x: 6.45833349, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.29166651, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.29166651, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .478516608, y: .103516601}
+    - {x: .599608421, y: .103516601}
+    - {x: .478516608, y: .201170892}
+    - {x: .599608421, y: .201170892}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 159
+    regionY: 514
+    regionW: 159
+    regionH: 102
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/26
+    boundsData:
+    - {x: .937500238, y: -1.1920929e-07, z: 0}
+    - {x: 6.45833349, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.29166651, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.29166651, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .603516579, y: .103516601}
+    - {x: .724608421, y: .103516601}
+    - {x: .603516579, y: .201170892}
+    - {x: .724608421, y: .201170892}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 318
+    regionY: 514
+    regionW: 159
+    regionH: 102
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/27
+    boundsData:
+    - {x: .937500238, y: -1.1920929e-07, z: 0}
+    - {x: 6.45833349, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.29166651, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.29166651, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .728516579, y: .103516601}
+    - {x: .849608421, y: .103516601}
+    - {x: .728516579, y: .201170892}
+    - {x: .849608421, y: .201170892}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 477
+    regionY: 514
+    regionW: 159
+    regionH: 102
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/28
+    boundsData:
+    - {x: .963541985, y: -1.1920929e-07, z: 0}
+    - {x: 6.40625, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.23958302, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.23958302, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .103516601, y: .329102546}
+    - {x: .103516601, y: .449217767}
+    - {x: .201170892, y: .329102546}
+    - {x: .201170892, y: .449217767}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 636
+    regionY: 514
+    regionW: 159
+    regionH: 102
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/29
+    boundsData:
+    - {x: .963541985, y: -1.1920929e-07, z: 0}
+    - {x: 6.40625, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.23958302, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.23958302, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .103516601, y: .453125983}
+    - {x: .103516601, y: .573241234}
+    - {x: .201170892, y: .453125983}
+    - {x: .201170892, y: .573241234}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 795
+    regionY: 514
+    regionW: 159
+    regionH: 102
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/30
+    boundsData:
+    - {x: .989583611, y: -1.1920929e-07, z: 0}
+    - {x: 6.35416698, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.18749976, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.18749976, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .103516601, y: .700196266}
+    - {x: .103516601, y: .819334984}
+    - {x: .201170892, y: .700196266}
+    - {x: .201170892, y: .819334984}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 0
+    regionY: 412
+    regionW: 159
+    regionH: 102
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/31
+    boundsData:
+    - {x: .989583611, y: -1.1920929e-07, z: 0}
+    - {x: 6.35416698, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.18749976, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.18749976, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .103516601, y: .823243141}
+    - {x: .103516601, y: .942381859}
+    - {x: .201170892, y: .823243141}
+    - {x: .201170892, y: .942381859}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 159
+    regionY: 412
+    regionW: 159
+    regionH: 102
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/32
+    boundsData:
+    - {x: 1.01562524, y: -1.1920929e-07, z: 0}
+    - {x: 6.30208349, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.13541651, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.13541651, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .449219733, y: .205079108}
+    - {x: .567381859, y: .205079108}
+    - {x: .449219733, y: .302733392}
+    - {x: .567381859, y: .302733392}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 318
+    regionY: 412
+    regionW: 159
+    regionH: 102
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/33
+    boundsData:
+    - {x: 1.04166698, y: -1.1920929e-07, z: 0}
+    - {x: 6.25, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.08333302, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.08333302, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .692383766, y: .205079108}
+    - {x: .809569359, y: .205079108}
+    - {x: .692383766, y: .302733392}
+    - {x: .809569359, y: .302733392}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 477
+    regionY: 412
+    regionW: 159
+    regionH: 102
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/34
+    boundsData:
+    - {x: 1.04166698, y: -1.1920929e-07, z: 0}
+    - {x: 6.25, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.08333302, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.08333302, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .813477516, y: .205079108}
+    - {x: .930663109, y: .205079108}
+    - {x: .813477516, y: .302733392}
+    - {x: .930663109, y: .302733392}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 636
+    regionY: 412
+    regionW: 159
+    regionH: 102
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/35
+    boundsData:
+    - {x: 1.06770873, y: -1.1920929e-07, z: 0}
+    - {x: 6.19791651, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -2.03124952, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -2.03124952, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .205079108, y: .426758796}
+    - {x: .205079108, y: .542967796}
+    - {x: .302733392, y: .426758796}
+    - {x: .302733392, y: .542967796}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 795
+    regionY: 412
+    regionW: 159
+    regionH: 102
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/36
+    boundsData:
+    - {x: 1.09375036, y: -1.1920929e-07, z: 0}
+    - {x: 6.14583302, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -1.97916627, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -1.97916627, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .205079108, y: .666016579}
+    - {x: .205079108, y: .781249046}
+    - {x: .302733392, y: .666016579}
+    - {x: .302733392, y: .781249046}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 0
+    regionY: 310
+    regionW: 159
+    regionH: 102
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: Sentry_shoot/37
+    boundsData:
+    - {x: 1.09375036, y: -1.1920929e-07, z: 0}
+    - {x: 6.14583302, y: 5.20833302, z: 0}
+    untrimmedBoundsData:
+    - {x: .0260419846, y: 0, z: 0}
+    - {x: 8.28125, y: 5.3125, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -1.97916627, y: -2.60416675, z: 0}
+    - {x: 4.16666698, y: -2.60416675, z: 0}
+    - {x: -1.97916627, y: 2.60416651, z: 0}
+    - {x: 4.16666698, y: 2.60416651, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .205079108, y: .785157204}
+    - {x: .205079108, y: .900389671}
+    - {x: .302733392, y: .785157204}
+    - {x: .302733392, y: .900389671}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5eb51a43086e9ef41884ef2235c6dae5
+    extractRegion: 1
+    regionX: 159
+    regionY: 310
+    regionW: 159
+    regionH: 102
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: ee600781b4834cf4a8ef50c9a596b03d, type: 2}
+  textures:
+  - {fileID: 2800000, guid: fdc7fa188cd03dc42ae149fd170dc82d, type: 3}
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: a141b15c054281a45b21d60e3849ad8f
+  spriteCollectionName: Drone Sprites
+  assetName: 
+  loadable: 0
+  invOrthoSize: .0500000007
+  halfTargetHeight: 384
+  buildKey: 864363743
+  dataGuid: b5cef71c885d0ec47a23223f922aae05
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

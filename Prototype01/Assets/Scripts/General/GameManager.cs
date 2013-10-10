@@ -68,8 +68,8 @@ public class GameManager : MonoBehaviour {
 		alarmTriggered = false;
 	}
 	
-	void OnDestroy()
+	/*void OnDestroy()
 	{
 		gameManager = null;
-	}
+	}*/
 }
