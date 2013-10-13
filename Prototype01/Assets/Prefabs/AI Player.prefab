@@ -167,6 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   occupiedGadget: {fileID: 0}
   debugControls: 0
+  transitionSound: {fileID: 8300000, guid: cf847d578b51f264997a29822591b7e2, type: 3}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1

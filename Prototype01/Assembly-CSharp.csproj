@@ -59,6 +59,7 @@
      <Compile Include="Assets\Light2D\Samples\_Scripts\ScaleObject_VLS.cs" />
      <Compile Include="Assets\Light2D\Samples\_Scripts\SineWave_VLS.cs" />
      <Compile Include="Assets\Light2D\Samples\_Scripts\ToggleLight_VLS.cs" />
+     <Compile Include="Assets\Scripts\Audio\SynchronisedPlayer.cs" />
      <Compile Include="Assets\Scripts\Detection Systems\AlarmTrigger.cs" />
      <Compile Include="Assets\Scripts\Detection Systems\DelayedReactionLogic.cs" />
      <Compile Include="Assets\Scripts\Detection Systems\FieldOfView.cs" />

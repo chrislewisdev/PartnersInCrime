@@ -5,6 +5,7 @@ using System.Collections;
 public class ShootReactionMethod : ReactionMethod {
 	
 	public float shotDelay;
+	public AudioClip shootSound;
 	
 	private FieldOfView sight;
 	private float shotTimer = 0;
@@ -45,6 +46,7 @@ public class ShootReactionMethod : ReactionMethod {
 				//Bullet.createBullet (transform.position, GameManager.gameManager.Robot.transform.position - transform.position);
 				//Debug.Break ();
 				GameManager.gameManager.Robot.Damage();
+				if (shootSound != null) AudioSource.PlayClipAtPoint (shootSound, transform.position);
 				shotTimer = shotDelay;
 			}
 		}

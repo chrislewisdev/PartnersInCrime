@@ -18,6 +18,7 @@ GameObject:
   - 114: {fileID: 11400008}
   - 114: {fileID: 11400012}
   - 114: {fileID: 11400010}
+  - 82: {fileID: 8200000}
   m_Layer: 9
   m_Name: Robot Guard
   m_TagString: Untagged
@@ -61,6 +62,99 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Mesh: {fileID: 0}
+--- !u!82 &8200000
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 35cc8ff4e5ed00242a80ee74f8103458, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: .300000012
+  MaxDistance: 1
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: .00600000005
+      value: 1
+      inSlope: -166.733322
+      outSlope: -166.733322
+      tangentMode: 0
+    - time: .0120000001
+      value: .5
+      inSlope: -41.6833305
+      outSlope: -41.6833305
+      tangentMode: 0
+    - time: .0240000002
+      value: .25
+      inSlope: -10.4208326
+      outSlope: -10.4208326
+      tangentMode: 0
+    - time: .0480000004
+      value: .125
+      inSlope: -2.60520816
+      outSlope: -2.60520816
+      tangentMode: 0
+    - time: .0984509811
+      value: 0
+      inSlope: -.65130204
+      outSlope: -.65130204
+      tangentMode: 0
+    - time: .201803923
+      value: 0
+      inSlope: -.16282551
+      outSlope: -.16282551
+      tangentMode: 0
+    - time: .384000003
+      value: .015625
+      inSlope: -.0407063775
+      outSlope: -.0407063775
+      tangentMode: 0
+    - time: .768000007
+      value: .0078125
+      inSlope: -.0101765944
+      outSlope: -.0101765944
+      tangentMode: 0
+    - time: 1
+      value: .00600000005
+      inSlope: -.00600239541
+      outSlope: -.00600239541
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -73,6 +167,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerGadgets: []
+  alertSound: {fileID: 8300000, guid: 5d2e6f2e8fc8d43429aa0a07ae0ea995, type: 3}
+  suspiciousSound: {fileID: 8300000, guid: 5e8a3e60c0e729e4e98020b01ca741cf, type: 3}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -132,6 +228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotDelay: 2
+  shootSound: {fileID: 8300000, guid: baaf6579e54675d47b3ebf0c5dabe8c9, type: 3}
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1

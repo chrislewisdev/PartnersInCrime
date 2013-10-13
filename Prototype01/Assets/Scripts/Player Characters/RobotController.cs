@@ -71,7 +71,7 @@ public class RobotController : AiControllable {
 		{
 			animations.Play (animations.Library.GetClipByName("Idle"));
 		}
-		if (movement.Velocity.y > 0)
+		if (movement.Velocity.y > 0 && animations.CurrentClip.name != "Jump_Start")
 		{
 			animations.Play (animations.Library.GetClipByName ("Jump_Start"));
 		}

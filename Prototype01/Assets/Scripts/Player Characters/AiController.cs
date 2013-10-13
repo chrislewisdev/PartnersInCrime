@@ -5,6 +5,7 @@ public class AiController : AiActor {
 	
 	
 	public bool debugControls = true;
+	public AudioClip transitionSound;
 	
 	GameObject selectionCircle;
 	
@@ -55,6 +56,8 @@ public class AiController : AiActor {
 			{
 				occupiedGadget.GetComponent<AiControllable>().aiLeft();
 				jumpToGadget(closestGadget);
+				//Play our transition sound
+				if (transitionSound != null) AudioSource.PlayClipAtPoint (transitionSound, transform.position);
 				closestGadget.GetComponent<AiControllable>().aiArrived();
 			}
 			
@@ -104,6 +107,7 @@ public class AiController : AiActor {
 			{
 				occupiedGadget.GetComponent<AiControllable>().aiLeft();
 				jumpToGadget(closestGadget);
+				if (transitionSound != null) AudioSource.PlayClipAtPoint (transitionSound, transform.position);
 				occupiedGadget.GetComponent<AiControllable>().aiArrived();
 			}
 		}

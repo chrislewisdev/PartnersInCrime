@@ -7,10 +7,14 @@ using System.Collections;
 [RequireComponent(typeof(ReactionMethod))]
 public class GuardController : AiControllable {
 	
+	public AudioClip alertSound;
+	public AudioClip suspiciousSound;
+	
 	private FieldOfView sight;
 	private ReactionLogic reaction;
 	private ReactionMethod reactionMethod;
 	Alertness alertness = Alertness.Normal;
+	Alertness previousAlertness = Alertness.Normal;
 	private bool isActive;
 	private int health = 3;
 	private GuardMovement movement;
@@ -76,19 +80,26 @@ public class GuardController : AiControllable {
 		if (alertness == Alertness.Aggressive)
 		{
 			reactionMethod.OnAggressive();
+			if (previousAlertness != Alertness.Aggressive && alertSound != null) 
+				AudioSource.PlayClipAtPoint(alertSound, transform.position);
 			activateConnectedGadgets();
+			previousAlertness = Alertness.Aggressive;
 			//Return so we don't move
 			return;
 		}
 		else if (alertness == Alertness.Suspicious)
 		{
 			reactionMethod.OnSuspicious();
+			if (previousAlertness != Alertness.Suspicious && previousAlertness != Alertness.Aggressive && suspiciousSound != null) 
+				AudioSource.PlayClipAtPoint(suspiciousSound, transform.position);
+			previousAlertness = Alertness.Suspicious;
 			//Don't move if intruder is still in sight
 			if (sight.IsObjectInView (GameManager.gameManager.Robot.gameObject)) return;
 		}
 		else if (alertness == Alertness.Normal)
 		{
 			reactionMethod.OnNormal ();
+			previousAlertness = Alertness.Normal;
 		}
 		
 		movement.UpdateMovement();

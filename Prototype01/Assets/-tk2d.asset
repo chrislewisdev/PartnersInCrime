@@ -846,3 +846,218 @@ MonoBehaviour:
     loadable: 0
     assetName: 
     version: 3
+  - name: Foreground Tileset
+    spriteCollectionGUID: f076a940200b00646915d653b41fb6d9
+    spriteCollectionDataGUID: 5d9ba561c44951c40a7f341a62d1f177
+    spriteNames:
+    - foreground - crates (1)/0
+    - foreground - crates (1)/1
+    - foreground - crates (1)/2
+    - foreground - crates (1)/3
+    - foreground - crates (1)/4
+    - foreground - crates (1)/5
+    - foreground - door/0
+    - foreground - door/1
+    - foreground - door/2
+    - foreground - door/3
+    - foreground - door/4
+    - foreground - door/5
+    - foreground - converyor belt & platform stands/0
+    - foreground - converyor belt & platform stands/1
+    - foreground - converyor belt & platform stands/2
+    - foreground - converyor belt & platform stands/3
+    - foreground - converyor belt & platform stands/4
+    - foreground - converyor belt & platform stands/5
+    - foreground - converyor belt & platform stands/6
+    - foreground - converyor belt & platform stands/7
+    - foreground - converyor belt & platform stands/8
+    - foreground - door 2/0
+    - foreground - door 2/1
+    - foreground - door 2/2
+    - foreground - door 2/3
+    - foreground - door 2/4
+    - foreground - door 2/5
+    - foreground - pillar/0
+    - foreground - pillar/1
+    - foreground - pillar/2
+    - foreground - pillar/3
+    - foreground - pillar/4
+    - foreground - pillar/5
+    spriteTextureGUIDs:
+    - 5cdf6f4fa6b1f6f4a85f411d953d72d1
+    - 5cdf6f4fa6b1f6f4a85f411d953d72d1
+    - 5cdf6f4fa6b1f6f4a85f411d953d72d1
+    - 5cdf6f4fa6b1f6f4a85f411d953d72d1
+    - 5cdf6f4fa6b1f6f4a85f411d953d72d1
+    - 5cdf6f4fa6b1f6f4a85f411d953d72d1
+    - a209956214b141942bc1b89533ba11e6
+    - a209956214b141942bc1b89533ba11e6
+    - a209956214b141942bc1b89533ba11e6
+    - a209956214b141942bc1b89533ba11e6
+    - a209956214b141942bc1b89533ba11e6
+    - a209956214b141942bc1b89533ba11e6
+    - ef8b50505163d084382c36d0a5986ce1
+    - ef8b50505163d084382c36d0a5986ce1
+    - ef8b50505163d084382c36d0a5986ce1
+    - ef8b50505163d084382c36d0a5986ce1
+    - ef8b50505163d084382c36d0a5986ce1
+    - ef8b50505163d084382c36d0a5986ce1
+    - ef8b50505163d084382c36d0a5986ce1
+    - ef8b50505163d084382c36d0a5986ce1
+    - ef8b50505163d084382c36d0a5986ce1
+    - 8907296c156e5ca4386cad1c7eb0349c
+    - 8907296c156e5ca4386cad1c7eb0349c
+    - 8907296c156e5ca4386cad1c7eb0349c
+    - 8907296c156e5ca4386cad1c7eb0349c
+    - 8907296c156e5ca4386cad1c7eb0349c
+    - 8907296c156e5ca4386cad1c7eb0349c
+    - 1d06d3d36e45936499a22a87f478906d
+    - 1d06d3d36e45936499a22a87f478906d
+    - 1d06d3d36e45936499a22a87f478906d
+    - 1d06d3d36e45936499a22a87f478906d
+    - 1d06d3d36e45936499a22a87f478906d
+    - 1d06d3d36e45936499a22a87f478906d
+    spriteTextureTimeStamps:
+    - 1381671235
+    - 1381671235
+    - 1381671235
+    - 1381671235
+    - 1381671235
+    - 1381671235
+    - 1381693651.21467
+    - 1381693651.21467
+    - 1381693651.21467
+    - 1381693651.21467
+    - 1381693651.21467
+    - 1381693651.21467
+    - 1381693575.94036
+    - 1381693575.94036
+    - 1381693575.94036
+    - 1381693575.94036
+    - 1381693575.94036
+    - 1381693575.94036
+    - 1381693575.94036
+    - 1381693575.94036
+    - 1381693575.94036
+    - 1381693616.6957
+    - 1381693616.6957
+    - 1381693616.6957
+    - 1381693616.6957
+    - 1381693616.6957
+    - 1381693616.6957
+    - 1381693679.23427
+    - 1381693679.23427
+    - 1381693679.23427
+    - 1381693679.23427
+    - 1381693679.23427
+    - 1381693679.23427
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: Background Sprites
+    spriteCollectionGUID: b1c2be8198459f54f936cd4232977aab
+    spriteCollectionDataGUID: 0c004f3743d7aa14bae8680e05b0dc0b
+    spriteNames:
+    - background - blue gate/0
+    - background - blue gate/1
+    - background - blue gate/2
+    - background - blue gate/3
+    - background - blue gate/4
+    - background - blue gate/5
+    - background - wall piece/0
+    - background - wall piece/1
+    - background - wall piece/2
+    - background - wall piece/3
+    - background - wall piece/4
+    - background - wall piece/5
+    - background - wall piece 1/0
+    - background - wall piece 1/1
+    - background - wall piece 1/2
+    - background - wall piece 1/3
+    - background - wall piece 2/0
+    - background - wall piece 3/0
+    - background - wall piece 3/1
+    - background - wall piece pipes/0
+    - background - wall piece pipes/1
+    - background - wall piece rails/0
+    - background - wall piece signal right/0
+    - background - wall piece signals left/0
+    - background - wall piece+vent/0
+    - background - wall piece+vent/1
+    - background - wall piece+vent/2
+    - background - wall piece+vent/3
+    - background - wall piece+vent/4
+    - background - wall piece+vent/5
+    - background - wall piece+vent/6
+    - background - wall piece+vent/7
+    spriteTextureGUIDs:
+    - 30e6a2751a617544e96469366cc255b2
+    - 30e6a2751a617544e96469366cc255b2
+    - 30e6a2751a617544e96469366cc255b2
+    - 30e6a2751a617544e96469366cc255b2
+    - 30e6a2751a617544e96469366cc255b2
+    - 30e6a2751a617544e96469366cc255b2
+    - 438670a517984b946a2f204d244fc617
+    - 438670a517984b946a2f204d244fc617
+    - 438670a517984b946a2f204d244fc617
+    - 438670a517984b946a2f204d244fc617
+    - 438670a517984b946a2f204d244fc617
+    - 438670a517984b946a2f204d244fc617
+    - 2b6def21a02a22e43b154647380a66fc
+    - 2b6def21a02a22e43b154647380a66fc
+    - 2b6def21a02a22e43b154647380a66fc
+    - 2b6def21a02a22e43b154647380a66fc
+    - 2871aa5994ca09d419944f3bede86f72
+    - a3384eea44896474d9c9dd0dbf9f016c
+    - a3384eea44896474d9c9dd0dbf9f016c
+    - 34a6d97d75367434bac4d169ac53498f
+    - 34a6d97d75367434bac4d169ac53498f
+    - cd1c79c87628a3d49a8fa64d2e75167e
+    - 2a3ade7c3cd6cb2429a0a2964b47e055
+    - 8bc3945886ae929408a4eb26925e8dfa
+    - beb2a81241fca404bb5457e39fd2fe47
+    - beb2a81241fca404bb5457e39fd2fe47
+    - beb2a81241fca404bb5457e39fd2fe47
+    - beb2a81241fca404bb5457e39fd2fe47
+    - beb2a81241fca404bb5457e39fd2fe47
+    - beb2a81241fca404bb5457e39fd2fe47
+    - beb2a81241fca404bb5457e39fd2fe47
+    - beb2a81241fca404bb5457e39fd2fe47
+    spriteTextureTimeStamps:
+    - 1381670592
+    - 1381670592
+    - 1381670592
+    - 1381670592
+    - 1381670592
+    - 1381670592
+    - 1381670609
+    - 1381670609
+    - 1381670609
+    - 1381670609
+    - 1381670609
+    - 1381670609
+    - 1381670594
+    - 1381670594
+    - 1381670594
+    - 1381670594
+    - 1381670596
+    - 1381670599
+    - 1381670599
+    - 1381670601
+    - 1381670601
+    - 1381670603
+    - 1381670605
+    - 1381670607
+    - 1381670611
+    - 1381670611
+    - 1381670611
+    - 1381670611
+    - 1381670611
+    - 1381670611
+    - 1381670611
+    - 1381670611
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
