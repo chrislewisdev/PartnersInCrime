@@ -324,6 +324,7 @@ GameObject:
   - 114: {fileID: 42319935}
   - 114: {fileID: 42319945}
   - 114: {fileID: 42319944}
+  - 82: {fileID: 42319946}
   m_Layer: 9
   m_Name: Robot Guard
   m_TagString: Untagged
@@ -344,6 +345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotDelay: 2
+  shootSound: {fileID: 8300000, guid: baaf6579e54675d47b3ebf0c5dabe8c9, type: 3}
 --- !u!114 &42319936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,6 +388,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerGadgets: []
+  alertSound: {fileID: 8300000, guid: 5d2e6f2e8fc8d43429aa0a07ae0ea995, type: 3}
+  suspiciousSound: {fileID: 8300000, guid: 5e8a3e60c0e729e4e98020b01ca741cf, type: 3}
 --- !u!114 &42319939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -489,6 +493,100 @@ MonoBehaviour:
   library: {fileID: 11400000, guid: 65105607644a78e4f8eed31d7d271ffb, type: 2}
   defaultClipId: 0
   playAutomatically: 1
+--- !u!82 &42319946
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 46de64d4976139148819a8adf0302d20,
+    type: 2}
+  m_PrefabInternal: {fileID: 618487765}
+  m_GameObject: {fileID: 42319934}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 35cc8ff4e5ed00242a80ee74f8103458, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: .300000012
+  MaxDistance: 1
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: .00600000005
+      value: 1
+      inSlope: -166.733322
+      outSlope: -166.733322
+      tangentMode: 0
+    - time: .0120000001
+      value: .5
+      inSlope: -41.6833305
+      outSlope: -41.6833305
+      tangentMode: 0
+    - time: .0240000002
+      value: .25
+      inSlope: -10.4208326
+      outSlope: -10.4208326
+      tangentMode: 0
+    - time: .0480000004
+      value: .125
+      inSlope: -2.60520816
+      outSlope: -2.60520816
+      tangentMode: 0
+    - time: .0984509811
+      value: 0
+      inSlope: -.65130204
+      outSlope: -.65130204
+      tangentMode: 0
+    - time: .201803923
+      value: 0
+      inSlope: -.16282551
+      outSlope: -.16282551
+      tangentMode: 0
+    - time: .384000003
+      value: .015625
+      inSlope: -.0407063775
+      outSlope: -.0407063775
+      tangentMode: 0
+    - time: .768000007
+      value: .0078125
+      inSlope: -.0101765944
+      outSlope: -.0101765944
+      tangentMode: 0
+    - time: 1
+      value: .00600000005
+      inSlope: -.00600239541
+      outSlope: -.00600239541
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &44394308
 Prefab:
   m_ObjectHideFlags: 0
@@ -2993,6 +3091,7 @@ GameObject:
   - 114: {fileID: 284345182}
   - 114: {fileID: 284345192}
   - 114: {fileID: 284345191}
+  - 82: {fileID: 284345193}
   m_Layer: 9
   m_Name: Robot Guard
   m_TagString: Untagged
@@ -3013,6 +3112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotDelay: 2
+  shootSound: {fileID: 8300000, guid: baaf6579e54675d47b3ebf0c5dabe8c9, type: 3}
 --- !u!114 &284345183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3055,6 +3155,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerGadgets: []
+  alertSound: {fileID: 8300000, guid: 5d2e6f2e8fc8d43429aa0a07ae0ea995, type: 3}
+  suspiciousSound: {fileID: 8300000, guid: 5e8a3e60c0e729e4e98020b01ca741cf, type: 3}
 --- !u!114 &284345186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3158,6 +3260,100 @@ MonoBehaviour:
   library: {fileID: 11400000, guid: 65105607644a78e4f8eed31d7d271ffb, type: 2}
   defaultClipId: 0
   playAutomatically: 1
+--- !u!82 &284345193
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 46de64d4976139148819a8adf0302d20,
+    type: 2}
+  m_PrefabInternal: {fileID: 619164723}
+  m_GameObject: {fileID: 284345181}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 35cc8ff4e5ed00242a80ee74f8103458, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: .300000012
+  MaxDistance: 1
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: .00600000005
+      value: 1
+      inSlope: -166.733322
+      outSlope: -166.733322
+      tangentMode: 0
+    - time: .0120000001
+      value: .5
+      inSlope: -41.6833305
+      outSlope: -41.6833305
+      tangentMode: 0
+    - time: .0240000002
+      value: .25
+      inSlope: -10.4208326
+      outSlope: -10.4208326
+      tangentMode: 0
+    - time: .0480000004
+      value: .125
+      inSlope: -2.60520816
+      outSlope: -2.60520816
+      tangentMode: 0
+    - time: .0984509811
+      value: 0
+      inSlope: -.65130204
+      outSlope: -.65130204
+      tangentMode: 0
+    - time: .201803923
+      value: 0
+      inSlope: -.16282551
+      outSlope: -.16282551
+      tangentMode: 0
+    - time: .384000003
+      value: .015625
+      inSlope: -.0407063775
+      outSlope: -.0407063775
+      tangentMode: 0
+    - time: .768000007
+      value: .0078125
+      inSlope: -.0101765944
+      outSlope: -.0101765944
+      tangentMode: 0
+    - time: 1
+      value: .00600000005
+      inSlope: -.00600239541
+      outSlope: -.00600239541
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &292719432
 GameObject:
   m_ObjectHideFlags: 0
@@ -3841,6 +4037,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   occupiedGadget: {fileID: 1544863094}
   debugControls: 1
+  transitionSound: {fileID: 8300000, guid: cf847d578b51f264997a29822591b7e2, type: 3}
 --- !u!114 &366451458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5244,6 +5441,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 494218507}
   - 114: {fileID: 494218506}
+  - 143: {fileID: 494218510}
+  - 114: {fileID: 494218509}
+  - 114: {fileID: 494218508}
   m_Layer: 8
   m_Name: TileMap
   m_TagString: Untagged
@@ -5394,6 +5594,47 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &494218508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 494218505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4b62b4fde2022344a5c1af84b7c0b79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerGadgets: []
+--- !u!114 &494218509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 494218505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd6499a6834b6e408164749aa41817b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  jumpStrength: 0
+  gravityFactor: 0
+  ladderMap: {fileID: 0}
+--- !u!143 &494218510
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 494218505}
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: .5
+  m_SlopeLimit: 45
+  m_StepOffset: .300000012
+  m_SkinWidth: .0799999982
+  m_MinMoveDistance: 0
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &498781704
 GameObject:
   m_ObjectHideFlags: 0
@@ -5848,6 +6089,7 @@ GameObject:
   - 114: {fileID: 593088368}
   - 114: {fileID: 593088378}
   - 114: {fileID: 593088377}
+  - 82: {fileID: 593088379}
   m_Layer: 9
   m_Name: Robot Guard
   m_TagString: Untagged
@@ -5868,6 +6110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotDelay: 2
+  shootSound: {fileID: 8300000, guid: baaf6579e54675d47b3ebf0c5dabe8c9, type: 3}
 --- !u!114 &593088369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5910,6 +6153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerGadgets: []
+  alertSound: {fileID: 8300000, guid: 5d2e6f2e8fc8d43429aa0a07ae0ea995, type: 3}
+  suspiciousSound: {fileID: 8300000, guid: 5e8a3e60c0e729e4e98020b01ca741cf, type: 3}
 --- !u!114 &593088372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6013,6 +6258,100 @@ MonoBehaviour:
   library: {fileID: 11400000, guid: 65105607644a78e4f8eed31d7d271ffb, type: 2}
   defaultClipId: 0
   playAutomatically: 1
+--- !u!82 &593088379
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 46de64d4976139148819a8adf0302d20,
+    type: 2}
+  m_PrefabInternal: {fileID: 1233531242}
+  m_GameObject: {fileID: 593088367}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 35cc8ff4e5ed00242a80ee74f8103458, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: .300000012
+  MaxDistance: 1
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: .00600000005
+      value: 1
+      inSlope: -166.733322
+      outSlope: -166.733322
+      tangentMode: 0
+    - time: .0120000001
+      value: .5
+      inSlope: -41.6833305
+      outSlope: -41.6833305
+      tangentMode: 0
+    - time: .0240000002
+      value: .25
+      inSlope: -10.4208326
+      outSlope: -10.4208326
+      tangentMode: 0
+    - time: .0480000004
+      value: .125
+      inSlope: -2.60520816
+      outSlope: -2.60520816
+      tangentMode: 0
+    - time: .0984509811
+      value: 0
+      inSlope: -.65130204
+      outSlope: -.65130204
+      tangentMode: 0
+    - time: .201803923
+      value: 0
+      inSlope: -.16282551
+      outSlope: -.16282551
+      tangentMode: 0
+    - time: .384000003
+      value: .015625
+      inSlope: -.0407063775
+      outSlope: -.0407063775
+      tangentMode: 0
+    - time: .768000007
+      value: .0078125
+      inSlope: -.0101765944
+      outSlope: -.0101765944
+      tangentMode: 0
+    - time: 1
+      value: .00600000005
+      inSlope: -.00600239541
+      outSlope: -.00600239541
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &605404328
 GameObject:
   m_ObjectHideFlags: 0
@@ -7111,6 +7450,14 @@ Prefab:
     - target: {fileID: 400000, guid: cfccf8f9ed08cd4458ee4456664e5764, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: cfccf8f9ed08cd4458ee4456664e5764, type: 2}
+      propertyPath: forceResolution.x
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: cfccf8f9ed08cd4458ee4456664e5764, type: 2}
+      propertyPath: forceResolution.y
+      value: 768
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cfccf8f9ed08cd4458ee4456664e5764, type: 2}
@@ -8855,6 +9202,7 @@ GameObject:
   - 114: {fileID: 900584917}
   - 114: {fileID: 900584927}
   - 114: {fileID: 900584926}
+  - 82: {fileID: 900584928}
   m_Layer: 9
   m_Name: Robot Guard
   m_TagString: Untagged
@@ -8875,6 +9223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotDelay: 2
+  shootSound: {fileID: 8300000, guid: baaf6579e54675d47b3ebf0c5dabe8c9, type: 3}
 --- !u!114 &900584918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8917,6 +9266,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerGadgets: []
+  alertSound: {fileID: 8300000, guid: 5d2e6f2e8fc8d43429aa0a07ae0ea995, type: 3}
+  suspiciousSound: {fileID: 8300000, guid: 5e8a3e60c0e729e4e98020b01ca741cf, type: 3}
 --- !u!114 &900584921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9020,6 +9371,100 @@ MonoBehaviour:
   library: {fileID: 11400000, guid: 65105607644a78e4f8eed31d7d271ffb, type: 2}
   defaultClipId: 0
   playAutomatically: 1
+--- !u!82 &900584928
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 46de64d4976139148819a8adf0302d20,
+    type: 2}
+  m_PrefabInternal: {fileID: 2076130745}
+  m_GameObject: {fileID: 900584916}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 35cc8ff4e5ed00242a80ee74f8103458, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: .300000012
+  MaxDistance: 1
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: .00600000005
+      value: 1
+      inSlope: -166.733322
+      outSlope: -166.733322
+      tangentMode: 0
+    - time: .0120000001
+      value: .5
+      inSlope: -41.6833305
+      outSlope: -41.6833305
+      tangentMode: 0
+    - time: .0240000002
+      value: .25
+      inSlope: -10.4208326
+      outSlope: -10.4208326
+      tangentMode: 0
+    - time: .0480000004
+      value: .125
+      inSlope: -2.60520816
+      outSlope: -2.60520816
+      tangentMode: 0
+    - time: .0984509811
+      value: 0
+      inSlope: -.65130204
+      outSlope: -.65130204
+      tangentMode: 0
+    - time: .201803923
+      value: 0
+      inSlope: -.16282551
+      outSlope: -.16282551
+      tangentMode: 0
+    - time: .384000003
+      value: .015625
+      inSlope: -.0407063775
+      outSlope: -.0407063775
+      tangentMode: 0
+    - time: .768000007
+      value: .0078125
+      inSlope: -.0101765944
+      outSlope: -.0101765944
+      tangentMode: 0
+    - time: 1
+      value: .00600000005
+      inSlope: -.00600239541
+      outSlope: -.00600239541
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &902572071
 GameObject:
   m_ObjectHideFlags: 0
@@ -9996,6 +10441,7 @@ GameObject:
   - 114: {fileID: 1004788016}
   - 114: {fileID: 1004788026}
   - 114: {fileID: 1004788025}
+  - 82: {fileID: 1004788027}
   m_Layer: 9
   m_Name: Robot Guard
   m_TagString: Untagged
@@ -10016,6 +10462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotDelay: 2
+  shootSound: {fileID: 8300000, guid: baaf6579e54675d47b3ebf0c5dabe8c9, type: 3}
 --- !u!114 &1004788017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10058,6 +10505,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerGadgets: []
+  alertSound: {fileID: 8300000, guid: 5d2e6f2e8fc8d43429aa0a07ae0ea995, type: 3}
+  suspiciousSound: {fileID: 8300000, guid: 5e8a3e60c0e729e4e98020b01ca741cf, type: 3}
 --- !u!114 &1004788020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10161,6 +10610,100 @@ MonoBehaviour:
   library: {fileID: 11400000, guid: 65105607644a78e4f8eed31d7d271ffb, type: 2}
   defaultClipId: 0
   playAutomatically: 1
+--- !u!82 &1004788027
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 46de64d4976139148819a8adf0302d20,
+    type: 2}
+  m_PrefabInternal: {fileID: 1356415342}
+  m_GameObject: {fileID: 1004788015}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 35cc8ff4e5ed00242a80ee74f8103458, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: .300000012
+  MaxDistance: 1
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: .00600000005
+      value: 1
+      inSlope: -166.733322
+      outSlope: -166.733322
+      tangentMode: 0
+    - time: .0120000001
+      value: .5
+      inSlope: -41.6833305
+      outSlope: -41.6833305
+      tangentMode: 0
+    - time: .0240000002
+      value: .25
+      inSlope: -10.4208326
+      outSlope: -10.4208326
+      tangentMode: 0
+    - time: .0480000004
+      value: .125
+      inSlope: -2.60520816
+      outSlope: -2.60520816
+      tangentMode: 0
+    - time: .0984509811
+      value: 0
+      inSlope: -.65130204
+      outSlope: -.65130204
+      tangentMode: 0
+    - time: .201803923
+      value: 0
+      inSlope: -.16282551
+      outSlope: -.16282551
+      tangentMode: 0
+    - time: .384000003
+      value: .015625
+      inSlope: -.0407063775
+      outSlope: -.0407063775
+      tangentMode: 0
+    - time: .768000007
+      value: .0078125
+      inSlope: -.0101765944
+      outSlope: -.0101765944
+      tangentMode: 0
+    - time: 1
+      value: .00600000005
+      inSlope: -.00600239541
+      outSlope: -.00600239541
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1007112635
 GameObject:
   m_ObjectHideFlags: 0
@@ -10873,6 +11416,7 @@ GameObject:
   - 114: {fileID: 1052916211}
   - 114: {fileID: 1052916221}
   - 114: {fileID: 1052916220}
+  - 82: {fileID: 1052916222}
   m_Layer: 9
   m_Name: Robot Guard
   m_TagString: Untagged
@@ -10893,6 +11437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotDelay: 2
+  shootSound: {fileID: 8300000, guid: baaf6579e54675d47b3ebf0c5dabe8c9, type: 3}
 --- !u!114 &1052916212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10935,6 +11480,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerGadgets: []
+  alertSound: {fileID: 8300000, guid: 5d2e6f2e8fc8d43429aa0a07ae0ea995, type: 3}
+  suspiciousSound: {fileID: 8300000, guid: 5e8a3e60c0e729e4e98020b01ca741cf, type: 3}
 --- !u!114 &1052916215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11038,6 +11585,100 @@ MonoBehaviour:
   library: {fileID: 11400000, guid: 65105607644a78e4f8eed31d7d271ffb, type: 2}
   defaultClipId: 0
   playAutomatically: 1
+--- !u!82 &1052916222
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 46de64d4976139148819a8adf0302d20,
+    type: 2}
+  m_PrefabInternal: {fileID: 953676350}
+  m_GameObject: {fileID: 1052916210}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 35cc8ff4e5ed00242a80ee74f8103458, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: .300000012
+  MaxDistance: 1
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: .00600000005
+      value: 1
+      inSlope: -166.733322
+      outSlope: -166.733322
+      tangentMode: 0
+    - time: .0120000001
+      value: .5
+      inSlope: -41.6833305
+      outSlope: -41.6833305
+      tangentMode: 0
+    - time: .0240000002
+      value: .25
+      inSlope: -10.4208326
+      outSlope: -10.4208326
+      tangentMode: 0
+    - time: .0480000004
+      value: .125
+      inSlope: -2.60520816
+      outSlope: -2.60520816
+      tangentMode: 0
+    - time: .0984509811
+      value: 0
+      inSlope: -.65130204
+      outSlope: -.65130204
+      tangentMode: 0
+    - time: .201803923
+      value: 0
+      inSlope: -.16282551
+      outSlope: -.16282551
+      tangentMode: 0
+    - time: .384000003
+      value: .015625
+      inSlope: -.0407063775
+      outSlope: -.0407063775
+      tangentMode: 0
+    - time: .768000007
+      value: .0078125
+      inSlope: -.0101765944
+      outSlope: -.0101765944
+      tangentMode: 0
+    - time: 1
+      value: .00600000005
+      inSlope: -.00600239541
+      outSlope: -.00600239541
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &1060422216
 Prefab:
   m_ObjectHideFlags: 0
@@ -11459,6 +12100,7 @@ GameObject:
   - 114: {fileID: 1106930527}
   - 114: {fileID: 1106930537}
   - 114: {fileID: 1106930536}
+  - 82: {fileID: 1106930538}
   m_Layer: 9
   m_Name: Robot Guard
   m_TagString: Untagged
@@ -11479,6 +12121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotDelay: 2
+  shootSound: {fileID: 8300000, guid: baaf6579e54675d47b3ebf0c5dabe8c9, type: 3}
 --- !u!114 &1106930528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11521,6 +12164,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerGadgets: []
+  alertSound: {fileID: 8300000, guid: 5d2e6f2e8fc8d43429aa0a07ae0ea995, type: 3}
+  suspiciousSound: {fileID: 8300000, guid: 5e8a3e60c0e729e4e98020b01ca741cf, type: 3}
 --- !u!114 &1106930531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11624,6 +12269,100 @@ MonoBehaviour:
   library: {fileID: 11400000, guid: 65105607644a78e4f8eed31d7d271ffb, type: 2}
   defaultClipId: 0
   playAutomatically: 1
+--- !u!82 &1106930538
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 46de64d4976139148819a8adf0302d20,
+    type: 2}
+  m_PrefabInternal: {fileID: 407711848}
+  m_GameObject: {fileID: 1106930526}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 35cc8ff4e5ed00242a80ee74f8103458, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: .300000012
+  MaxDistance: 1
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: .00600000005
+      value: 1
+      inSlope: -166.733322
+      outSlope: -166.733322
+      tangentMode: 0
+    - time: .0120000001
+      value: .5
+      inSlope: -41.6833305
+      outSlope: -41.6833305
+      tangentMode: 0
+    - time: .0240000002
+      value: .25
+      inSlope: -10.4208326
+      outSlope: -10.4208326
+      tangentMode: 0
+    - time: .0480000004
+      value: .125
+      inSlope: -2.60520816
+      outSlope: -2.60520816
+      tangentMode: 0
+    - time: .0984509811
+      value: 0
+      inSlope: -.65130204
+      outSlope: -.65130204
+      tangentMode: 0
+    - time: .201803923
+      value: 0
+      inSlope: -.16282551
+      outSlope: -.16282551
+      tangentMode: 0
+    - time: .384000003
+      value: .015625
+      inSlope: -.0407063775
+      outSlope: -.0407063775
+      tangentMode: 0
+    - time: .768000007
+      value: .0078125
+      inSlope: -.0101765944
+      outSlope: -.0101765944
+      tangentMode: 0
+    - time: 1
+      value: .00600000005
+      inSlope: -.00600239541
+      outSlope: -.00600239541
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1108423617
 GameObject:
   m_ObjectHideFlags: 0
@@ -12451,6 +13190,7 @@ GameObject:
   - 114: {fileID: 1212065942}
   - 114: {fileID: 1212065952}
   - 114: {fileID: 1212065951}
+  - 82: {fileID: 1212065953}
   m_Layer: 9
   m_Name: Robot Guard
   m_TagString: Untagged
@@ -12471,6 +13211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotDelay: 2
+  shootSound: {fileID: 8300000, guid: baaf6579e54675d47b3ebf0c5dabe8c9, type: 3}
 --- !u!114 &1212065943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12513,6 +13254,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerGadgets: []
+  alertSound: {fileID: 8300000, guid: 5d2e6f2e8fc8d43429aa0a07ae0ea995, type: 3}
+  suspiciousSound: {fileID: 8300000, guid: 5e8a3e60c0e729e4e98020b01ca741cf, type: 3}
 --- !u!114 &1212065946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12616,6 +13359,100 @@ MonoBehaviour:
   library: {fileID: 11400000, guid: 65105607644a78e4f8eed31d7d271ffb, type: 2}
   defaultClipId: 0
   playAutomatically: 1
+--- !u!82 &1212065953
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 46de64d4976139148819a8adf0302d20,
+    type: 2}
+  m_PrefabInternal: {fileID: 74642038}
+  m_GameObject: {fileID: 1212065941}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 35cc8ff4e5ed00242a80ee74f8103458, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: .300000012
+  MaxDistance: 1
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: .00600000005
+      value: 1
+      inSlope: -166.733322
+      outSlope: -166.733322
+      tangentMode: 0
+    - time: .0120000001
+      value: .5
+      inSlope: -41.6833305
+      outSlope: -41.6833305
+      tangentMode: 0
+    - time: .0240000002
+      value: .25
+      inSlope: -10.4208326
+      outSlope: -10.4208326
+      tangentMode: 0
+    - time: .0480000004
+      value: .125
+      inSlope: -2.60520816
+      outSlope: -2.60520816
+      tangentMode: 0
+    - time: .0984509811
+      value: 0
+      inSlope: -.65130204
+      outSlope: -.65130204
+      tangentMode: 0
+    - time: .201803923
+      value: 0
+      inSlope: -.16282551
+      outSlope: -.16282551
+      tangentMode: 0
+    - time: .384000003
+      value: .015625
+      inSlope: -.0407063775
+      outSlope: -.0407063775
+      tangentMode: 0
+    - time: .768000007
+      value: .0078125
+      inSlope: -.0101765944
+      outSlope: -.0101765944
+      tangentMode: 0
+    - time: 1
+      value: .00600000005
+      inSlope: -.00600239541
+      outSlope: -.00600239541
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!43 &1214184175
 Mesh:
   m_ObjectHideFlags: 0
@@ -15092,6 +15929,7 @@ GameObject:
   - 114: {fileID: 1359330536}
   - 114: {fileID: 1359330546}
   - 114: {fileID: 1359330545}
+  - 82: {fileID: 1359330547}
   m_Layer: 9
   m_Name: Robot Guard
   m_TagString: Untagged
@@ -15112,6 +15950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotDelay: 2
+  shootSound: {fileID: 8300000, guid: baaf6579e54675d47b3ebf0c5dabe8c9, type: 3}
 --- !u!114 &1359330537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15154,6 +15993,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerGadgets: []
+  alertSound: {fileID: 8300000, guid: 5d2e6f2e8fc8d43429aa0a07ae0ea995, type: 3}
+  suspiciousSound: {fileID: 8300000, guid: 5e8a3e60c0e729e4e98020b01ca741cf, type: 3}
 --- !u!114 &1359330540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15257,6 +16098,100 @@ MonoBehaviour:
   library: {fileID: 11400000, guid: 65105607644a78e4f8eed31d7d271ffb, type: 2}
   defaultClipId: 0
   playAutomatically: 1
+--- !u!82 &1359330547
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 46de64d4976139148819a8adf0302d20,
+    type: 2}
+  m_PrefabInternal: {fileID: 782121717}
+  m_GameObject: {fileID: 1359330535}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 35cc8ff4e5ed00242a80ee74f8103458, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: .300000012
+  MaxDistance: 1
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: .00600000005
+      value: 1
+      inSlope: -166.733322
+      outSlope: -166.733322
+      tangentMode: 0
+    - time: .0120000001
+      value: .5
+      inSlope: -41.6833305
+      outSlope: -41.6833305
+      tangentMode: 0
+    - time: .0240000002
+      value: .25
+      inSlope: -10.4208326
+      outSlope: -10.4208326
+      tangentMode: 0
+    - time: .0480000004
+      value: .125
+      inSlope: -2.60520816
+      outSlope: -2.60520816
+      tangentMode: 0
+    - time: .0984509811
+      value: 0
+      inSlope: -.65130204
+      outSlope: -.65130204
+      tangentMode: 0
+    - time: .201803923
+      value: 0
+      inSlope: -.16282551
+      outSlope: -.16282551
+      tangentMode: 0
+    - time: .384000003
+      value: .015625
+      inSlope: -.0407063775
+      outSlope: -.0407063775
+      tangentMode: 0
+    - time: .768000007
+      value: .0078125
+      inSlope: -.0101765944
+      outSlope: -.0101765944
+      tangentMode: 0
+    - time: 1
+      value: .00600000005
+      inSlope: -.00600239541
+      outSlope: -.00600239541
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1376880641
 GameObject:
   m_ObjectHideFlags: 0
@@ -15328,7 +16263,9 @@ GameObject:
   - 92: {fileID: 1383098481}
   - 114: {fileID: 1383098480}
   - 114: {fileID: 1383098487}
+  - 81: {fileID: 1383098488}
   - 114: {fileID: 1383098486}
+  - 82: {fileID: 1383098489}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -15421,7 +16358,7 @@ MonoBehaviour:
   viewportRegion: {x: 0, y: 0, z: 100, w: 100}
   zoomFactor: 1
   forceResolutionInEditor: 1
-  forceResolution: {x: 1366, y: 768}
+  forceResolution: {x: 1024, y: 768}
 --- !u!20 &1383098484
 Camera:
   m_ObjectHideFlags: 0
@@ -15485,6 +16422,72 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa99cf7cf6d1e04b83a4d7c57c117c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!81 &1383098488
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8100000, guid: cfccf8f9ed08cd4458ee4456664e5764,
+    type: 2}
+  m_PrefabInternal: {fileID: 709695132}
+  m_GameObject: {fileID: 1383098479}
+  m_Enabled: 1
+--- !u!82 &1383098489
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1383098479}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 9008cdf13eb7e0e4885e87d8da4ab1f1, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1384744111
 GameObject:
   m_ObjectHideFlags: 0
@@ -17486,6 +18489,7 @@ GameObject:
   - 114: {fileID: 1915765269}
   - 114: {fileID: 1544863101}
   - 114: {fileID: 1544863102}
+  - 114: {fileID: 1544863103}
   m_Layer: 9
   m_Name: Robot Player
   m_TagString: Player
@@ -17607,6 +18611,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 482a37dc0db756843a217fcbdbbb9f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1544863103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400010, guid: 090733a3cc5f53e46b5f3552d4903acd,
+    type: 2}
+  m_PrefabInternal: {fileID: 923332160}
+  m_GameObject: {fileID: 1544863094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 457f0d3937f2bad4e8a069ca2aa5d44c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: Step
+  sound: {fileID: 8300000, guid: 56d0b5a3020dff4489631a8965ecbe93, type: 3}
 --- !u!1 &1554974151
 GameObject:
   m_ObjectHideFlags: 0
@@ -17652,6 +18670,7 @@ GameObject:
   - 114: {fileID: 1555547028}
   - 114: {fileID: 1555547038}
   - 114: {fileID: 1555547037}
+  - 82: {fileID: 1555547039}
   m_Layer: 9
   m_Name: Robot Guard
   m_TagString: Untagged
@@ -17672,6 +18691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotDelay: 2
+  shootSound: {fileID: 8300000, guid: baaf6579e54675d47b3ebf0c5dabe8c9, type: 3}
 --- !u!114 &1555547029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17714,6 +18734,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerGadgets: []
+  alertSound: {fileID: 8300000, guid: 5d2e6f2e8fc8d43429aa0a07ae0ea995, type: 3}
+  suspiciousSound: {fileID: 8300000, guid: 5e8a3e60c0e729e4e98020b01ca741cf, type: 3}
 --- !u!114 &1555547032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17817,6 +18839,100 @@ MonoBehaviour:
   library: {fileID: 11400000, guid: 65105607644a78e4f8eed31d7d271ffb, type: 2}
   defaultClipId: 0
   playAutomatically: 1
+--- !u!82 &1555547039
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 46de64d4976139148819a8adf0302d20,
+    type: 2}
+  m_PrefabInternal: {fileID: 44394308}
+  m_GameObject: {fileID: 1555547027}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 35cc8ff4e5ed00242a80ee74f8103458, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: .300000012
+  MaxDistance: 1
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: .00600000005
+      value: 1
+      inSlope: -166.733322
+      outSlope: -166.733322
+      tangentMode: 0
+    - time: .0120000001
+      value: .5
+      inSlope: -41.6833305
+      outSlope: -41.6833305
+      tangentMode: 0
+    - time: .0240000002
+      value: .25
+      inSlope: -10.4208326
+      outSlope: -10.4208326
+      tangentMode: 0
+    - time: .0480000004
+      value: .125
+      inSlope: -2.60520816
+      outSlope: -2.60520816
+      tangentMode: 0
+    - time: .0984509811
+      value: 0
+      inSlope: -.65130204
+      outSlope: -.65130204
+      tangentMode: 0
+    - time: .201803923
+      value: 0
+      inSlope: -.16282551
+      outSlope: -.16282551
+      tangentMode: 0
+    - time: .384000003
+      value: .015625
+      inSlope: -.0407063775
+      outSlope: -.0407063775
+      tangentMode: 0
+    - time: .768000007
+      value: .0078125
+      inSlope: -.0101765944
+      outSlope: -.0101765944
+      tangentMode: 0
+    - time: 1
+      value: .00600000005
+      inSlope: -.00600239541
+      outSlope: -.00600239541
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1565657878
 GameObject:
   m_ObjectHideFlags: 0
@@ -17835,6 +18951,7 @@ GameObject:
   - 114: {fileID: 1565657879}
   - 114: {fileID: 1565657889}
   - 114: {fileID: 1565657888}
+  - 82: {fileID: 1565657890}
   m_Layer: 9
   m_Name: Robot Guard
   m_TagString: Untagged
@@ -17855,6 +18972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotDelay: 2
+  shootSound: {fileID: 8300000, guid: baaf6579e54675d47b3ebf0c5dabe8c9, type: 3}
 --- !u!114 &1565657880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17897,6 +19015,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerGadgets: []
+  alertSound: {fileID: 8300000, guid: 5d2e6f2e8fc8d43429aa0a07ae0ea995, type: 3}
+  suspiciousSound: {fileID: 8300000, guid: 5e8a3e60c0e729e4e98020b01ca741cf, type: 3}
 --- !u!114 &1565657883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18000,6 +19120,100 @@ MonoBehaviour:
   library: {fileID: 11400000, guid: 65105607644a78e4f8eed31d7d271ffb, type: 2}
   defaultClipId: 0
   playAutomatically: 1
+--- !u!82 &1565657890
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 46de64d4976139148819a8adf0302d20,
+    type: 2}
+  m_PrefabInternal: {fileID: 123319655}
+  m_GameObject: {fileID: 1565657878}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 35cc8ff4e5ed00242a80ee74f8103458, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: .300000012
+  MaxDistance: 1
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: .00600000005
+      value: 1
+      inSlope: -166.733322
+      outSlope: -166.733322
+      tangentMode: 0
+    - time: .0120000001
+      value: .5
+      inSlope: -41.6833305
+      outSlope: -41.6833305
+      tangentMode: 0
+    - time: .0240000002
+      value: .25
+      inSlope: -10.4208326
+      outSlope: -10.4208326
+      tangentMode: 0
+    - time: .0480000004
+      value: .125
+      inSlope: -2.60520816
+      outSlope: -2.60520816
+      tangentMode: 0
+    - time: .0984509811
+      value: 0
+      inSlope: -.65130204
+      outSlope: -.65130204
+      tangentMode: 0
+    - time: .201803923
+      value: 0
+      inSlope: -.16282551
+      outSlope: -.16282551
+      tangentMode: 0
+    - time: .384000003
+      value: .015625
+      inSlope: -.0407063775
+      outSlope: -.0407063775
+      tangentMode: 0
+    - time: .768000007
+      value: .0078125
+      inSlope: -.0101765944
+      outSlope: -.0101765944
+      tangentMode: 0
+    - time: 1
+      value: .00600000005
+      inSlope: -.00600239541
+      outSlope: -.00600239541
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1571504336
 GameObject:
   m_ObjectHideFlags: 0
@@ -19303,6 +20517,7 @@ GameObject:
   - 114: {fileID: 1693838415}
   - 114: {fileID: 1693838425}
   - 114: {fileID: 1693838424}
+  - 82: {fileID: 1693838426}
   m_Layer: 9
   m_Name: Robot Guard
   m_TagString: Untagged
@@ -19323,6 +20538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotDelay: 2
+  shootSound: {fileID: 8300000, guid: baaf6579e54675d47b3ebf0c5dabe8c9, type: 3}
 --- !u!114 &1693838416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19365,6 +20581,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerGadgets: []
+  alertSound: {fileID: 8300000, guid: 5d2e6f2e8fc8d43429aa0a07ae0ea995, type: 3}
+  suspiciousSound: {fileID: 8300000, guid: 5e8a3e60c0e729e4e98020b01ca741cf, type: 3}
 --- !u!114 &1693838419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19468,6 +20686,100 @@ MonoBehaviour:
   library: {fileID: 11400000, guid: 65105607644a78e4f8eed31d7d271ffb, type: 2}
   defaultClipId: 0
   playAutomatically: 1
+--- !u!82 &1693838426
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 46de64d4976139148819a8adf0302d20,
+    type: 2}
+  m_PrefabInternal: {fileID: 325996080}
+  m_GameObject: {fileID: 1693838414}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 35cc8ff4e5ed00242a80ee74f8103458, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: .300000012
+  MaxDistance: 1
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: .00600000005
+      value: 1
+      inSlope: -166.733322
+      outSlope: -166.733322
+      tangentMode: 0
+    - time: .0120000001
+      value: .5
+      inSlope: -41.6833305
+      outSlope: -41.6833305
+      tangentMode: 0
+    - time: .0240000002
+      value: .25
+      inSlope: -10.4208326
+      outSlope: -10.4208326
+      tangentMode: 0
+    - time: .0480000004
+      value: .125
+      inSlope: -2.60520816
+      outSlope: -2.60520816
+      tangentMode: 0
+    - time: .0984509811
+      value: 0
+      inSlope: -.65130204
+      outSlope: -.65130204
+      tangentMode: 0
+    - time: .201803923
+      value: 0
+      inSlope: -.16282551
+      outSlope: -.16282551
+      tangentMode: 0
+    - time: .384000003
+      value: .015625
+      inSlope: -.0407063775
+      outSlope: -.0407063775
+      tangentMode: 0
+    - time: .768000007
+      value: .0078125
+      inSlope: -.0101765944
+      outSlope: -.0101765944
+      tangentMode: 0
+    - time: 1
+      value: .00600000005
+      inSlope: -.00600239541
+      outSlope: -.00600239541
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1709731210
 GameObject:
   m_ObjectHideFlags: 0
@@ -21189,6 +22501,7 @@ GameObject:
   - 114: {fileID: 1828836263}
   - 114: {fileID: 1828836273}
   - 114: {fileID: 1828836272}
+  - 82: {fileID: 1828836274}
   m_Layer: 9
   m_Name: Robot Guard
   m_TagString: Untagged
@@ -21209,6 +22522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotDelay: 2
+  shootSound: {fileID: 8300000, guid: baaf6579e54675d47b3ebf0c5dabe8c9, type: 3}
 --- !u!114 &1828836264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21251,6 +22565,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerGadgets: []
+  alertSound: {fileID: 8300000, guid: 5d2e6f2e8fc8d43429aa0a07ae0ea995, type: 3}
+  suspiciousSound: {fileID: 8300000, guid: 5e8a3e60c0e729e4e98020b01ca741cf, type: 3}
 --- !u!114 &1828836267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21354,6 +22670,100 @@ MonoBehaviour:
   library: {fileID: 11400000, guid: 65105607644a78e4f8eed31d7d271ffb, type: 2}
   defaultClipId: 0
   playAutomatically: 1
+--- !u!82 &1828836274
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 46de64d4976139148819a8adf0302d20,
+    type: 2}
+  m_PrefabInternal: {fileID: 1863809775}
+  m_GameObject: {fileID: 1828836262}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 35cc8ff4e5ed00242a80ee74f8103458, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: .300000012
+  MaxDistance: 1
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: .00600000005
+      value: 1
+      inSlope: -166.733322
+      outSlope: -166.733322
+      tangentMode: 0
+    - time: .0120000001
+      value: .5
+      inSlope: -41.6833305
+      outSlope: -41.6833305
+      tangentMode: 0
+    - time: .0240000002
+      value: .25
+      inSlope: -10.4208326
+      outSlope: -10.4208326
+      tangentMode: 0
+    - time: .0480000004
+      value: .125
+      inSlope: -2.60520816
+      outSlope: -2.60520816
+      tangentMode: 0
+    - time: .0984509811
+      value: 0
+      inSlope: -.65130204
+      outSlope: -.65130204
+      tangentMode: 0
+    - time: .201803923
+      value: 0
+      inSlope: -.16282551
+      outSlope: -.16282551
+      tangentMode: 0
+    - time: .384000003
+      value: .015625
+      inSlope: -.0407063775
+      outSlope: -.0407063775
+      tangentMode: 0
+    - time: .768000007
+      value: .0078125
+      inSlope: -.0101765944
+      outSlope: -.0101765944
+      tangentMode: 0
+    - time: 1
+      value: .00600000005
+      inSlope: -.00600239541
+      outSlope: -.00600239541
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1832738909
 GameObject:
   m_ObjectHideFlags: 0
@@ -21581,6 +22991,7 @@ GameObject:
   - 114: {fileID: 1862192016}
   - 114: {fileID: 1862192026}
   - 114: {fileID: 1862192025}
+  - 82: {fileID: 1862192027}
   m_Layer: 9
   m_Name: Robot Guard
   m_TagString: Untagged
@@ -21601,6 +23012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotDelay: 2
+  shootSound: {fileID: 8300000, guid: baaf6579e54675d47b3ebf0c5dabe8c9, type: 3}
 --- !u!114 &1862192017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21643,6 +23055,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerGadgets: []
+  alertSound: {fileID: 8300000, guid: 5d2e6f2e8fc8d43429aa0a07ae0ea995, type: 3}
+  suspiciousSound: {fileID: 8300000, guid: 5e8a3e60c0e729e4e98020b01ca741cf, type: 3}
 --- !u!114 &1862192020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21746,6 +23160,100 @@ MonoBehaviour:
   library: {fileID: 11400000, guid: 65105607644a78e4f8eed31d7d271ffb, type: 2}
   defaultClipId: 0
   playAutomatically: 1
+--- !u!82 &1862192027
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 46de64d4976139148819a8adf0302d20,
+    type: 2}
+  m_PrefabInternal: {fileID: 1968168161}
+  m_GameObject: {fileID: 1862192015}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 35cc8ff4e5ed00242a80ee74f8103458, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: .300000012
+  MaxDistance: 1
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: .00600000005
+      value: 1
+      inSlope: -166.733322
+      outSlope: -166.733322
+      tangentMode: 0
+    - time: .0120000001
+      value: .5
+      inSlope: -41.6833305
+      outSlope: -41.6833305
+      tangentMode: 0
+    - time: .0240000002
+      value: .25
+      inSlope: -10.4208326
+      outSlope: -10.4208326
+      tangentMode: 0
+    - time: .0480000004
+      value: .125
+      inSlope: -2.60520816
+      outSlope: -2.60520816
+      tangentMode: 0
+    - time: .0984509811
+      value: 0
+      inSlope: -.65130204
+      outSlope: -.65130204
+      tangentMode: 0
+    - time: .201803923
+      value: 0
+      inSlope: -.16282551
+      outSlope: -.16282551
+      tangentMode: 0
+    - time: .384000003
+      value: .015625
+      inSlope: -.0407063775
+      outSlope: -.0407063775
+      tangentMode: 0
+    - time: .768000007
+      value: .0078125
+      inSlope: -.0101765944
+      outSlope: -.0101765944
+      tangentMode: 0
+    - time: 1
+      value: .00600000005
+      inSlope: -.00600239541
+      outSlope: -.00600239541
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &1863809775
 Prefab:
   m_ObjectHideFlags: 0
@@ -21992,6 +23500,7 @@ GameObject:
   - 114: {fileID: 1907289681}
   - 114: {fileID: 1907289691}
   - 114: {fileID: 1907289690}
+  - 82: {fileID: 1907289692}
   m_Layer: 9
   m_Name: Robot Guard
   m_TagString: Untagged
@@ -22012,6 +23521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotDelay: 2
+  shootSound: {fileID: 8300000, guid: baaf6579e54675d47b3ebf0c5dabe8c9, type: 3}
 --- !u!114 &1907289682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22054,6 +23564,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerGadgets: []
+  alertSound: {fileID: 8300000, guid: 5d2e6f2e8fc8d43429aa0a07ae0ea995, type: 3}
+  suspiciousSound: {fileID: 8300000, guid: 5e8a3e60c0e729e4e98020b01ca741cf, type: 3}
 --- !u!114 &1907289685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22157,6 +23669,100 @@ MonoBehaviour:
   library: {fileID: 11400000, guid: 65105607644a78e4f8eed31d7d271ffb, type: 2}
   defaultClipId: 0
   playAutomatically: 1
+--- !u!82 &1907289692
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 46de64d4976139148819a8adf0302d20,
+    type: 2}
+  m_PrefabInternal: {fileID: 906662065}
+  m_GameObject: {fileID: 1907289680}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 35cc8ff4e5ed00242a80ee74f8103458, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: .300000012
+  MaxDistance: 1
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: .00600000005
+      value: 1
+      inSlope: -166.733322
+      outSlope: -166.733322
+      tangentMode: 0
+    - time: .0120000001
+      value: .5
+      inSlope: -41.6833305
+      outSlope: -41.6833305
+      tangentMode: 0
+    - time: .0240000002
+      value: .25
+      inSlope: -10.4208326
+      outSlope: -10.4208326
+      tangentMode: 0
+    - time: .0480000004
+      value: .125
+      inSlope: -2.60520816
+      outSlope: -2.60520816
+      tangentMode: 0
+    - time: .0984509811
+      value: 0
+      inSlope: -.65130204
+      outSlope: -.65130204
+      tangentMode: 0
+    - time: .201803923
+      value: 0
+      inSlope: -.16282551
+      outSlope: -.16282551
+      tangentMode: 0
+    - time: .384000003
+      value: .015625
+      inSlope: -.0407063775
+      outSlope: -.0407063775
+      tangentMode: 0
+    - time: .768000007
+      value: .0078125
+      inSlope: -.0101765944
+      outSlope: -.0101765944
+      tangentMode: 0
+    - time: 1
+      value: .00600000005
+      inSlope: -.00600239541
+      outSlope: -.00600239541
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!43 &1909058601
 Mesh:
   m_ObjectHideFlags: 0
@@ -22466,6 +24072,7 @@ GameObject:
   - 114: {fileID: 1942298206}
   - 114: {fileID: 1942298216}
   - 114: {fileID: 1942298215}
+  - 82: {fileID: 1942298217}
   m_Layer: 9
   m_Name: Robot Guard
   m_TagString: Untagged
@@ -22486,6 +24093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotDelay: 2
+  shootSound: {fileID: 8300000, guid: baaf6579e54675d47b3ebf0c5dabe8c9, type: 3}
 --- !u!114 &1942298207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22528,6 +24136,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerGadgets: []
+  alertSound: {fileID: 8300000, guid: 5d2e6f2e8fc8d43429aa0a07ae0ea995, type: 3}
+  suspiciousSound: {fileID: 8300000, guid: 5e8a3e60c0e729e4e98020b01ca741cf, type: 3}
 --- !u!114 &1942298210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22631,6 +24241,100 @@ MonoBehaviour:
   library: {fileID: 11400000, guid: 65105607644a78e4f8eed31d7d271ffb, type: 2}
   defaultClipId: 0
   playAutomatically: 1
+--- !u!82 &1942298217
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 46de64d4976139148819a8adf0302d20,
+    type: 2}
+  m_PrefabInternal: {fileID: 968065046}
+  m_GameObject: {fileID: 1942298205}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 35cc8ff4e5ed00242a80ee74f8103458, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: .300000012
+  MaxDistance: 1
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: .00600000005
+      value: 1
+      inSlope: -166.733322
+      outSlope: -166.733322
+      tangentMode: 0
+    - time: .0120000001
+      value: .5
+      inSlope: -41.6833305
+      outSlope: -41.6833305
+      tangentMode: 0
+    - time: .0240000002
+      value: .25
+      inSlope: -10.4208326
+      outSlope: -10.4208326
+      tangentMode: 0
+    - time: .0480000004
+      value: .125
+      inSlope: -2.60520816
+      outSlope: -2.60520816
+      tangentMode: 0
+    - time: .0984509811
+      value: 0
+      inSlope: -.65130204
+      outSlope: -.65130204
+      tangentMode: 0
+    - time: .201803923
+      value: 0
+      inSlope: -.16282551
+      outSlope: -.16282551
+      tangentMode: 0
+    - time: .384000003
+      value: .015625
+      inSlope: -.0407063775
+      outSlope: -.0407063775
+      tangentMode: 0
+    - time: .768000007
+      value: .0078125
+      inSlope: -.0101765944
+      outSlope: -.0101765944
+      tangentMode: 0
+    - time: 1
+      value: .00600000005
+      inSlope: -.00600239541
+      outSlope: -.00600239541
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1967679141
 GameObject:
   m_ObjectHideFlags: 0
