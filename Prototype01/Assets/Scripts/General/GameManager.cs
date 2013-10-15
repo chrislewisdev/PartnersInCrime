@@ -12,23 +12,27 @@ public class GameManager : MonoBehaviour {
 	private AiController aiPlayer;
 	public AiController AI { get { return aiPlayer; } }
 	
-	private List<GuardSpawner> spawners = new List<GuardSpawner>();
-	private bool alarmTriggered;
+	private List<Spawner> spawners = new List<Spawner>();
+	public bool alarmTriggered;
 	
 	// Triggers alarm, including triggering all registered guard spawners
 	public void triggerAlarm()
 	{
 		if (!alarmTriggered)
 		{
-			foreach (GuardSpawner spawner in spawners)
-				spawner.spawnGuards();
+			foreach (Spawner spawner in spawners)
+				spawner.spawn();
 			
+			
+			robotPlayer.powerUpRobot();
 			alarmTriggered = true;
 		}
+		
+		Debug.Log("Alarm triggered");
 	}
 	
 	// Registers a guard spawner that will be triggered when the alarm goes off
-	public void registerSpawner(GuardSpawner spawner)
+	public void registerSpawner(Spawner spawner)
 	{
 		spawners.Add(spawner);
 	}

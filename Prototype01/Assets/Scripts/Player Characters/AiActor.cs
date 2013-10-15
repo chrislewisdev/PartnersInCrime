@@ -60,7 +60,7 @@ public class AiActor : MonoBehaviour {
 				transform.position = Vector3.Lerp(beginPosition, occupiedGadget.transform.position, moveTimer);
 		}
 		else
-			transform.position = occupiedGadget.transform.position;
+			transform.position = occupiedGadget.transform.position + new Vector3(0f, 0f, -1f);
 	}
 	
 	//Initilizes ai actor and partile systems

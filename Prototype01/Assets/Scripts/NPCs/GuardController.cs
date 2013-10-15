@@ -81,7 +81,9 @@ public class GuardController : AiControllable {
 		{
 			reactionMethod.OnAggressive();
 			if (previousAlertness != Alertness.Aggressive && alertSound != null) 
+			{
 				AudioSource.PlayClipAtPoint(alertSound, transform.position);
+			}
 			activateConnectedGadgets();
 			previousAlertness = Alertness.Aggressive;
 			//Return so we don't move

@@ -90,7 +90,7 @@ public class Door : AiControllable {
 			closeTimer -= Time.deltaTime;
 			if (closeTimer <= 0f)
 			{
-				if (Vector3.Distance(transform.position, GameManager.gameManager.Robot.gameObject.transform.position) > 3.2f)
+				if (Vector3.Distance(transform.position, GameManager.gameManager.Robot.gameObject.transform.position) > 6.4f)
 				{
 					closeTimer = closeTime;
 					open = false;

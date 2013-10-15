@@ -6,6 +6,7 @@ public class AiController : AiActor {
 	
 	public bool debugControls = true;
 	public AudioClip transitionSound;
+	public float maxRange = 50.0f;
 	
 	GameObject selectionCircle;
 	
@@ -165,7 +166,7 @@ public class AiController : AiActor {
 			{
 				RaycastHit hit;
 				Physics.Raycast(new Ray(transform.position, g.gameObject.transform.position - transform.position), out hit);
-				if (hit.collider.gameObject == g.gameObject)
+				if (hit.collider.gameObject == g.gameObject && Vector3.Distance(transform.position, g.gameObject.transform.position) < maxRange)
 					visibleObjects.Add(g.gameObject);
 			}
 		}
@@ -194,7 +195,7 @@ public class AiController : AiActor {
 			}
 		}
 		
-		if (smallestAngle < 20f * Mathf.Deg2Rad)
+		if (smallestAngle < 45f * Mathf.Deg2Rad)
 			return closestGadget;
 		else
 			return null;

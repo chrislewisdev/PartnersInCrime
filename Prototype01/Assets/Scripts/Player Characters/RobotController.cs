@@ -7,6 +7,7 @@ public class RobotController : AiControllable {
 	private tk2dSpriteAnimator animations;
 	private float timeSinceLastHit = 5f;
 	private RobotMovement movement;
+	private bool poweredUp = false;
 	
 	public override void aiSendDirection (Vector2 direction)
 	{
@@ -22,6 +23,12 @@ public class RobotController : AiControllable {
 	
 	public override void aiLeft ()
 	{
+	}
+	
+	//Called when robot retrieves prize, allows it to punch robots and breakable doors
+	public void powerUpRobot()
+	{
+		poweredUp = true;
 	}
 	
 	// Use this for initialization
@@ -91,17 +98,28 @@ public class RobotController : AiControllable {
 	//Attack robot for takedown
 	void attack()
 	{
-		RaycastHit hit;
-		Debug.Log("Punch");
-		if (Physics.Raycast(new Ray(transform.position, new Vector3(animations.Sprite.FlipX ? 0.0f : 1.0f, -.5f, 0.0f)), out hit))
+		//seriously ugly but it should be a problem for performance
+		GuardController[] guardControllers = (GuardController[])Object.FindObjectsOfType(typeof(GuardController));
+		
+		foreach (GuardController guard in guardControllers)
 		{
-			if (hit.distance < 1.5f)
+			if (Vector3.Distance(transform.position, guard.transform.position) < 5f)
 			{
-				GuardController guard = hit.collider.GetComponent<GuardController>();
-				if (guard != null)
+				if (guard.isPossessed() || poweredUp)
 				{
-					if (guard.isPossessed())
-						guard.Damage(10);
+					guard.Damage(10);
+				}
+			}
+		}
+		
+		BreakableDoor[] doors = (BreakableDoor[])Object.FindObjectsOfType(typeof(BreakableDoor));
+		foreach (BreakableDoor door in doors)
+		{
+			if (Vector3.Distance(transform.position, door.transform.position) < 5f)
+			{
+				if (poweredUp)
+				{
+					door.breakDoor();
 				}
 			}
 		}

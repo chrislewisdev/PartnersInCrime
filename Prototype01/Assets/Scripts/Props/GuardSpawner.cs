@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GuardSpawner : ActivatableGadget {
+public class GuardSpawner : Spawner {
 	
 	public GameObject guardPrefab;
 	public float number;
@@ -13,13 +13,8 @@ public class GuardSpawner : ActivatableGadget {
 	float _spawnTimer;
 	int _spawnCounter;
 	
-	public override void activateGadget (bool triggeredByAi)
-	{
-		spawnGuards();
-	}
-	
 	// Spawner will begin spawning guards
-	public void spawnGuards()
+	public override void spawn ()
 	{
 		if (spawnOnce && _guardsSpawned)
 			return;
