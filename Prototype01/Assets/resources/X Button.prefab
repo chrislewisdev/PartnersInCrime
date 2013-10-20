@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: B Button
+  m_Name: X Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,7 +82,7 @@ MonoBehaviour:
   collection: {fileID: 11400000, guid: 71f5123ee30b16a4fbaee849199395af, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: .400000006, y: .400000006, z: .400000006}
-  _spriteId: 0
+  _spriteId: 2
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []

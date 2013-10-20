@@ -42,30 +42,30 @@ MonoBehaviour:
   materialIdsValid: 1
   needMaterialInstance: 0
   spriteDefinitions:
-  - name: b-button
+  - name: 
     boundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 1.9375, y: -1.9375, z: 0}
     - {x: 4, y: 4, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 1.9375, y: -1.9375, z: 0}
     - {x: 4, y: 4, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -2, y: -2, z: 0}
-    - {x: 2, y: -2, z: 0}
-    - {x: -2, y: 2, z: 0}
-    - {x: 2, y: 2, z: 0}
+    - {x: -.0625, y: -3.9375, z: 0}
+    - {x: 3.9375, y: -3.9375, z: 0}
+    - {x: -.0625, y: .0625, z: 0}
+    - {x: 3.9375, y: .0625, z: 0}
     normals: []
     tangents: []
     uvs:
-    - {x: .0156328119, y: .0156328119}
-    - {x: .515617192, y: .0156328119}
-    - {x: .0156328119, y: .515617192}
-    - {x: .515617192, y: .515617192}
+    - {x: .859390616, y: .500007808}
+    - {x: .890609384, y: .500007808}
+    - {x: .859390616, y: .515617192}
+    - {x: .890609384, y: .515617192}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 2d7423eba20baad4992b984924171843, type: 2}
     materialId: 0
-    sourceTextureGUID: c41633ed8467a0f4bb7c0079442cb6a4
+    sourceTextureGUID: 
     extractRegion: 0
     regionX: 0
     regionY: 0
@@ -96,14 +96,52 @@ MonoBehaviour:
     normals: []
     tangents: []
     uvs:
-    - {x: .0156328119, y: .546882808}
-    - {x: .226554692, y: .546882808}
-    - {x: .0156328119, y: .929679692}
-    - {x: .226554692, y: .929679692}
+    - {x: .0312656239, y: .500007808}
+    - {x: .0312656239, y: .710929692}
+    - {x: .796859384, y: .500007808}
+    - {x: .796859384, y: .710929692}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 2d7423eba20baad4992b984924171843, type: 2}
     materialId: 0
     sourceTextureGUID: 54177c8aa9808b24091633bdc8b94375
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: x-button
+    boundsData:
+    - {x: .03125, y: 0, z: 0}
+    - {x: 3.6875, y: 3.625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 4, y: 4, z: 0}
+    texelSize: {x: .0625, y: .0625}
+    positions:
+    - {x: -1.8125, y: -1.8125, z: 0}
+    - {x: 1.875, y: -1.8125, z: 0}
+    - {x: -1.8125, y: 1.8125, z: 0}
+    - {x: 1.875, y: 1.8125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .0312656239, y: .0156328119}
+    - {x: .953109384, y: .0156328119}
+    - {x: .0312656239, y: .468742192}
+    - {x: .953109384, y: .468742192}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 2d7423eba20baad4992b984924171843, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1b35eb3324975d64c85a4da607e4785a
     extractRegion: 0
     regionX: 0
     regionY: 0
@@ -131,7 +169,7 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: .0500000007
   halfTargetHeight: 320
-  buildKey: 180582813
+  buildKey: 165284437
   dataGuid: 71f5123ee30b16a4fbaee849199395af
   managedSpriteCollection: 0
   hasPlatformData: 0

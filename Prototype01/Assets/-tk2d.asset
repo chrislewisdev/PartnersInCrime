@@ -590,14 +590,17 @@ MonoBehaviour:
     spriteCollectionGUID: 80f96c74bdc006d49b16f3a0381d3f07
     spriteCollectionDataGUID: 71f5123ee30b16a4fbaee849199395af
     spriteNames:
-    - b-button
+    - 
     - up-down-arrows
+    - x-button
     spriteTextureGUIDs:
-    - c41633ed8467a0f4bb7c0079442cb6a4
+    - 
     - 54177c8aa9808b24091633bdc8b94375
+    - 1b35eb3324975d64c85a4da607e4785a
     spriteTextureTimeStamps:
-    - 1381150226.29411
-    - 1381152474.15968
+    - 0
+    - 1382212205.79446
+    - 1382350531.54223
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

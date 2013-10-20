@@ -93,7 +93,7 @@ public class AiController : AiActor {
 		else 
 			sendGadgetButtonInput(ButtonState.NOT_PRESSED);
 		
-		sendGadgetDirectionInput(new Vector2(Input.GetAxis("Interact_Horizontal_AI"), Input.GetAxis("Interact_Vertical_AI")));
+		sendGadgetDirectionInput(new Vector2(Input.GetAxis("Horizontal_AI"), Input.GetAxis("Vertical_AI")));
 	}
 	
 	void debugControlsUpdate()

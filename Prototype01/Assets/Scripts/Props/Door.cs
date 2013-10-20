@@ -65,7 +65,7 @@ public class Door : AiControllable {
 	
 	public override void aiArrived()
 	{
-		controllerButton = Instantiate(Resources.Load("B Button") as GameObject, transform.position + new Vector3(0f, 3.5f, -1f), Quaternion.identity) as GameObject;
+		controllerButton = Instantiate(Resources.Load("X Button") as GameObject, transform.position + new Vector3(0f, 3.5f, -1f), Quaternion.identity) as GameObject;
 	}
 	
 	void Start()
