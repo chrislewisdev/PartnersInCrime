@@ -185,16 +185,16 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick 2 button 1
+    positiveButton: joystick 2 button 2
     altNegativeButton: 
     altPositiveButton: space
     gravity: 1000
     dead: .00100000005
     sensitivity: 1000
-    snap: 0
+    snap: 1
     invert: 0
     type: 0
-    axis: 0
+    axis: 2
     joyNum: 2
   - serializedVersion: 3
     m_Name: Interact_Horizontal_AI
