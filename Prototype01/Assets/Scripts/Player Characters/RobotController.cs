@@ -7,7 +7,7 @@ public class RobotController : AiControllable {
 	private tk2dSpriteAnimator animations;
 	private float timeSinceLastHit = 5f;
 	private RobotMovement movement;
-	private bool poweredUp = false;
+	private bool poweredUp = true;
 	
 	public override void aiSendDirection (Vector2 direction)
 	{

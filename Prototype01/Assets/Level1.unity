@@ -4368,6 +4368,7 @@ MonoBehaviour:
   occupiedGadget: {fileID: 1544863094}
   debugControls: 1
   transitionSound: {fileID: 8300000, guid: cf847d578b51f264997a29822591b7e2, type: 3}
+  maxRange: 50
 --- !u!114 &366451458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5633,9 +5634,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 494218507}
   - 114: {fileID: 494218506}
-  - 143: {fileID: 494218510}
-  - 114: {fileID: 494218509}
-  - 114: {fileID: 494218508}
   m_Layer: 8
   m_Name: TileMap
   m_TagString: Untagged
@@ -5786,47 +5784,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!114 &494218508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 494218505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4b62b4fde2022344a5c1af84b7c0b79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerGadgets: []
---- !u!114 &494218509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 494218505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfd6499a6834b6e408164749aa41817b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  jumpStrength: 0
-  gravityFactor: 0
-  ladderMap: {fileID: 0}
---- !u!143 &494218510
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 494218505}
-  serializedVersion: 2
-  m_Height: 2
-  m_Radius: .5
-  m_SlopeLimit: 45
-  m_StepOffset: .300000012
-  m_SkinWidth: .0799999982
-  m_MinMoveDistance: 0
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &498781704
 GameObject:
   m_ObjectHideFlags: 0
@@ -10113,7 +10070,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 090733a3cc5f53e46b5f3552d4903acd, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 14.6734619
+      value: 16.355278
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 090733a3cc5f53e46b5f3552d4903acd, type: 2}
       propertyPath: m_LocalPosition.y
@@ -10173,7 +10130,11 @@ Prefab:
       objectReference: {fileID: 1771943409}
     - target: {fileID: 11400006, guid: 090733a3cc5f53e46b5f3552d4903acd, type: 2}
       propertyPath: speed
-      value: 10
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 090733a3cc5f53e46b5f3552d4903acd, type: 2}
+      propertyPath: playAutomatically
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 090733a3cc5f53e46b5f3552d4903acd, type: 2}
@@ -16798,6 +16759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa99cf7cf6d1e04b83a4d7c57c117c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  alarmTriggered: 0
 --- !u!114 &1383098487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16810,6 +16772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa99cf7cf6d1e04b83a4d7c57c117c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  alarmTriggered: 0
 --- !u!81 &1383098488
 AudioListener:
   m_ObjectHideFlags: 0
@@ -18652,7 +18615,7 @@ Transform:
   m_PrefabInternal: {fileID: 923332160}
   m_GameObject: {fileID: 1544863094}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.6734619, y: 119.220787, z: 10}
+  m_LocalPosition: {x: 16.355278, y: 119.220787, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -18743,7 +18706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfd6499a6834b6e408164749aa41817b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 25
   jumpStrength: 25
   gravityFactor: 2
   ladderMap: {fileID: 1771943409}
@@ -24217,7 +24180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   library: {fileID: 11400000, guid: d7bee5efc95681d4db60de448ea4219b, type: 2}
   defaultClipId: 0
-  playAutomatically: 1
+  playAutomatically: 0
 --- !u!43 &1925541574
 Mesh:
   m_ObjectHideFlags: 0

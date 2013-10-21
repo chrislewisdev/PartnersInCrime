@@ -46,12 +46,11 @@ public class ShootReactionMethod : ReactionMethod {
 				//Bullet.createBullet (transform.position, GameManager.gameManager.Robot.transform.position - transform.position);
 				//Debug.Break ();
 				GameManager.gameManager.Robot.Damage();
-				if (shootSound != null) AudioSource.PlayClipAtPoint (shootSound, transform.position);
-				{
-					shotTimer = shotDelay;
-					Vector3 direction = GameManager.gameManager.Robot.transform.position - transform.position;
-					Bullet.createBullet(transform.position, Mathf.Atan2(direction.y, direction.x) + 180f); 
-				}	
+				if (shootSound != null) 
+					AudioSource.PlayClipAtPoint (shootSound, transform.position);
+				shotTimer = shotDelay;
+				Vector3 direction = GameManager.gameManager.Robot.transform.position - transform.position;
+				Bullet.createBullet(transform.position, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg); 	
 			}
 		}
 	}

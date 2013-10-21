@@ -21,6 +21,7 @@ public class GuardController : AiControllable {
 	private GuardMovement movement;
 	private tk2dSpriteAnimator animations;
 	private SpriteEffects effects;
+	private int orientation = 1;
 	
 	public override void aiArrived ()
 	{
@@ -73,8 +74,15 @@ public class GuardController : AiControllable {
 		if (!isActive) // Do nothing if currently occupied by ai
 			return;
 		
-		if (sight.IsObjectInView (GameManager.gameManager.Robot.gameObject))
+		UpdateVisuals();
+		
+		if (sight.IsObjectInView (GameManager.gameManager.Robot.gameObject)
+			|| Vector3.Distance(transform.position, GameManager.gameManager.Robot.transform.position) < 7f)
+		{
 			reaction.OnIntruderInSight();
+			//Try to turn to face the player
+			orientation = (int)Mathf.Sign (GameManager.gameManager.Robot.transform.position.x - transform.position.x);
+		}
 		else
 		{
 			reaction.OnIntruderOutOfSight();
@@ -100,7 +108,9 @@ public class GuardController : AiControllable {
 				AudioSource.PlayClipAtPoint(suspiciousSound, transform.position);
 			previousAlertness = Alertness.Suspicious;
 			//Don't move if intruder is still in sight
-			if (sight.IsObjectInView (GameManager.gameManager.Robot.gameObject)) return;
+			if (sight.IsObjectInView (GameManager.gameManager.Robot.gameObject)
+				|| Vector3.Distance(transform.position, GameManager.gameManager.Robot.transform.position) < 7f) 
+				return;
 		}
 		else if (alertness == Alertness.Normal)
 		{
@@ -109,16 +119,15 @@ public class GuardController : AiControllable {
 		}
 		
 		movement.UpdateMovement();
-		
-		UpdateVisuals();
+		orientation = (int)Mathf.Sign (movement.Velocity.x);
 	}
 	
 	private void UpdateVisuals()
 	{
 		//Set our FOV orientation
-		sight.Rotation = Mathf.Sign (movement.Velocity.x) == 1 ? 0 : 180;
+		sight.Rotation = orientation == 1 ? 0 : 180;
 		
-		if (movement.Velocity.x > 0) animations.Sprite.FlipX = true;
-		else if (movement.Velocity.x < 0) animations.Sprite.FlipX = false;
+		if (orientation > 0) animations.Sprite.FlipX = true;
+		else if (orientation < 0) animations.Sprite.FlipX = false;
 	}
 }

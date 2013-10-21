@@ -12,12 +12,12 @@ InputManager:
     positiveButton: right
     altNegativeButton: 
     altPositiveButton: 
-    gravity: 0
+    gravity: 1000
     dead: .300000012
-    sensitivity: 1
+    sensitivity: 1000
     snap: 1
     invert: 0
-    type: 2
+    type: 0
     axis: 0
     joyNum: 1
   - serializedVersion: 3
@@ -28,12 +28,12 @@ InputManager:
     positiveButton: 
     altNegativeButton: down
     altPositiveButton: up
-    gravity: 0
+    gravity: 1000
     dead: .300000012
-    sensitivity: 1
+    sensitivity: 1000
     snap: 1
-    invert: 1
-    type: 2
+    invert: 0
+    type: 0
     axis: 1
     joyNum: 1
   - serializedVersion: 3
