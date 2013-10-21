@@ -44,6 +44,7 @@ public class FieldOfView : MonoBehaviour {
 		//If target is both in range and in view, check that line of sight is not blocked
 		Ray lineOfSight = new Ray(transform.position, position - transform.position);
 		RaycastHit hitInfo;
+		//Debug.DrawRay (transform.position, position - transform.position);
 		if (Physics.Raycast (lineOfSight, out hitInfo, range, LayerMask.NameToLayer("Characters")))
 		{
 			return false;

@@ -1454,7 +1454,7 @@ MonoBehaviour:
   targetHeight: 640
   targetOrthoSize: 10
   sizeDef:
-    type: 0
+    type: 1
     orthoSize: 20
     pixelsPerMeter: 20
     width: 960

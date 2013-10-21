@@ -5,6 +5,7 @@ using System.Collections;
 [RequireComponent(typeof(FieldOfView))]
 [RequireComponent(typeof(ReactionLogic))]
 [RequireComponent(typeof(ReactionMethod))]
+[RequireComponent(typeof(SpriteEffects))]
 public class GuardController : AiControllable {
 	
 	public AudioClip alertSound;
@@ -19,6 +20,7 @@ public class GuardController : AiControllable {
 	private int health = 3;
 	private GuardMovement movement;
 	private tk2dSpriteAnimator animations;
+	private SpriteEffects effects;
 	
 	public override void aiArrived ()
 	{
@@ -45,6 +47,7 @@ public class GuardController : AiControllable {
 	public void Damage(int amount)
 	{
 		health -= amount;
+		effects.FlashColour (Color.red, 0.5f);
 		if (health <= 0)
 		{
 			if (isPossessed())
@@ -61,6 +64,7 @@ public class GuardController : AiControllable {
 		isActive = true;
 		movement = GetComponent<GuardMovement>();
 		animations = GetComponent<tk2dSpriteAnimator>();
+		effects = GetComponent<SpriteEffects>();
 	}
 	
 	// Update is called once per frame
