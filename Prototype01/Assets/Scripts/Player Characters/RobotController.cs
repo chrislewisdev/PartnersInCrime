@@ -63,7 +63,7 @@ public class RobotController : AiControllable {
 
 
 			
-		if (timeSinceLastHit < 5f) timeSinceLastHit += Time.deltaTime;
+		if (timeSinceLastHit < 6f) timeSinceLastHit += Time.deltaTime;
 		
 		movement.UpdateMovement ();
 		
