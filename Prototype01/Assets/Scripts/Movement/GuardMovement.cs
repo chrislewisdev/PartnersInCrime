@@ -46,7 +46,7 @@ public class GuardMovement : MonoBehaviour {
 		velocity.x = Mathf.Sign (velocity.x) * walkSpeed;
 		walkDirection = (int)Mathf.Sign (velocity.x);
 		
-		if (ladderMap.GetTileIdAtPosition(transform.position, 0) == -1)
+		if (ladderMap == null || ladderMap.GetTileIdAtPosition(transform.position, 0) == -1)
 		{
 			velocity += Physics.gravity * Time.deltaTime;
 			if (velocity.y < Physics.gravity.y)
@@ -72,7 +72,7 @@ public class GuardMovement : MonoBehaviour {
 	{
 		velocity.x = walkSpeed * walkDirection;
 		
-		if (ladderMap.GetTileIdAtPosition(transform.position, 0) == -1)
+		if (ladderMap == null || ladderMap.GetTileIdAtPosition(transform.position, 0) == -1)
 		{
 			velocity += Physics.gravity * Time.deltaTime;
 			if (velocity.y < Physics.gravity.y)
@@ -133,6 +133,7 @@ public class GuardMovement : MonoBehaviour {
 		
 		if (!Physics.Raycast (ray, out info, distance))
 		{
+			if (ladderMap == null) return true;
 			int tileId = ladderMap.GetTileIdAtPosition (transform.position + (halfHeight + direction).normalized * distance, 0);
 			if (tileId == -1)
 				return true;
