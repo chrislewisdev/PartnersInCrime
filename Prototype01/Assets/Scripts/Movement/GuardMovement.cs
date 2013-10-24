@@ -6,6 +6,7 @@ public class GuardMovement : MonoBehaviour {
 	
 	public float walkSpeed;
 	public PatrolPath patrolPath;
+	public tk2dTileMap ladderMap;
 	
 	private CharacterController moveController;
 	private int pathIndex = 0;
@@ -18,6 +19,8 @@ public class GuardMovement : MonoBehaviour {
 	void Start () 
 	{
 		moveController = GetComponent<CharacterController>();
+		if (ladderMap == null)
+			Debug.LogError("ladder map was not set for " + gameObject.name);
 	}
 	
 	// Update is called once per frame
@@ -43,10 +46,17 @@ public class GuardMovement : MonoBehaviour {
 		velocity.x = Mathf.Sign (velocity.x) * walkSpeed;
 		walkDirection = (int)Mathf.Sign (velocity.x);
 		
-		velocity += Physics.gravity * Time.deltaTime;
-		if (velocity.y < Physics.gravity.y)
+		if (ladderMap.GetTileIdAtPosition(transform.position, 0) == -1)
 		{
-			velocity.y = Physics.gravity.y;
+			velocity += Physics.gravity * Time.deltaTime;
+			if (velocity.y < Physics.gravity.y)
+			{
+				velocity.y = Physics.gravity.y;
+			}
+		}
+		else
+		{
+			velocity.y = 0f;
 		}
 		
 		moveController.Move (velocity * Time.deltaTime);
@@ -62,10 +72,17 @@ public class GuardMovement : MonoBehaviour {
 	{
 		velocity.x = walkSpeed * walkDirection;
 		
-		velocity += Physics.gravity * Time.deltaTime;
-		if (velocity.y < Physics.gravity.y)
+		if (ladderMap.GetTileIdAtPosition(transform.position, 0) == -1)
 		{
-			velocity.y = Physics.gravity.y;
+			velocity += Physics.gravity * Time.deltaTime;
+			if (velocity.y < Physics.gravity.y)
+			{
+				velocity.y = Physics.gravity.y;
+			}
+		}
+		else
+		{
+			velocity.y = 0f;
 		}
 		
 		moveController.Move (velocity * Time.deltaTime);
@@ -111,17 +128,17 @@ public class GuardMovement : MonoBehaviour {
 		float distance = (halfHeight + direction).magnitude;
 		Ray ray = new Ray(transform.position, (halfHeight + direction).normalized);
 		
-		Debug.DrawRay (transform.position, halfHeight + direction, Color.red);
+		Debug.DrawRay (transform.position, (halfHeight + direction).normalized * distance, Color.red);
 		RaycastHit info;
 		
-		if (Physics.Raycast (ray, out info, distance))
+		if (!Physics.Raycast (ray, out info, distance))
 		{
-			return false;
+			int tileId = ladderMap.GetTileIdAtPosition (transform.position + (halfHeight + direction).normalized * distance, 0);
+			if (tileId == -1)
+				return true;
 		}
-		else
-		{
-			return true;
-		}
+		
+		return false;
 	}
 	
 	public void Sleep(float seconds)

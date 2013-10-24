@@ -258,13 +258,10 @@ MonoBehaviour:
     spriteCollectionDataGUID: b1ed14976e9bc9f42aa23d09c9ff18fa
     spriteNames:
     - ladder
-    - guard_blocker
     spriteTextureGUIDs:
     - 9d78ace59f480344f942a1ce71a6e39f
-    - 9d78ace59f480344f942a1ce71a6e39f
     spriteTextureTimeStamps:
-    - 1381148634.96709
-    - 1381148634.96709
+    - 1382212205.67746
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

@@ -19,11 +19,6 @@ MonoBehaviour:
   tilePrefabs:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   tileInfo:
   - stringVal: 
     intVal: 0
@@ -56,13 +51,5 @@ MonoBehaviour:
     generateCollider: 1
     z: 0
     unityLayer: 0
-    skipMeshGeneration: 0
-    physicMaterial: {fileID: 0}
-  - name: Guard_Blocker
-    hash: 779167786
-    useColor: 1
-    generateCollider: 1
-    z: .100000001
-    unityLayer: 11
     skipMeshGeneration: 0
     physicMaterial: {fileID: 0}

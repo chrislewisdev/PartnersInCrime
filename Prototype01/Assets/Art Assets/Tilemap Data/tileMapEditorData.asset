@@ -68,38 +68,13 @@ MonoBehaviour:
       layer: 0
       spriteId: 1
       blendAmount: 0
-    - x: 2
-      y: 0
-      layer: 0
-      spriteId: 2
-      blendAmount: 0
-    - x: 3
-      y: 0
-      layer: 0
-      spriteId: 3
-      blendAmount: 0
-    - x: 4
-      y: 0
-      layer: 0
-      spriteId: 4
-      blendAmount: 0
-    - x: 5
-      y: 0
-      layer: 0
-      spriteId: 5
-      blendAmount: 0
-    - x: 6
-      y: 0
-      layer: 0
-      spriteId: 6
-      blendAmount: 0
     multiSelectTiles: 
     edgeMode: 0
     multiLayer: 0
     overrideWithSpriteBounds: 1
-    brushHash: -952745024
+    brushHash: -224913408
   paletteTilesPerRow: 7
-  setupMode: 2
+  setupMode: 32
   showBrush: 1
   showPalette: 1
   layer: 0
