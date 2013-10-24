@@ -8,9 +8,7 @@ public class MovingPlatform : AiControllable
 	public float rightNumberOfBlocks;
 	public float leftNumberOfBlocks;
 	
-	private List<CharacterController> carryingObjects = new List<CharacterController>();
 	private Vector3 lastMovement = Vector3.zero;
-	private bool updatingPositions = false;
 	private float maxHeight;
 	private float minHeight;
 	private float leftMax;
@@ -58,14 +56,6 @@ public class MovingPlatform : AiControllable
 			arrows = null;
 		}
 	}
-	
-	public void characterCollision(GameObject character)
-	{
-		if (!updatingPositions)
-		{
-			carryingObjects.Add(character.GetComponent<CharacterController>());	
-		}
-	}
 		
 	void Start()
 	{
@@ -89,13 +79,21 @@ public class MovingPlatform : AiControllable
 	
 	void LateUpdate()
 	{
-		updatingPositions = true;
-		foreach (CharacterController o in carryingObjects)
-		{
-			o.Move(lastMovement);	
-		}
+		GameObject robot = GameManager.gameManager.Robot.gameObject;
+		RobotMovement movement = robot.GetComponent<RobotMovement>();
 		
-		carryingObjects.Clear();
-		updatingPositions = false;
+		if (collider.bounds.Intersects(robot.collider.bounds))
+		{
+			if (robot.transform.position.y > transform.position.y)
+			{
+				float penetrationAmount = Mathf.Abs(robot.transform.position.y - transform.position.y) - (robot.collider.bounds.extents.y + collider.bounds.extents.y) - .01f;
+				robot.transform.Translate(new Vector3(0f, -penetrationAmount, 0f));
+				movement.OnPlatform = true;	
+			}
+			else
+				movement.OnPlatform = false;
+		}
+		else
+			movement.OnPlatform = false;
 	}
 }

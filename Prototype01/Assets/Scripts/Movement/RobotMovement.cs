@@ -19,6 +19,8 @@ public class RobotMovement : MonoBehaviour {
 	private bool jumped = false;
 	private bool attachedToLadder = false;
 	private bool nextToLadder;
+	private bool onPlatform = false;
+	public bool OnPlatform {set {onPlatform = value;}}
 
 	// Use this for initialization
 	void Start () {
@@ -76,7 +78,7 @@ public class RobotMovement : MonoBehaviour {
 		//Start a jump only when a jump has been pressed initially
 		if (jump > 0 && !jumped)
 		{
-			if (moveController.isGrounded || attachedToLadder)
+			if (moveController.isGrounded || attachedToLadder || onPlatform)
 			{
 				velocity += Vector3.up * jumpStrength;
 			}
@@ -88,7 +90,7 @@ public class RobotMovement : MonoBehaviour {
 		}
 		
 		//Apply gravity only if not attached to a ladder
-		if (!attachedToLadder)
+		if (!attachedToLadder && !onPlatform)
 		{
 			velocity += Physics.gravity * Time.deltaTime * gravityFactor;
 			if (velocity.y < Physics.gravity.y)

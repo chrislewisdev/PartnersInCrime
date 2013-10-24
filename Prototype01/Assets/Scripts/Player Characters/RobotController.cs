@@ -88,13 +88,6 @@ public class RobotController : AiControllable {
 		}
 	}
 	
-	void OnControllerColliderHit(ControllerColliderHit col)
-	{
-		// UGLY workaround code, don't look at me!! 
-		if (col.collider.gameObject.GetComponent<MovingPlatform>() != null)
-			col.collider.gameObject.GetComponent<MovingPlatform>().characterCollision(gameObject);
-	}
-	
 	//Attack robot for takedown
 	void attack()
 	{
