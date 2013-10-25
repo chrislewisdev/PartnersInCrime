@@ -166,8 +166,8 @@ public class AiController : AiActor {
 			{
 				RaycastHit hit;
 				Physics.Raycast(new Ray(transform.position, g.gameObject.transform.position - transform.position), out hit);
-				if (hit.collider.gameObject == g.gameObject && Vector3.Distance(transform.position, g.gameObject.transform.position) < maxRange
-					|| Vector3.Distance(transform.position, g.transform.position) < 3.9f)
+				if ((hit.collider.gameObject == g.gameObject && Vector3.Distance(transform.position, g.gameObject.transform.position) < maxRange)
+					|| Vector3.Distance(transform.position, g.transform.position) < 6.4f)
 					visibleObjects.Add(g.gameObject);
 			}
 		}
