@@ -12,11 +12,15 @@ public class GuardSpawner : Spawner {
 	bool _guardsSpawned;
 	float _spawnTimer;
 	int _spawnCounter;
+	bool _triggeredLastStep;
+	bool _triggeredThisStep;
 	
 	// Spawner will begin spawning guards
 	public override void spawn ()
 	{
-		if (spawnOnce && _guardsSpawned)
+		_triggeredThisStep = true;
+		
+		if ((spawnOnce && _guardsSpawned) || _triggeredLastStep)
 			return;
 		
 		if (!_spawning)
@@ -50,5 +54,13 @@ public class GuardSpawner : Spawner {
 					_spawning = false;
 			}
 		}
+		
+		if (_triggeredThisStep)
+		{
+			_triggeredLastStep = true;
+			_triggeredThisStep = false;
+		}
+		else
+			_triggeredLastStep = false;
 	}
 }

@@ -6,8 +6,8 @@ public class GuardMovement : MonoBehaviour {
 	
 	public float walkSpeed;
 	public PatrolPath patrolPath;
-	public tk2dTileMap ladderMap;
 	
+	private tk2dTileMap ladderMap;
 	private CharacterController moveController;
 	private int pathIndex = 0;
 	private Vector3 velocity = Vector3.zero;
