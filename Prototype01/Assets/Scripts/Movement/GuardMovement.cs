@@ -19,6 +19,7 @@ public class GuardMovement : MonoBehaviour {
 	void Start () 
 	{
 		moveController = GetComponent<CharacterController>();
+		ladderMap = GameManager.gameManager.ladderMap;
 		if (ladderMap == null)
 			Debug.LogError("ladder map was not set for " + gameObject.name);
 	}

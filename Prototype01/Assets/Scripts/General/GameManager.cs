@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour {
 	public RobotController Robot { get { return robotPlayer; } }
 	private AiController aiPlayer;
 	public AiController AI { get { return aiPlayer; } }
+	public tk2dTileMap ladderMap;
 	
 	private List<Spawner> spawners = new List<Spawner>();
 	public bool alarmTriggered;

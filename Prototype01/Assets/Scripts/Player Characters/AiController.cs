@@ -144,7 +144,7 @@ public class AiController : AiActor {
 			
 			if (hitObject.GetComponent<AiControllable>() != null)
 			{		
-				if (Physics.Raycast(new Ray(transform.position, hitObject.transform.position - transform.position), out hit))
+				if (Physics.Raycast(new Ray(transform.position, hitObject.transform.position - transform.position), out hit) || Vector3.Distance(transform.position, hitObject.transform.position) < 6.4f)
 				{
 					if (hit.collider.gameObject == hitObject)
 						return hitObject;
