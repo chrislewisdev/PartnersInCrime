@@ -165,7 +165,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd8fc96ab697f724dbb3d3f2dd4b3155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  triggerGadgets: []
   closeTime: 1.5
+  closeSound: {fileID: 8300000, guid: d51405986e1670546af54fc7db6c7ce7, type: 3}
+  openSound: {fileID: 8300000, guid: e312f4c9c506cd642aed9603669312cf, type: 3}
+  triggerGadgetsOnlyOnAiOpen: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

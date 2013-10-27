@@ -120,6 +120,7 @@ MonoBehaviour:
   jumpStrength: 25
   gravityFactor: 2
   ladderMap: {fileID: 0}
+  jumpSound: {fileID: 8300000, guid: c38454a72eac18948945a0ebffb72abc, type: 3}
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1

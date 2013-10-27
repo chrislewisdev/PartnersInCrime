@@ -4,6 +4,8 @@ using System.Collections;
 public class Door : AiControllable {
 	
 	public float closeTime = 1.5f;
+	public AudioClip closeSound;
+	public AudioClip openSound;
 	
 	// If true, connected gadgets to the door will only be triggered when the ai opens the door, otherwise they will be triggered whenever the door opens
 	public bool triggerGadgetsOnlyOnAiOpen = true;
@@ -23,11 +25,13 @@ public class Door : AiControllable {
 			{
 				targetScale = 3f;
 				boxCollider.enabled = true;
+				if (closeSound != null) AudioSource.PlayClipAtPoint(closeSound, transform.position);
 			}
 			else
 			{
 				targetScale = 0f;
 				boxCollider.enabled = false;
+				if (openSound != null) AudioSource.PlayClipAtPoint(openSound, transform.position);
 				activateConnectedGadgets();
 			}
 			
@@ -96,6 +100,7 @@ public class Door : AiControllable {
 					open = false;
 					targetScale = 3f;
 					boxCollider.enabled = true;
+					if (closeSound != null) AudioSource.PlayClipAtPoint(closeSound, transform.position);
 				}
 			}
 		}

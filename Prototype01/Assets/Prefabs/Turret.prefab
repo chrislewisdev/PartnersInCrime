@@ -162,6 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerGadgets: []
+  shootSound: {fileID: 8300000, guid: baaf6579e54675d47b3ebf0c5dabe8c9, type: 3}
   triggerGadgetsOnlyOnAiFire: 1
 --- !u!114 &11400002
 MonoBehaviour:

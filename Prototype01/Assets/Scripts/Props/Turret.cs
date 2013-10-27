@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Turret : AiControllable {
 	
+	public AudioClip shootSound;
+	
 	// If true, connected gadgets to the turret will only be triggered when the ai fires the turret, otherwise they will be triggered whenever the turret fires
 	public bool triggerGadgetsOnlyOnAiFire = true;
 	
@@ -50,6 +52,7 @@ public class Turret : AiControllable {
 	{	
 		if (fireTimer >= reloadTimer)
 		{
+			if (shootSound != null) AudioSource.PlayClipAtPoint(shootSound, transform.position);
 			Bullet.createBullet(transform.position, transform.eulerAngles.z);
 			fireTimer = 0f;	
 		}

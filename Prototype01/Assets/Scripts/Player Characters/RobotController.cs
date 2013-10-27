@@ -68,7 +68,25 @@ public class RobotController : AiControllable {
 		movement.UpdateMovement ();
 		
 		//Update sprite
-		if (movement.Velocity.x != 0)
+		if (movement.Velocity.y > 0 && movement.AttachedToLadder)
+		{
+			animations.Play (animations.Library.GetClipByName("Ladder_Climb_Up"));
+		}
+		else if (movement.Velocity.y < 0 && movement.AttachedToLadder)
+		{
+			animations.Play (animations.Library.GetClipByName("Ladder_Climb_Down"));
+		}
+		else if (movement.Velocity.y > 0)
+		{
+			if (animations.CurrentClip.name != "Jump_Start")
+				animations.Play (animations.Library.GetClipByName ("Jump_Start"));
+		}
+		else if (movement.Velocity.y < 0)
+		{
+			if (animations.CurrentClip.name != "Jump_End")
+				animations.Play (animations.Library.GetClipByName ("Jump_End"));
+		}
+		else if (movement.Velocity.x != 0)
 		{
 			if (movement.Velocity.x > 0) animations.Sprite.FlipX = false;
 			else animations.Sprite.FlipX = true;
@@ -77,14 +95,6 @@ public class RobotController : AiControllable {
 		else
 		{
 			animations.Play (animations.Library.GetClipByName("Idle"));
-		}
-		if (movement.Velocity.y > 0 && animations.CurrentClip.name != "Jump_Start")
-		{
-			animations.Play (animations.Library.GetClipByName ("Jump_Start"));
-		}
-		else if (movement.Velocity.y < 0)
-		{
-			animations.Play (animations.Library.GetClipByName ("Jump_End"));
 		}
 	}
 	

@@ -12,12 +12,14 @@ public class RobotMovement : MonoBehaviour {
 	public float jumpStrength;
 	public float gravityFactor;
 	public tk2dTileMap ladderMap;
+	public AudioClip jumpSound;
 	
 	private CharacterController moveController;
 	private Vector3 velocity = Vector3.zero;
 	public Vector3 Velocity { get { return velocity; } }
 	private bool jumped = false;
 	private bool attachedToLadder = false;
+	public bool AttachedToLadder { get { return attachedToLadder; } }
 	private bool nextToLadder;
 	private bool onPlatform = false;
 	public bool OnPlatform {set {onPlatform = value;}}
@@ -81,6 +83,8 @@ public class RobotMovement : MonoBehaviour {
 			if (moveController.isGrounded || attachedToLadder || onPlatform)
 			{
 				velocity += Vector3.up * jumpStrength;
+				if (jumpSound != null)
+					AudioSource.PlayClipAtPoint (jumpSound, transform.position);
 			}
 			jumped = true;
 		}
