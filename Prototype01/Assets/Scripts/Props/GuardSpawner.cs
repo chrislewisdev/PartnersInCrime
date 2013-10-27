@@ -49,6 +49,7 @@ public class GuardSpawner : Spawner {
 				_spawnTimer = 0f;
 				_spawnCounter++;
 				Instantiate(guardPrefab, new Vector3(transform.position.x, transform.position.y, 10f), Quaternion.identity);
+				Instantiate(Resources.Load("GuardSpawn") as GameObject, new Vector3(transform.position.x, transform.position.y, 9f), Quaternion.identity);
 				
 				if (_spawnCounter >= number)
 					_spawning = false;

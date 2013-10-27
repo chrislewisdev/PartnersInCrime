@@ -70,7 +70,7 @@ public class AiController : AiActor {
 			if (closestGadget)
 			{
 				selectionCircle.SetActive(true);
-				selectionCircle.transform.position = closestGadget.transform.position;
+				selectionCircle.transform.position = closestGadget.transform.position + new Vector3(0f, 0f, -1f);
 			}
 			else
 				selectionCircle.SetActive(false);	
@@ -102,7 +102,7 @@ public class AiController : AiActor {
 		if (closestGadget)
 		{
 			selectionCircle.SetActive(true);
-			selectionCircle.transform.position = closestGadget.transform.position;
+			selectionCircle.transform.position = closestGadget.transform.position + new Vector3(0f, 0f, -1f);
 			
 			if (Input.GetMouseButtonDown(0))
 			{

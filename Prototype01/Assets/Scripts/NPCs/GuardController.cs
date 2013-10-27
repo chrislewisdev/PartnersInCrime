@@ -54,6 +54,7 @@ public class GuardController : AiControllable {
 			if (isPossessed())
 				GameManager.gameManager.AI.occupiedGadgetDestroyed();
 			Destroy(gameObject);
+			Instantiate(Resources.Load("Explosion") as GameObject, transform.position, Quaternion.identity);
 		}
 	}
 	

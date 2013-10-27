@@ -21,7 +21,7 @@ public class GuardMovement : MonoBehaviour {
 		moveController = GetComponent<CharacterController>();
 		ladderMap = GameManager.gameManager.ladderMap;
 		if (ladderMap == null)
-			Debug.LogError("ladder map was not set for " + gameObject.name);
+			Debug.LogError("ladder map was not set for " + gameObject.name + " in gameManager");
 	}
 	
 	// Update is called once per frame
