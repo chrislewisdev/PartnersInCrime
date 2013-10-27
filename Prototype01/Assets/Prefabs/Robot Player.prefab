@@ -17,6 +17,7 @@ GameObject:
   - 114: {fileID: 11400006}
   - 114: {fileID: 11400008}
   - 114: {fileID: 11400010}
+  - 114: {fileID: 11400012}
   m_Layer: 9
   m_Name: Robot Player
   m_TagString: Player
@@ -145,6 +146,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundName: Step
   sound: {fileID: 8300000, guid: 56d0b5a3020dff4489631a8965ecbe93, type: 3}
+--- !u!114 &11400012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 457f0d3937f2bad4e8a069ca2aa5d44c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: Ladder_Rung
+  sound: {fileID: 8300000, guid: 3aa4a30940a9c464a970adc9f0cb77f1, type: 3}
 --- !u!143 &14300000
 CharacterController:
   m_ObjectHideFlags: 1

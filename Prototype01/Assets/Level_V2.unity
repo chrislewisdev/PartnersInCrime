@@ -1312,6 +1312,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerGadgets: []
   closeTime: 1.5
+  closeSound: {fileID: 8300000, guid: d51405986e1670546af54fc7db6c7ce7, type: 3}
+  openSound: {fileID: 8300000, guid: e312f4c9c506cd642aed9603669312cf, type: 3}
   triggerGadgetsOnlyOnAiOpen: 1
 --- !u!65 &62986068
 BoxCollider:
@@ -1795,7 +1797,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 42941e9eb3969d2468c80f7514494e7c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 42941e9eb3969d2468c80f7514494e7c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -2043,7 +2045,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 42941e9eb3969d2468c80f7514494e7c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 42941e9eb3969d2468c80f7514494e7c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -2642,7 +2644,7 @@ Transform:
   m_PrefabInternal: {fileID: 227189583}
   m_GameObject: {fileID: 184690529}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 135.952209, y: 115.431992, z: 10}
+  m_LocalPosition: {x: 135.952209, y: 115.431992, z: 11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2739,7 +2741,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 42941e9eb3969d2468c80f7514494e7c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 42941e9eb3969d2468c80f7514494e7c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3079,7 +3081,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 42941e9eb3969d2468c80f7514494e7c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 42941e9eb3969d2468c80f7514494e7c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3343,6 +3345,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerGadgets: []
   closeTime: 1.5
+  closeSound: {fileID: 8300000, guid: d51405986e1670546af54fc7db6c7ce7, type: 3}
+  openSound: {fileID: 8300000, guid: e312f4c9c506cd642aed9603669312cf, type: 3}
   triggerGadgetsOnlyOnAiOpen: 1
 --- !u!65 &272019006
 BoxCollider:
@@ -3400,6 +3404,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerGadgets: []
   closeTime: 1.5
+  closeSound: {fileID: 8300000, guid: d51405986e1670546af54fc7db6c7ce7, type: 3}
+  openSound: {fileID: 8300000, guid: e312f4c9c506cd642aed9603669312cf, type: 3}
   triggerGadgetsOnlyOnAiOpen: 1
 --- !u!65 &277148181
 BoxCollider:
@@ -3953,7 +3959,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 42941e9eb3969d2468c80f7514494e7c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 42941e9eb3969d2468c80f7514494e7c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -6745,7 +6751,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 42941e9eb3969d2468c80f7514494e7c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 42941e9eb3969d2468c80f7514494e7c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -7342,6 +7348,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerGadgets: []
   closeTime: 1.5
+  closeSound: {fileID: 8300000, guid: d51405986e1670546af54fc7db6c7ce7, type: 3}
+  openSound: {fileID: 8300000, guid: e312f4c9c506cd642aed9603669312cf, type: 3}
   triggerGadgetsOnlyOnAiOpen: 1
 --- !u!65 &562462453
 BoxCollider:
@@ -7694,6 +7702,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerGadgets: []
   closeTime: 1.5
+  closeSound: {fileID: 8300000, guid: d51405986e1670546af54fc7db6c7ce7, type: 3}
+  openSound: {fileID: 8300000, guid: e312f4c9c506cd642aed9603669312cf, type: 3}
   triggerGadgetsOnlyOnAiOpen: 1
 --- !u!65 &566097630
 BoxCollider:
@@ -8352,7 +8362,7 @@ Transform:
   m_PrefabInternal: {fileID: 1016207115}
   m_GameObject: {fileID: 618380034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 56.7669907, y: 57.8654099, z: 10}
+  m_LocalPosition: {x: 56.7669907, y: 57.8654099, z: 11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8429,7 +8439,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 42941e9eb3969d2468c80f7514494e7c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 42941e9eb3969d2468c80f7514494e7c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -8604,7 +8614,7 @@ Transform:
   m_PrefabInternal: {fileID: 307946909}
   m_GameObject: {fileID: 621951113}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 171.778366, y: 93.0152817, z: 10}
+  m_LocalPosition: {x: 171.778366, y: 93.0152817, z: 11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -9767,6 +9777,14 @@ Prefab:
       propertyPath: ladderMap
       value: 
       objectReference: {fileID: 1771943409}
+    - target: {fileID: 11400000, guid: cfccf8f9ed08cd4458ee4456664e5764, type: 2}
+      propertyPath: nativeResolutionWidth
+      value: 1366
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: cfccf8f9ed08cd4458ee4456664e5764, type: 2}
+      propertyPath: nativeResolutionHeight
+      value: 768
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cfccf8f9ed08cd4458ee4456664e5764, type: 2}
   m_RootGameObject: {fileID: 1383098479}
@@ -10040,6 +10058,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerGadgets: []
   closeTime: 1.5
+  closeSound: {fileID: 0}
+  openSound: {fileID: 0}
   triggerGadgetsOnlyOnAiOpen: 1
 --- !u!65 &733934132
 BoxCollider:
@@ -11118,6 +11138,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerGadgets: []
   closeTime: 1.5
+  closeSound: {fileID: 0}
+  openSound: {fileID: 0}
   triggerGadgetsOnlyOnAiOpen: 1
 --- !u!65 &776775304
 BoxCollider:
@@ -11349,6 +11371,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerGadgets: []
   closeTime: 1.5
+  closeSound: {fileID: 8300000, guid: d51405986e1670546af54fc7db6c7ce7, type: 3}
+  openSound: {fileID: 8300000, guid: e312f4c9c506cd642aed9603669312cf, type: 3}
   triggerGadgetsOnlyOnAiOpen: 1
 --- !u!65 &811410252
 BoxCollider:
@@ -12388,7 +12412,7 @@ Transform:
   m_PrefabInternal: {fileID: 1940828323}
   m_GameObject: {fileID: 884582932}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 236.678619, y: 93.0596542, z: 10}
+  m_LocalPosition: {x: 236.678619, y: 93.0596542, z: 11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -13076,6 +13100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerGadgets: []
+  shootSound: {fileID: 8300000, guid: baaf6579e54675d47b3ebf0c5dabe8c9, type: 3}
   triggerGadgetsOnlyOnAiFire: 1
 --- !u!65 &916568025
 BoxCollider:
@@ -13287,11 +13312,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 090733a3cc5f53e46b5f3552d4903acd, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 16.7739029
+      value: 306.759003
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 090733a3cc5f53e46b5f3552d4903acd, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 119.500946
+      value: 118.731514
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 090733a3cc5f53e46b5f3552d4903acd, type: 2}
       propertyPath: m_LocalPosition.z
@@ -13351,7 +13376,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 090733a3cc5f53e46b5f3552d4903acd, type: 2}
       propertyPath: playAutomatically
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 090733a3cc5f53e46b5f3552d4903acd, type: 2}
@@ -13549,6 +13574,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerGadgets: []
   closeTime: 1.5
+  closeSound: {fileID: 0}
+  openSound: {fileID: 0}
   triggerGadgetsOnlyOnAiOpen: 1
 --- !u!65 &949637043
 BoxCollider:
@@ -14394,7 +14421,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 42941e9eb3969d2468c80f7514494e7c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 42941e9eb3969d2468c80f7514494e7c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -14479,6 +14506,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerGadgets: []
   closeTime: 1.5
+  closeSound: {fileID: 8300000, guid: d51405986e1670546af54fc7db6c7ce7, type: 3}
+  openSound: {fileID: 8300000, guid: e312f4c9c506cd642aed9603669312cf, type: 3}
   triggerGadgetsOnlyOnAiOpen: 1
 --- !u!65 &1037273710
 BoxCollider:
@@ -15285,6 +15314,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerGadgets: []
   closeTime: 1.5
+  closeSound: {fileID: 8300000, guid: d51405986e1670546af54fc7db6c7ce7, type: 3}
+  openSound: {fileID: 8300000, guid: e312f4c9c506cd642aed9603669312cf, type: 3}
   triggerGadgetsOnlyOnAiOpen: 1
 --- !u!65 &1096529740
 BoxCollider:
@@ -15342,6 +15373,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerGadgets: []
   closeTime: 1.5
+  closeSound: {fileID: 0}
+  openSound: {fileID: 0}
   triggerGadgetsOnlyOnAiOpen: 1
 --- !u!65 &1099768715
 BoxCollider:
@@ -15826,7 +15859,7 @@ Transform:
   m_PrefabInternal: {fileID: 1299710649}
   m_GameObject: {fileID: 1139257659}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 81.1925201, y: 118.714912, z: 10}
+  m_LocalPosition: {x: 81.1925201, y: 118.714912, z: 11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -16074,7 +16107,7 @@ Transform:
   m_PrefabInternal: {fileID: 154698393}
   m_GameObject: {fileID: 1160028781}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 91.1404953, y: 93.3327255, z: 10}
+  m_LocalPosition: {x: 91.1404953, y: 93.3327255, z: 11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -16266,7 +16299,7 @@ Transform:
   m_PrefabInternal: {fileID: 199331037}
   m_GameObject: {fileID: 1169961637}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 110.59523, y: 61.1589775, z: 10}
+  m_LocalPosition: {x: 110.59523, y: 61.1589775, z: 11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -18242,6 +18275,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerGadgets: []
   closeTime: 1.5
+  closeSound: {fileID: 8300000, guid: d51405986e1670546af54fc7db6c7ce7, type: 3}
+  openSound: {fileID: 8300000, guid: e312f4c9c506cd642aed9603669312cf, type: 3}
   triggerGadgetsOnlyOnAiOpen: 1
 --- !u!65 &1255965823
 BoxCollider:
@@ -19125,7 +19160,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 42941e9eb3969d2468c80f7514494e7c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 42941e9eb3969d2468c80f7514494e7c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -19772,6 +19807,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerGadgets: []
   closeTime: 1.5
+  closeSound: {fileID: 8300000, guid: d51405986e1670546af54fc7db6c7ce7, type: 3}
+  openSound: {fileID: 8300000, guid: e312f4c9c506cd642aed9603669312cf, type: 3}
   triggerGadgetsOnlyOnAiOpen: 1
 --- !u!65 &1344632688
 BoxCollider:
@@ -20733,6 +20770,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerGadgets: []
   closeTime: 1.5
+  closeSound: {fileID: 8300000, guid: d51405986e1670546af54fc7db6c7ce7, type: 3}
+  openSound: {fileID: 8300000, guid: e312f4c9c506cd642aed9603669312cf, type: 3}
   triggerGadgetsOnlyOnAiOpen: 1
 --- !u!65 &1376880643
 BoxCollider:
@@ -20774,7 +20813,6 @@ GameObject:
   - 114: {fileID: 1383098480}
   - 114: {fileID: 1383098487}
   - 81: {fileID: 1383098488}
-  - 114: {fileID: 1383098486}
   - 82: {fileID: 1383098489}
   m_Layer: 0
   m_Name: Camera
@@ -20861,8 +20899,8 @@ MonoBehaviour:
     autoScaleMode: 3
     fitMode: 1
   inheritSettings: {fileID: 0}
-  nativeResolutionWidth: 960
-  nativeResolutionHeight: 640
+  nativeResolutionWidth: 1366
+  nativeResolutionHeight: 768
   _unityCamera: {fileID: 1383098484}
   viewportClippingEnabled: 0
   viewportRegion: {x: 0, y: 0, z: 100, w: 100}
@@ -20909,19 +20947,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!114 &1383098486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1383098479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0aa99cf7cf6d1e04b83a4d7c57c117c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ladderMap: {fileID: 1771943409}
-  alarmTriggered: 0
 --- !u!114 &1383098487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20956,7 +20981,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: .100000001
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Priority: 128
   DopplerLevel: 1
@@ -21166,7 +21191,7 @@ Transform:
   m_PrefabInternal: {fileID: 119411011}
   m_GameObject: {fileID: 1410836311}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 123.840454, y: 89.9226456, z: 10}
+  m_LocalPosition: {x: 123.840454, y: 89.9226456, z: 11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -21187,7 +21212,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 42941e9eb3969d2468c80f7514494e7c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 42941e9eb3969d2468c80f7514494e7c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -21382,6 +21407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerGadgets: []
+  shootSound: {fileID: 8300000, guid: baaf6579e54675d47b3ebf0c5dabe8c9, type: 3}
   triggerGadgetsOnlyOnAiFire: 1
 --- !u!65 &1441403099
 BoxCollider:
@@ -21618,7 +21644,7 @@ Transform:
   m_PrefabInternal: {fileID: 491945412}
   m_GameObject: {fileID: 1465731456}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 230.429184, y: 64.2196884, z: 10}
+  m_LocalPosition: {x: 230.429184, y: 64.2196884, z: 11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -21865,6 +21891,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerGadgets: []
   closeTime: 1.5
+  closeSound: {fileID: 8300000, guid: d51405986e1670546af54fc7db6c7ce7, type: 3}
+  openSound: {fileID: 8300000, guid: e312f4c9c506cd642aed9603669312cf, type: 3}
   triggerGadgetsOnlyOnAiOpen: 1
 --- !u!65 &1488370362
 BoxCollider:
@@ -21934,6 +21962,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerGadgets: []
   closeTime: 1.5
+  closeSound: {fileID: 8300000, guid: d51405986e1670546af54fc7db6c7ce7, type: 3}
+  openSound: {fileID: 8300000, guid: e312f4c9c506cd642aed9603669312cf, type: 3}
   triggerGadgetsOnlyOnAiOpen: 1
 --- !u!65 &1490292715
 BoxCollider:
@@ -22870,6 +22900,7 @@ GameObject:
   - 114: {fileID: 1544863101}
   - 114: {fileID: 1544863102}
   - 114: {fileID: 1544863103}
+  - 114: {fileID: 1544863104}
   m_Layer: 9
   m_Name: Robot Player
   m_TagString: Player
@@ -22884,7 +22915,7 @@ Transform:
   m_PrefabInternal: {fileID: 923332160}
   m_GameObject: {fileID: 1544863094}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.7739029, y: 119.500946, z: 10}
+  m_LocalPosition: {x: 306.759003, y: 118.731514, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -22979,6 +23010,7 @@ MonoBehaviour:
   jumpStrength: 25
   gravityFactor: 2
   ladderMap: {fileID: 1771943409}
+  jumpSound: {fileID: 8300000, guid: c38454a72eac18948945a0ebffb72abc, type: 3}
 --- !u!114 &1544863102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23005,6 +23037,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundName: Step
   sound: {fileID: 8300000, guid: 56d0b5a3020dff4489631a8965ecbe93, type: 3}
+--- !u!114 &1544863104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400012, guid: 090733a3cc5f53e46b5f3552d4903acd,
+    type: 2}
+  m_PrefabInternal: {fileID: 923332160}
+  m_GameObject: {fileID: 1544863094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 457f0d3937f2bad4e8a069ca2aa5d44c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: Ladder_Rung
+  sound: {fileID: 8300000, guid: 3aa4a30940a9c464a970adc9f0cb77f1, type: 3}
 --- !u!1 &1565657878
 GameObject:
   m_ObjectHideFlags: 0
@@ -26050,7 +26096,7 @@ Transform:
   m_PrefabInternal: {fileID: 618587549}
   m_GameObject: {fileID: 1772069477}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 37.2507629, y: 118.648743, z: 10}
+  m_LocalPosition: {x: 37.2507629, y: 118.648743, z: 11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -28057,7 +28103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   library: {fileID: 11400000, guid: d7bee5efc95681d4db60de448ea4219b, type: 2}
   defaultClipId: 0
-  playAutomatically: 0
+  playAutomatically: 1
 --- !u!1 &1916563768
 GameObject:
   m_ObjectHideFlags: 0
@@ -28533,6 +28579,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerGadgets: []
   closeTime: 1.5
+  closeSound: {fileID: 8300000, guid: d51405986e1670546af54fc7db6c7ce7, type: 3}
+  openSound: {fileID: 8300000, guid: e312f4c9c506cd642aed9603669312cf, type: 3}
   triggerGadgetsOnlyOnAiOpen: 1
 --- !u!65 &1932169001
 BoxCollider:
@@ -28616,7 +28664,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 42941e9eb3969d2468c80f7514494e7c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 42941e9eb3969d2468c80f7514494e7c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -28883,6 +28931,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerGadgets: []
+  shootSound: {fileID: 8300000, guid: baaf6579e54675d47b3ebf0c5dabe8c9, type: 3}
   triggerGadgetsOnlyOnAiFire: 1
 --- !u!65 &1963768645
 BoxCollider:
@@ -29754,7 +29803,7 @@ Transform:
   m_PrefabInternal: {fileID: 1413053747}
   m_GameObject: {fileID: 2000714238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 142.41954, y: 61.0923958, z: 10}
+  m_LocalPosition: {x: 142.41954, y: 61.0923958, z: 11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -30405,6 +30454,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerGadgets: []
   closeTime: 1.5
+  closeSound: {fileID: 8300000, guid: d51405986e1670546af54fc7db6c7ce7, type: 3}
+  openSound: {fileID: 8300000, guid: e312f4c9c506cd642aed9603669312cf, type: 3}
   triggerGadgetsOnlyOnAiOpen: 1
 --- !u!65 &2074594138
 BoxCollider:
