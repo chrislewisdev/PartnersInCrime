@@ -5,6 +5,7 @@ using System.Collections;
 public class RobotController : AiControllable {
 	
 	private tk2dSpriteAnimator animations;
+	private float health = 10f;
 	private float timeSinceLastHit = 5f;
 	private RobotMovement movement;
 	private bool poweredUp = false;
@@ -47,7 +48,9 @@ public class RobotController : AiControllable {
 	
 	public void Damage()
 	{
-		if (timeSinceLastHit < 5f && !destroyed)
+		health -= 1f;
+		
+		if (health < 0f && !destroyed)
 		{
 			//Application.LoadLevel (Application.loadedLevelName);
 			Instantiate(Resources.Load("Destroyed") as GameObject);
@@ -58,8 +61,8 @@ public class RobotController : AiControllable {
 		}
 		else
 		{
-			timeSinceLastHit = 0f;
 			Flash (Color.red);
+			timeSinceLastHit = 0f;
 		}
 	}
 	
@@ -74,8 +77,9 @@ public class RobotController : AiControllable {
 		if (Input.GetButtonDown("Attack"))
 			attack();
 
-			
-		if (timeSinceLastHit < 6f) timeSinceLastHit += Time.deltaTime;
+		timeSinceLastHit += Time.deltaTime;
+		
+		if (health < 10f && timeSinceLastHit < 3f) health += Time.deltaTime * 2f;
 		
 		movement.UpdateMovement ();
 		

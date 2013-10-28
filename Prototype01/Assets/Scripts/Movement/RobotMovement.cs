@@ -103,7 +103,7 @@ public class RobotMovement : MonoBehaviour {
 			}
 		}
 		
-		PerformMove ();
+		PerformMove();
 	}
 	
 	//Performs the actual Character Controller move and update some of our velocity according to the returned

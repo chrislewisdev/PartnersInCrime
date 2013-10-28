@@ -45,7 +45,6 @@ public class ShootReactionMethod : ReactionMethod {
 			{
 				//Bullet.createBullet (transform.position, GameManager.gameManager.Robot.transform.position - transform.position);
 				//Debug.Break ();
-				GameManager.gameManager.Robot.Damage();
 				if (shootSound != null) 
 					AudioSource.PlayClipAtPoint (shootSound, transform.position);
 				shotTimer = shotDelay;

@@ -39,6 +39,13 @@ public class GameManager : MonoBehaviour {
 		spawners.Add(spawner);
 	}
 	
+	// Changes the current camera controller
+	public void changeCameraController(string name)
+	{
+		Destroy(GetComponent<ICameraController>());
+		gameObject.AddComponent(name);
+	}
+	
 	void Awake()
 	{
 		DontDestroyOnLoad(gameObject);

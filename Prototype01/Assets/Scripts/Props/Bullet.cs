@@ -5,7 +5,6 @@ using System.Collections;
 public class Bullet : MonoBehaviour {
 	
 	private static float ACCURACY = 2.5f;
-	private static float HIT_CHANCE = 0.2f;
 	private static GameObject bulletPrefab = Resources.Load("bullet") as GameObject;
 	private float disappearTimer = .05f;
 	
@@ -34,7 +33,7 @@ public class Bullet : MonoBehaviour {
 		if (Physics.Raycast(new Ray(transform.position, direction), out hit))
 		{
 			RobotController robot = hit.collider.GetComponent<RobotController>();
-			if (robot != null && Random.Range(0f, 1.0f) < HIT_CHANCE)
+			if (robot != null)
 				robot.Damage();
 			
 			GuardController guard = hit.collider.GetComponent<GuardController>();

@@ -10,6 +10,7 @@ public class Turret : AiControllable {
 	
 	private static float reloadTimer = .1f;
 	private float fireTimer = 0f;
+	private GameObject controllerButton;
 	
 	public override void activateGadget (bool triggeredByAi)
 	{
@@ -42,10 +43,16 @@ public class Turret : AiControllable {
 	
 	public override void aiArrived ()
 	{
+		controllerButton = Instantiate(Resources.Load("X Button") as GameObject, transform.position + new Vector3(0f, 2f, -1f), Quaternion.identity) as GameObject;
 	}
 	
 	public override void aiLeft ()
 	{
+		if (controllerButton)
+		{
+			Destroy(controllerButton);
+			controllerButton = null;
+		}	
 	}
 	
 	private void fireTurret()
