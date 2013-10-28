@@ -7,7 +7,7 @@ public class RobotController : AiControllable {
 	private tk2dSpriteAnimator animations;
 	private float timeSinceLastHit = 5f;
 	private RobotMovement movement;
-	private bool poweredUp = true;
+	private bool poweredUp = false;
 	
 	public override void aiSendDirection (Vector2 direction)
 	{
@@ -58,8 +58,8 @@ public class RobotController : AiControllable {
 	// Update is called once per frame
 	void Update () 
 	{
-		if (Input.GetButtonDown("Attack"))
-			attack();
+		/*if (Input.GetButtonDown("Attack"))
+			attack();*/
 
 
 			
