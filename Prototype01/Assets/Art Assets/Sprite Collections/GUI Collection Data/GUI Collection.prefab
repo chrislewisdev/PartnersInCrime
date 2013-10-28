@@ -42,36 +42,36 @@ MonoBehaviour:
   materialIdsValid: 1
   needMaterialInstance: 0
   spriteDefinitions:
-  - name: 
+  - name: Destroyed
     boundsData:
-    - {x: 1.9375, y: -1.9375, z: 0}
-    - {x: 4, y: 4, z: 0}
+    - {x: -4.76837158e-07, y: .0312498808, z: 0}
+    - {x: 30.25, y: 7.4375, z: 0}
     untrimmedBoundsData:
-    - {x: 1.9375, y: -1.9375, z: 0}
-    - {x: 4, y: 4, z: 0}
+    - {x: .03125, y: 0, z: 0}
+    - {x: 30.5625, y: 7.875, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.0625, y: -3.9375, z: 0}
-    - {x: 3.9375, y: -3.9375, z: 0}
-    - {x: -.0625, y: .0625, z: 0}
-    - {x: 3.9375, y: .0625, z: 0}
+    - {x: -15.125, y: -3.6875, z: 0}
+    - {x: 15.124999, y: -3.6875, z: 0}
+    - {x: -15.125, y: 3.74999976, z: 0}
+    - {x: 15.124999, y: 3.74999976, z: 0}
     normals: []
     tangents: []
     uvs:
-    - {x: .859390616, y: .500007808}
-    - {x: .890609384, y: .500007808}
-    - {x: .859390616, y: .515617192}
-    - {x: .890609384, y: .515617192}
+    - {x: .00781640597, y: .00390820298}
+    - {x: .00781640597, y: .949216783}
+    - {x: .472652346, y: .00390820298}
+    - {x: .472652346, y: .949216783}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 2d7423eba20baad4992b984924171843, type: 2}
     materialId: 0
-    sourceTextureGUID: 
+    sourceTextureGUID: c104458d4ddac6f47981286ab74099e0
     extractRegion: 0
     regionX: 0
     regionY: 0
     regionW: 0
     regionH: 0
-    flipped: 0
+    flipped: 1
     complexGeometry: 0
     colliderType: 0
     colliderVertices: []
@@ -96,10 +96,10 @@ MonoBehaviour:
     normals: []
     tangents: []
     uvs:
-    - {x: .0312656239, y: .500007808}
-    - {x: .0312656239, y: .710929692}
-    - {x: .796859384, y: .500007808}
-    - {x: .796859384, y: .710929692}
+    - {x: .734378934, y: .00390820298}
+    - {x: .734378934, y: .0566386729}
+    - {x: .925777316, y: .00390820298}
+    - {x: .925777316, y: .0566386729}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 2d7423eba20baad4992b984924171843, type: 2}
     materialId: 0
@@ -134,10 +134,10 @@ MonoBehaviour:
     normals: []
     tangents: []
     uvs:
-    - {x: .0312656239, y: .0156328119}
-    - {x: .953109384, y: .0156328119}
-    - {x: .0312656239, y: .468742192}
-    - {x: .953109384, y: .468742192}
+    - {x: .488285154, y: .00390820298}
+    - {x: .718746066, y: .00390820298}
+    - {x: .488285154, y: .117185548}
+    - {x: .718746066, y: .117185548}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 2d7423eba20baad4992b984924171843, type: 2}
     materialId: 0
@@ -169,7 +169,7 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: .0500000007
   halfTargetHeight: 320
-  buildKey: 521581132
+  buildKey: 437963874
   dataGuid: 71f5123ee30b16a4fbaee849199395af
   managedSpriteCollection: 0
   hasPlatformData: 0

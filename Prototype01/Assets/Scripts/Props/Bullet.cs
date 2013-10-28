@@ -45,6 +45,8 @@ public class Bullet : MonoBehaviour {
 			lineRenderer.SetVertexCount(2);
 			lineRenderer.SetPosition(0, transform.position);
 			lineRenderer.SetPosition(1, hit.point);
+			
+			Instantiate(Resources.Load("Sparks") as GameObject, hit.point, Quaternion.identity);
 		}
 	}
 	

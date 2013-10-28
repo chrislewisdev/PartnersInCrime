@@ -8,6 +8,9 @@ public class RobotController : AiControllable {
 	private float timeSinceLastHit = 5f;
 	private RobotMovement movement;
 	private bool poweredUp = false;
+	private float runTimer = 0f;
+	private ParticleSystem smokeParticles;
+	private bool destroyed = false;
 	
 	public override void aiSendDirection (Vector2 direction)
 	{
@@ -35,13 +38,23 @@ public class RobotController : AiControllable {
 	void Start () {
 		animations = GetComponent<tk2dSpriteAnimator>();
 		movement = GetComponent<RobotMovement>();
+		smokeParticles = transform.GetChild(0).GetComponent<ParticleSystem>();
+		if (!smokeParticles)
+			Debug.LogError("Robot does not have smoke particles as a child");
+		else
+			smokeParticles.enableEmission = false;
 	}
 	
 	public void Damage()
 	{
-		if (timeSinceLastHit < 5f)
+		if (timeSinceLastHit < 5f && !destroyed)
 		{
-			Application.LoadLevel (Application.loadedLevelName);
+			//Application.LoadLevel (Application.loadedLevelName);
+			Instantiate(Resources.Load("Destroyed") as GameObject);
+			Instantiate(Resources.Load("Explosion") as GameObject, transform.position, Quaternion.identity);
+			renderer.enabled = false;
+			GetComponent<CharacterController>().enabled = false;
+			destroyed = true;
 		}
 		else
 		{
@@ -58,9 +71,8 @@ public class RobotController : AiControllable {
 	// Update is called once per frame
 	void Update () 
 	{
-		/*if (Input.GetButtonDown("Attack"))
-			attack();*/
-
+		if (Input.GetButtonDown("Attack"))
+			attack();
 
 			
 		if (timeSinceLastHit < 6f) timeSinceLastHit += Time.deltaTime;
@@ -95,6 +107,17 @@ public class RobotController : AiControllable {
 		else
 		{
 			animations.Play (animations.Library.GetClipByName("Idle"));
+		}
+		
+		// Smoke particle effect when running
+		if (smokeParticles)
+		{
+			if (animations.CurrentClip.name == "Run")
+			{
+				smokeParticles.enableEmission = true;
+			}
+			else
+				smokeParticles.enableEmission = false;
 		}
 	}
 	

@@ -11,7 +11,8 @@ public class GameManager : MonoBehaviour {
 	public RobotController Robot { get { return robotPlayer; } }
 	private AiController aiPlayer;
 	public AiController AI { get { return aiPlayer; } }
-	public tk2dTileMap ladderMap;
+	private tk2dTileMap laddermap;
+	public tk2dTileMap ladderMap { get {return laddermap; } }
 	
 	private List<Spawner> spawners = new List<Spawner>();
 	public bool alarmTriggered;
@@ -71,6 +72,9 @@ public class GameManager : MonoBehaviour {
 		robotPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<RobotController>();
 		aiPlayer = GameObject.FindGameObjectWithTag("AI_Player").GetComponent<AiController>();
 		alarmTriggered = false;
+		laddermap = GameObject.Find("LadderMap").GetComponent<tk2dTileMap>();
+		if (!laddermap)
+			Debug.LogError("Could not find ladder map, make sure ladder map is called 'LadderMap'");
 	}
 	
 	/*void OnDestroy()

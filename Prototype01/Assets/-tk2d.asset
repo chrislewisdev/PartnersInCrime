@@ -779,17 +779,17 @@ MonoBehaviour:
     spriteCollectionGUID: 80f96c74bdc006d49b16f3a0381d3f07
     spriteCollectionDataGUID: 71f5123ee30b16a4fbaee849199395af
     spriteNames:
-    - 
+    - Destroyed
     - up-down-arrows
     - x-button
     spriteTextureGUIDs:
-    - 
+    - c104458d4ddac6f47981286ab74099e0
     - 54177c8aa9808b24091633bdc8b94375
     - 1b35eb3324975d64c85a4da607e4785a
     spriteTextureTimeStamps:
-    - 0
-    - 1382212205.79446
-    - 1382350531.54223
+    - 1382971963.1281
+    - 1381747094.51381
+    - 1382445909.75646
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
