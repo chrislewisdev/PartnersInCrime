@@ -22,6 +22,7 @@ public class GuardController : AiControllable {
 	private tk2dSpriteAnimator animations;
 	private SpriteEffects effects;
 	private int orientation = 1;
+	private const float bumpRange = 6f;
 	
 	public override void aiArrived ()
 	{
@@ -78,7 +79,7 @@ public class GuardController : AiControllable {
 		UpdateVisuals();
 		
 		if (sight.IsObjectInView (GameManager.gameManager.Robot.gameObject)
-			|| Vector3.Distance(transform.position, GameManager.gameManager.Robot.transform.position) < 7f)
+			|| Vector3.Distance(transform.position, GameManager.gameManager.Robot.transform.position) < bumpRange)
 		{
 			reaction.OnIntruderInSight();
 			//Try to turn to face the player
@@ -110,7 +111,7 @@ public class GuardController : AiControllable {
 			previousAlertness = Alertness.Suspicious;
 			//Don't move if intruder is still in sight
 			if (sight.IsObjectInView (GameManager.gameManager.Robot.gameObject)
-				|| Vector3.Distance(transform.position, GameManager.gameManager.Robot.transform.position) < 7f) 
+				|| Vector3.Distance(transform.position, GameManager.gameManager.Robot.transform.position) < bumpRange) 
 				return;
 		}
 		else if (alertness == Alertness.Normal)
