@@ -6,7 +6,7 @@ Shader "2DVLS/Light" {
        Lighting Off
        ZWrite Off
        //Tags { "Queue" = "Geometry-10" }
-       Blend One One
+       Blend SrcColor One
        BindChannels {
               Bind "Color", color
               Bind "Vertex", vertex
@@ -15,10 +15,10 @@ Shader "2DVLS/Light" {
        SubShader 
 	   {
             Pass 
-			{
+			{   
                SetTexture [_MainTex] 
 			   {
-                    Combine texture * primary //, texture * primary
+                    Combine texture + primary//, texture * primary  
                }
             }
         } 

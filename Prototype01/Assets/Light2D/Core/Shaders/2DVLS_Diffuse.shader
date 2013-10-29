@@ -2,13 +2,14 @@ Shader "2DVLS/Diffuse" {
     Properties
     {
         _MainTex ("Base (RGB) Trans. (Alpha)", 2D) = "white" { }
+        _Color("Main Color", Color) = (.5,.5,.5,0)
     }
 
     Category
     {
         //ZWrite On
         Cull Off
-        Lighting Off
+        Lighting On
 
         SubShader
         {
@@ -18,13 +19,13 @@ Shader "2DVLS/Diffuse" {
 			}
 
             Pass
-            {
-           		Blend DstColor DstAlpha
-
-                SetTexture [_MainTex] 
-				{ 
-                	combine texture
-                }             
+            {    		
+				blend SrcColor DstColor				
+				SetTexture [_MainTex]
+				{
+					combine texture + primary
+				}
+                                       
             }
         } 
     }
