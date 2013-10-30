@@ -9,7 +9,7 @@ Shader "2DVLS/Diffuse" {
     {
         //ZWrite On
         Cull Off
-        Lighting On
+        Lighting Off
 
         SubShader
         {
