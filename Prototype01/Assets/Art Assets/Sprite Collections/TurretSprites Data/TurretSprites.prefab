@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: TurretSprites
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67a65bd6ac06df547bd4e8847d3c9006, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: new_turret/0
+    boundsData:
+    - {x: -1.74999988, y: 0, z: 0}
+    - {x: 4.625, y: 4.375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 8.125, y: 4.375, z: 0}
+    texelSize: {x: .0625, y: .0625}
+    positions:
+    - {x: -4.0625, y: -2.1875, z: 0}
+    - {x: .562500238, y: -2.1875, z: 0}
+    - {x: -4.0625, y: 2.1875, z: 0}
+    - {x: .562500238, y: 2.1875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .0156328119, y: .285160154}
+    - {x: .593742192, y: .285160154}
+    - {x: .0156328119, y: .558589816}
+    - {x: .593742192, y: .558589816}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 505ef497c0b3dd84dba1d6f7dc41bb7b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3c313c42cac393741ac6a7292b88b09b
+    extractRegion: 1
+    regionX: 0
+    regionY: 186
+    regionW: 130
+    regionH: 70
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: new_turret/1
+    boundsData:
+    - {x: 1, y: .09375, z: 0}
+    - {x: 6.125, y: 4.1875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 8.125, y: 4.375, z: 0}
+    texelSize: {x: .0625, y: .0625}
+    positions:
+    - {x: -2.0625, y: -2, z: 0}
+    - {x: 4.0625, y: -2, z: 0}
+    - {x: -2.0625, y: 2.1875, z: 0}
+    - {x: 4.0625, y: 2.1875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .0156328119, y: .00781640597}
+    - {x: .781242192, y: .00781640597}
+    - {x: .0156328119, y: .269527346}
+    - {x: .781242192, y: .269527346}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 505ef497c0b3dd84dba1d6f7dc41bb7b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3c313c42cac393741ac6a7292b88b09b
+    extractRegion: 1
+    regionX: 0
+    regionY: 116
+    regionW: 130
+    regionH: 70
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 505ef497c0b3dd84dba1d6f7dc41bb7b, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 1b3001ac3ad323f4fa954c04f27cdcf9, type: 3}
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: 43cb187b413e86d4381eeafa657278d3
+  spriteCollectionName: TurretSprites
+  assetName: 
+  loadable: 0
+  invOrthoSize: .0500000007
+  halfTargetHeight: 320
+  buildKey: 595132671
+  dataGuid: f70e1451ad9c7d846bb4ef5ca19cbc34
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

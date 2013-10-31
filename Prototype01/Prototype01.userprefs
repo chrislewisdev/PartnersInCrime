@@ -1,12 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player Characters\RobotController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\NPCs\GuardController.cs">
     <Files>
+      <File FileName="Assets\Scripts\NPCs\GuardController.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Props\Door.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\General\GameManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player Characters\RobotController.cs" Line="50" Column="42" />
-      <File FileName="Assets\Scripts\Movement\RobotMovement.cs" Line="39" Column="14" />
-      <File FileName="Assets\Scripts\General\Destroyed.cs" Line="19" Column="80" />
+      <File FileName="Assets\Scripts\Player Characters\RobotController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Movement\RobotMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\General\Destroyed.cs" Line="17" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -16,7 +17,6 @@
       <Breakpoint file="C:\Users\Simon\Swinburne\Year 3 Sem 2\Games Lab\PartnersInCrime\Prototype01\Assets\Scripts\Player Characters\RobotController.cs" line="95" />
       <Breakpoint file="C:\Users\Simon\Swinburne\Year 3 Sem 2\Games Lab\PartnersInCrime\Prototype01\Assets\Scripts\Props\Door.cs" line="90" />
       <Breakpoint file="C:\Users\Simon\Swinburne\Year 3 Sem 2\Games Lab\PartnersInCrime\Prototype01\Assets\Scripts\Props\Door.cs" line="20" />
-      <Breakpoint file="C:\Chris\Documents\Uni\2013\Games and Interactivity Lab 2\Prototype Development\Prototype01\Assets\Scripts\Player Characters\RobotController.cs" line="42" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
