@@ -9,6 +9,7 @@ public abstract class GadgetInterface : ActivatableGadget {
 	{
 		foreach (ActivatableGadget gadget in triggerGadgets)
 		{
+			if (gadget == null) continue;
 			AiControllable aiCont = gadget.GetComponent<AiControllable>();
 			if (aiCont != null)
 			{

@@ -83,6 +83,7 @@
      <Compile Include="Assets\Scripts\General\GameManager.cs" />
      <Compile Include="Assets\Scripts\General\ICameraController.cs" />
      <Compile Include="Assets\Scripts\General\Mathfx.cs" />
+     <Compile Include="Assets\Scripts\General\PositionMarker.cs" />
      <Compile Include="Assets\Scripts\General\Pulse.cs" />
      <Compile Include="Assets\Scripts\General\SpriteEffects.cs" />
      <Compile Include="Assets\Scripts\General\TimerLight.cs" />

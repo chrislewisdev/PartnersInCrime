@@ -53,10 +53,11 @@ public class RobotController : AiControllable {
 		if (health < 0f && !destroyed)
 		{
 			//Application.LoadLevel (Application.loadedLevelName);
+			animations.Play (animations.Library.GetClipByName ("Death"));
 			Instantiate(Resources.Load("Destroyed") as GameObject);
 			Instantiate(Resources.Load("Explosion") as GameObject, transform.position, Quaternion.identity);
-			renderer.enabled = false;
-			GetComponent<CharacterController>().enabled = false;
+			//renderer.enabled = false;
+			//GetComponent<CharacterController>().enabled = false;
 			destroyed = true;
 		}
 		else
@@ -74,6 +75,8 @@ public class RobotController : AiControllable {
 	// Update is called once per frame
 	void Update () 
 	{
+		if (destroyed) return;
+		
 		if (Input.GetButtonDown("Attack"))
 			attack();
 

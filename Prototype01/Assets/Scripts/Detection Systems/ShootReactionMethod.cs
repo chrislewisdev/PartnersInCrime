@@ -10,10 +10,12 @@ public class ShootReactionMethod : ReactionMethod {
 	private FieldOfView sight;
 	private float shotTimer = 0;
 	public float ShotTimer { get { return shotTimer; } }
+	private PositionMarker gunPosition;
 	
 	void Start()
 	{
-		sight = GetComponent<FieldOfView>();	
+		sight = GetComponent<FieldOfView>();
+		gunPosition = GetComponentInChildren<PositionMarker>();
 	}
 	
 	void Update()
@@ -43,13 +45,19 @@ public class ShootReactionMethod : ReactionMethod {
 		{
 			if (shotTimer <= 0) 
 			{
-				//Bullet.createBullet (transform.position, GameManager.gameManager.Robot.transform.position - transform.position);
-				//Debug.Break ();
 				if (shootSound != null) 
 					AudioSource.PlayClipAtPoint (shootSound, transform.position);
 				shotTimer = shotDelay;
-				Vector3 direction = GameManager.gameManager.Robot.transform.position - transform.position;
-				Bullet.createBullet(transform.position, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg); 	
+				if (gunPosition == null)
+				{
+					Vector3 direction = GameManager.gameManager.Robot.transform.position - transform.position;
+					Bullet.createBullet(transform.position, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg);
+				}
+				else
+				{
+					Vector3 direction = GameManager.gameManager.Robot.transform.position - gunPosition.transform.position;
+					Bullet.createBullet(gunPosition.transform.position, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg);
+				}
 			}
 		}
 	}

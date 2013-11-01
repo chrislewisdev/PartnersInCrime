@@ -23,6 +23,7 @@ public class GuardController : AiControllable {
 	private SpriteEffects effects;
 	private int orientation = 1;
 	private const float bumpRange = 6f;
+	private bool destroyed = false;
 	
 	public override void aiArrived ()
 	{
@@ -54,9 +55,16 @@ public class GuardController : AiControllable {
 		{
 			if (isPossessed())
 				GameManager.gameManager.AI.occupiedGadgetDestroyed();
-			Destroy(gameObject);
-			Instantiate(Resources.Load("Explosion") as GameObject, transform.position, Quaternion.identity);
+			animations.Play (animations.Library.GetClipByName("Death"));
+			Invoke ("Explode", 1.0f);
+			destroyed = true;
 		}
+	}
+	
+	private void Explode()
+	{
+		Destroy(gameObject);
+		Instantiate(Resources.Load("Explosion") as GameObject, transform.position, Quaternion.identity);
 	}
 	
 	// Use this for initialization
@@ -73,7 +81,7 @@ public class GuardController : AiControllable {
 	// Update is called once per frame
 	void Update () 
 	{
-		if (!isActive) // Do nothing if currently occupied by ai
+		if (!isActive || destroyed) // Do nothing if currently occupied by ai
 			return;
 		
 		UpdateVisuals();
@@ -94,20 +102,26 @@ public class GuardController : AiControllable {
 		if (alertness == Alertness.Aggressive)
 		{
 			reactionMethod.OnAggressive();
-			if (previousAlertness != Alertness.Aggressive && alertSound != null) 
+			if (previousAlertness != Alertness.Aggressive) 
 			{
-				AudioSource.PlayClipAtPoint(alertSound, transform.position);
+				if (alertSound != null) AudioSource.PlayClipAtPoint(alertSound, transform.position);
+				animations.Play (animations.Library.GetClipByName ("Shoot"));
 			}
 			activateConnectedGadgets();
 			previousAlertness = Alertness.Aggressive;
+			
 			//Return so we don't move
 			return;
 		}
 		else if (alertness == Alertness.Suspicious)
 		{
 			reactionMethod.OnSuspicious();
-			if (previousAlertness != Alertness.Suspicious && previousAlertness != Alertness.Aggressive && suspiciousSound != null) 
-				AudioSource.PlayClipAtPoint(suspiciousSound, transform.position);
+			if (previousAlertness != Alertness.Suspicious)
+			{
+				if (suspiciousSound != null && previousAlertness != Alertness.Aggressive) 
+					AudioSource.PlayClipAtPoint(suspiciousSound, transform.position);
+				animations.Play (animations.Library.GetClipByName ("Attack"));
+			}
 			previousAlertness = Alertness.Suspicious;
 			//Don't move if intruder is still in sight
 			if (sight.IsObjectInView (GameManager.gameManager.Robot.gameObject)
@@ -131,5 +145,10 @@ public class GuardController : AiControllable {
 		
 		if (orientation > 0) animations.Sprite.FlipX = true;
 		else if (orientation < 0) animations.Sprite.FlipX = false;
+		
+		if (alertness == Alertness.Normal && animations.CurrentClip.name != "Hover")
+		{
+			animations.Play (animations.Library.GetClipByName("Hover"));
+		}
 	}
 }
