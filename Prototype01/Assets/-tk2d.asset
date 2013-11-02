@@ -545,18 +545,21 @@ MonoBehaviour:
     - Security Cameras/2
     - Security Cameras/3
     - guardSpawner
+    - loot
     spriteTextureGUIDs:
     - ce2b669e8997cf34db659d6825670a7b
     - ce2b669e8997cf34db659d6825670a7b
     - ce2b669e8997cf34db659d6825670a7b
     - ce2b669e8997cf34db659d6825670a7b
     - 1ef1405ec48b95a438804dda14116a03
+    - 72c8a2ab7472fb04c9dac07896b979b0
     spriteTextureTimeStamps:
     - 1382212205.67146
     - 1382212205.67146
     - 1382212205.67146
     - 1382212205.67146
     - 1382701561.83929
+    - 1383440608.1155
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
@@ -863,14 +866,17 @@ MonoBehaviour:
     - Destroyed
     - up-down-arrows
     - x-button
+    - Success
     spriteTextureGUIDs:
     - c104458d4ddac6f47981286ab74099e0
     - 54177c8aa9808b24091633bdc8b94375
     - 1b35eb3324975d64c85a4da607e4785a
+    - 4f72d43ccc2c831478ec01ac62163fc0
     spriteTextureTimeStamps:
     - 1382986991.59277
     - 1382212205.79446
     - 1382350531.54223
+    - 1383441218.04738
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
