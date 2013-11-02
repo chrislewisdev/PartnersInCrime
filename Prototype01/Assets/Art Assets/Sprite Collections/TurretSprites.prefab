@@ -128,9 +128,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 3c313c42cac393741ac6a7292b88b09b, type: 3}
     materialId: 0
-    anchor: 4
-    anchorX: 0
-    anchorY: 0
+    anchor: 9
+    anchorX: 44
+    anchorY: 28
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -152,9 +152,9 @@ MonoBehaviour:
     regionW: 130
     regionH: 70
     regionId: 1
-    colliderType: 0
-    boxColliderMin: {x: 0, y: 0}
-    boxColliderMax: {x: 0, y: 0}
+    colliderType: 3
+    boxColliderMin: {x: 31, y: 29}
+    boxColliderMax: {x: 88, y: 70}
     polyColliderIslands: []
     polyColliderCap: 1
     colliderConvex: 0
