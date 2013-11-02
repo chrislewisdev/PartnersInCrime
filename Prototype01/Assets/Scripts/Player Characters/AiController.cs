@@ -6,7 +6,8 @@ public class AiController : AiActor {
 	
 	public bool debugControls = true;
 	public AudioClip transitionSound;
-	public float maxRange = 50.0f;
+	public float maxJumpRange = 50.0f;
+	public float maxRobotDistance = 100.0f;
 	
 	GameObject selectionCircle;
 	
@@ -162,11 +163,12 @@ public class AiController : AiActor {
 		
 		foreach (AiControllable g in gadgets)
 		{
-			if (g.gameObject != occupiedGadget)
+			if (g.gameObject != occupiedGadget && 
+				Vector3.Distance(g.gameObject.transform.position, GameManager.gameManager.Robot.transform.position) < maxRobotDistance)
 			{
 				RaycastHit hit;
 				Physics.Raycast(new Ray(transform.position, g.gameObject.transform.position - transform.position), out hit);
-				if ((hit.collider.gameObject == g.gameObject && Vector3.Distance(transform.position, g.gameObject.transform.position) < maxRange)
+				if ((hit.collider.gameObject == g.gameObject && Vector3.Distance(transform.position, g.gameObject.transform.position) < maxJumpRange)
 					|| Vector3.Distance(transform.position, g.transform.position) < 6.2f)
 					visibleObjects.Add(g.gameObject);
 			}
