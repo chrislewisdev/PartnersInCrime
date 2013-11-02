@@ -95,5 +95,16 @@ public class MovingPlatform : AiControllable
 		}
 		else
 			movement.OnPlatform = false;
+		
+		if (robot.transform.position.x > transform.position.x - collider.bounds.extents.x && 
+			robot.transform.position.x < transform.position.x + collider.bounds.extents.x)
+		{
+			if (robot.transform.position.y > transform.position.y &&
+				robot.transform.position.y < transform.position.y + robot.collider.bounds.extents.y + collider.bounds.extents.y + 0.4f)
+			{
+				robot.transform.position += new Vector3(lastMovement.x, 0f, 0f);
+				lastMovement = Vector3.zero;
+			}
+		}
 	}
 }
