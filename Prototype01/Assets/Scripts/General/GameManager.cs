@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour {
 	
 	void Awake()
 	{
-		DontDestroyOnLoad(gameObject);
+		//DontDestroyOnLoad(gameObject);
 		
 		// Check it doesn't already exist
 		GameObject[] cameras = GameObject.FindGameObjectsWithTag("MainCamera");

@@ -13,7 +13,7 @@ public class Destroyed : MonoBehaviour {
 		timer -= Time.deltaTime;
 		if (timer < 0f)
 		{
-			Application.LoadLevel (Application.loadedLevelName);
+			Application.LoadLevel ("Menu");
 		}
 		
 		GetComponent<tk2dSprite>().color = new Color(1f, 1f, 1f, Mathf.Lerp(0f, 1f, 3f - timer));

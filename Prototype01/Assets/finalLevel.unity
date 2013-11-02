@@ -27427,8 +27427,8 @@ MonoBehaviour:
     autoScaleMode: 3
     fitMode: 1
   inheritSettings: {fileID: 0}
-  nativeResolutionWidth: 960
-  nativeResolutionHeight: 640
+  nativeResolutionWidth: 1366
+  nativeResolutionHeight: 768
   _unityCamera: {fileID: 1383098484}
   viewportClippingEnabled: 0
   viewportRegion: {x: 0, y: 0, z: 100, w: 100}

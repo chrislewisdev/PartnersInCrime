@@ -124,8 +124,8 @@ MonoBehaviour:
     autoScaleMode: 3
     fitMode: 1
   inheritSettings: {fileID: 0}
-  nativeResolutionWidth: 960
-  nativeResolutionHeight: 640
+  nativeResolutionWidth: 1366
+  nativeResolutionHeight: 768
   _unityCamera: {fileID: 2000000}
   viewportClippingEnabled: 0
   viewportRegion: {x: 0, y: 0, z: 100, w: 100}
@@ -154,7 +154,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa99cf7cf6d1e04b83a4d7c57c117c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ladderMap: {fileID: 0}
   alarmTriggered: 0
 --- !u!124 &12400000
 Behaviour:
