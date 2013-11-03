@@ -71,8 +71,8 @@
      <Compile Include="Assets\Scripts\Audio\SynchronisedPlayer.cs" />
      <Compile Include="Assets\Scripts\Detection Systems\AlarmTrigger.cs" />
      <Compile Include="Assets\Scripts\Detection Systems\DelayedReactionLogic.cs" />
-     <Compile Include="Assets\Scripts\Detection Systems\EscapeTrigger.cs" />
      <Compile Include="Assets\Scripts\Detection Systems\FieldOfView.cs" />
+     <Compile Include="Assets\Scripts\Detection Systems\Loot.cs" />
      <Compile Include="Assets\Scripts\Detection Systems\ReactionLogic.cs" />
      <Compile Include="Assets\Scripts\Detection Systems\ReactionMethod.cs" />
      <Compile Include="Assets\Scripts\Detection Systems\ShootReactionMethod.cs" />
@@ -85,6 +85,7 @@
      <Compile Include="Assets\Scripts\General\Mathfx.cs" />
      <Compile Include="Assets\Scripts\General\PositionMarker.cs" />
      <Compile Include="Assets\Scripts\General\Pulse.cs" />
+     <Compile Include="Assets\Scripts\General\RobotAiDistanceIndicator.cs" />
      <Compile Include="Assets\Scripts\General\SpriteEffects.cs" />
      <Compile Include="Assets\Scripts\General\StartScreen.cs" />
      <Compile Include="Assets\Scripts\General\TimerLight.cs" />

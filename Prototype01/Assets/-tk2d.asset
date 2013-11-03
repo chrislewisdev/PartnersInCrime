@@ -1537,3 +1537,16 @@ MonoBehaviour:
     loadable: 0
     assetName: 
     version: 3
+  - name: Menus
+    spriteCollectionGUID: 546c43362d03fdb4687903379912c0c0
+    spriteCollectionDataGUID: 3be07738f9a377349a159d42535cbd80
+    spriteNames:
+    - home
+    spriteTextureGUIDs:
+    - 6b2f8a9de93720e4eb83f59b3e719d91
+    spriteTextureTimeStamps:
+    - 1383512227
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
