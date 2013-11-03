@@ -12,6 +12,7 @@ public class RobotController : AiControllable {
 	private float runTimer = 0f;
 	private ParticleSystem smokeParticles;
 	private bool destroyed = false;
+	private bool punching = false;
 	
 	public override void aiSendDirection (Vector2 direction)
 	{
@@ -78,7 +79,17 @@ public class RobotController : AiControllable {
 		if (destroyed) return;
 		
 		if (Input.GetButtonDown("Attack"))
+		{
 			attack();
+			animations.Play (animations.Library.GetClipByName("Punch"));
+			punching = true;
+		}
+		
+		if (punching)
+		{
+			if (!animations.Playing || animations.CurrentClip.name != "Punch")
+				punching = false;
+		}
 
 		timeSinceLastHit += Time.deltaTime;
 		
@@ -111,7 +122,7 @@ public class RobotController : AiControllable {
 			else animations.Sprite.FlipX = true;
 			animations.Play(animations.Library.GetClipByName("Run"));
 		}
-		else
+		else if (!punching)
 		{
 			animations.Play (animations.Library.GetClipByName("Idle"));
 		}

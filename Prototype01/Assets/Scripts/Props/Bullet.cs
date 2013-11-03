@@ -8,30 +8,33 @@ public class Bullet : MonoBehaviour {
 	private static GameObject bulletPrefab = Resources.Load("bullet") as GameObject;
 	private float disappearTimer = .05f;
 	
-	public static void createBullet(Vector3 origin, Vector3 direction)
+	public static void createBullet(Vector3 origin, Vector3 direction, GameObject target = null)
 	{
-		createBullet(origin, Mathf.Atan2(direction.y, direction.x));
+		createBullet(origin, Mathf.Atan2(direction.y, direction.x), target);
 	}
 	
-	public static void createBullet(Vector3 origin, float angle)
+	public static void createBullet(Vector3 origin, float angle, GameObject target = null)
 	{
 		angle += Random.Range(-1.0f, 1.0f) * ACCURACY;
 		
 		Vector3 direction = new Vector3(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad), 0f);
-		createBulletandInit(origin, direction);
+		createBulletandInit(origin, direction, target);
 	}
 	
-	private static void createBulletandInit(Vector3 origin, Vector3 direction)
+	private static void createBulletandInit(Vector3 origin, Vector3 direction, GameObject target)
 	{
 		GameObject newBullet = Instantiate(bulletPrefab, origin + new Vector3(0f, 0f, .1f), Quaternion.identity) as GameObject;
-		newBullet.GetComponent<Bullet>().initBullet(direction);
+		newBullet.GetComponent<Bullet>().initBullet(direction, target);
 	}
 	
-	private void initBullet(Vector3 direction)
+	private void initBullet(Vector3 direction, GameObject target)
 	{
 		RaycastHit hit;
 		if (Physics.Raycast(new Ray(transform.position, direction), out hit))
 		{
+			if (target && hit.collider.gameObject != target)
+				return;
+			
 			RobotController robot = hit.collider.GetComponent<RobotController>();
 			if (robot != null)
 				robot.Damage();

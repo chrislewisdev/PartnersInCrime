@@ -51,12 +51,12 @@ public class ShootReactionMethod : ReactionMethod {
 				if (gunPosition == null)
 				{
 					Vector3 direction = GameManager.gameManager.Robot.transform.position - transform.position;
-					Bullet.createBullet(transform.position, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg);
+					Bullet.createBullet(transform.position, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg, GameManager.gameManager.Robot.gameObject);
 				}
 				else
 				{
 					Vector3 direction = GameManager.gameManager.Robot.transform.position - gunPosition.transform.position;
-					Bullet.createBullet(gunPosition.transform.position, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg);
+					Bullet.createBullet(gunPosition.transform.position, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg, GameManager.gameManager.Robot.gameObject);
 				}
 			}
 		}

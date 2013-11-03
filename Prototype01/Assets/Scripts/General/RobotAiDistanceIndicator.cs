@@ -20,8 +20,6 @@ public class RobotAiDistanceIndicator : MonoBehaviour {
 		float distance = Vector3.Distance(robot.transform.position, ai.transform.position);
 		if (distance > ai.maxRobotDistance / 2f)
 		{
-			float min = ai.maxRobotDistance / 2f;
-			float max = ai.maxRobotDistance;
 			float val =(distance - ai.maxRobotDistance / 2f) / (ai.maxRobotDistance / 2f);
 			
 			lineRenderer.enabled = true;
