@@ -78,12 +78,12 @@ public class RobotController : AiControllable {
 	{
 		if (destroyed) return;
 		
-		if (Input.GetButtonDown("Attack"))
+		/*if (Input.GetButtonDown("Attack"))
 		{
 			attack();
 			animations.Play (animations.Library.GetClipByName("Punch"));
 			punching = true;
-		}
+		}*/
 		
 		if (punching)
 		{
