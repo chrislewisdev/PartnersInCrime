@@ -29,7 +29,7 @@ public class Door : AiControllable {
 				boxCollider.enabled = true;
 				if (!boxCollider.bounds.Intersects(GameManager.gameManager.Robot.collider.bounds))
 				{
-					targetScale = 3f;
+					targetScale = 1f;
 					beginScale = doorCollider.transform.localScale.y;
 					doorCloseTimer = 0f;
 					if (closeSound != null) AudioSource.PlayClipAtPoint(closeSound, transform.position);
@@ -124,7 +124,7 @@ public class Door : AiControllable {
 				{
 					closeTimer = closeTime;
 					open = false;
-					targetScale = 3f;
+					targetScale = 1f;
 					beginScale = doorCollider.transform.localScale.y;
 					doorCloseTimer = 0f;
 					boxCollider.enabled = true;

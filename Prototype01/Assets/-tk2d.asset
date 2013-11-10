@@ -545,21 +545,24 @@ MonoBehaviour:
     - Security Cameras/2
     - Security Cameras/3
     - guardSpawner
-    - loot
+    - battery
+    - background - door
     spriteTextureGUIDs:
     - ce2b669e8997cf34db659d6825670a7b
     - ce2b669e8997cf34db659d6825670a7b
     - ce2b669e8997cf34db659d6825670a7b
     - ce2b669e8997cf34db659d6825670a7b
     - 1ef1405ec48b95a438804dda14116a03
-    - 72c8a2ab7472fb04c9dac07896b979b0
+    - a204aa88841e0794da1bdcdb5483e1a0
+    - e394ecd7cef4ff64d9f17106c5e2d26a
     spriteTextureTimeStamps:
-    - 1382212205.67146
-    - 1382212205.67146
-    - 1382212205.67146
-    - 1382212205.67146
-    - 1382701561.83929
-    - 1383440608.1155
+    - 1381700169.18048
+    - 1381700169.18048
+    - 1381700169.18048
+    - 1381700169.18048
+    - 1382910051.415
+    - 1383561845.92622
+    - 1384105023.09679
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
