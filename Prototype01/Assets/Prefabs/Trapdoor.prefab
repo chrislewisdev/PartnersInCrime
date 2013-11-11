@@ -69,7 +69,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106829}
-  m_LocalPosition: {x: 208.105057, y: 84.9272537, z: 10}
+  m_LocalPosition: {x: 284.772766, y: 190.501236, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400004}
@@ -81,8 +81,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.73355484, z: 0}
-  m_LocalScale: {x: 1, y: 3, z: 1}
+  m_LocalPosition: {x: 7.62502168e-07, y: 6.39633274, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400000}
   m_Father: {fileID: 400002}
@@ -98,7 +98,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 52e9cd63982a2794aa4879cb36fdf2f4, type: 2}
+  - {fileID: 2100000, guid: 5c77fda378c138c489ec024af734c058, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -121,8 +121,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.20000005, y: 3.20000005, z: 40}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.33333325, y: 10.208333, z: .200000003}
+  m_Center: {x: 0, y: -5.10416651, z: 0}
 --- !u!65 &6500002
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -146,10 +146,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66614e98694c3224598e6f0d216b52c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collection: {fileID: 11400000, guid: 272c20a8fc79a9b4390a7951e52e766e, type: 2}
+  collection: {fileID: 11400000, guid: 734c8e76ae1c996468cf053777b55d2c, type: 2}
   _color: {r: .368363082, g: .206314936, b: .779411793, a: 1}
   _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 2
+  _spriteId: 7
   boxCollider: {fileID: 6500000}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
@@ -167,6 +167,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerGadgets: []
   closeTime: 1.5
+  closeSound: {fileID: 0}
+  openSound: {fileID: 0}
   triggerGadgetsOnlyOnAiOpen: 1
 --- !u!1001 &100100000
 Prefab:
