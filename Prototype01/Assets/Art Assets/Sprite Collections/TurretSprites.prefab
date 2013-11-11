@@ -153,8 +153,8 @@ MonoBehaviour:
     regionH: 70
     regionId: 1
     colliderType: 3
-    boxColliderMin: {x: 31, y: 29}
-    boxColliderMax: {x: 88, y: 70}
+    boxColliderMin: {x: 31, y: 14}
+    boxColliderMax: {x: 106, y: 70}
     polyColliderIslands: []
     polyColliderCap: 1
     colliderConvex: 0
@@ -192,7 +192,7 @@ MonoBehaviour:
   normalGenerationMode: 0
   padAmount: -1
   autoUpdate: 1
-  editorDisplayScale: 1
+  editorDisplayScale: 3.18400121
   version: 4
   assetName: 
 --- !u!1001 &100100000

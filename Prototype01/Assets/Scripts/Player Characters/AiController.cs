@@ -145,7 +145,9 @@ public class AiController : AiActor {
 			
 			if (hitObject.GetComponent<AiControllable>() != null)
 			{		
-				if (Physics.Raycast(new Ray(transform.position, hitObject.transform.position - transform.position), out hit) || Vector3.Distance(transform.position, hitObject.transform.position) < 6.4f)
+				Debug.DrawRay (occupiedGadget.transform.position, hitObject.transform.position - occupiedGadget.transform.position, Color.red);
+				//if (Input.GetKey(KeyCode.D)) Debug.Break ();
+				if (Physics.Raycast(new Ray(occupiedGadget.transform.position, hitObject.transform.position - occupiedGadget.transform.position), out hit) || Vector3.Distance(transform.position, hitObject.transform.position) < 6.4f)
 				{	
 					if (hit.collider && hit.collider.gameObject == hitObject)
 						return hitObject;
@@ -167,7 +169,8 @@ public class AiController : AiActor {
 				Vector3.Distance(g.gameObject.transform.position, GameManager.gameManager.Robot.transform.position) < maxRobotDistance)
 			{
 				RaycastHit hit;
-				Physics.Raycast(new Ray(transform.position, g.gameObject.transform.position - transform.position), out hit);
+				//Debug.DrawRay (occupiedGadget.transform.position, g.gameObject.transform.position - occupiedGadget.transform.position, Color.red);
+				Physics.Raycast(new Ray(occupiedGadget.transform.position, g.gameObject.transform.position - occupiedGadget.transform.position), out hit);
 				if ((hit.collider.gameObject == g.gameObject && Vector3.Distance(transform.position, g.gameObject.transform.position) < maxJumpRange)
 					|| Vector3.Distance(transform.position, g.transform.position) < 6.2f)
 					visibleObjects.Add(g.gameObject);
