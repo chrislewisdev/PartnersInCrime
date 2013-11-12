@@ -174,6 +174,33 @@ public class AiController : AiActor {
 				if ((hit.collider.gameObject == g.gameObject && Vector3.Distance(transform.position, g.gameObject.transform.position) < maxJumpRange)
 					|| Vector3.Distance(transform.position, g.transform.position) < 6.2f)
 					visibleObjects.Add(g.gameObject);
+				else if (g.GetComponent<Door>()) // if door, do additional raycasts
+				{
+					if (g.transform.rotation.z == 0.0f) // if vertical door
+					{
+						if ((Physics.Raycast(new Ray(occupiedGadget.transform.position, 
+							g.gameObject.transform.position + new Vector3(g.collider.bounds.extents.x, 0f, 0f) - occupiedGadget.transform.position), out hit) 
+							&& hit.collider.gameObject == g.gameObject) ||
+							(Physics.Raycast(new Ray(occupiedGadget.transform.position, 
+							g.gameObject.transform.position - new Vector3(g.collider.bounds.extents.x, 0f, 0f) - occupiedGadget.transform.position), out hit)) 
+							&& hit.collider.gameObject == g.gameObject)
+						{
+							visibleObjects.Add(g.gameObject);
+						}
+					}
+					else // if horizontal door
+					{
+						if ((Physics.Raycast(new Ray(occupiedGadget.transform.position, 
+							g.gameObject.transform.position + new Vector3(0f, g.collider.bounds.extents.y, 0f) - occupiedGadget.transform.position), out hit) 
+							&& hit.collider.gameObject == g.gameObject) ||
+							(Physics.Raycast(new Ray(occupiedGadget.transform.position, 
+							g.gameObject.transform.position - new Vector3(0f, g.collider.bounds.extents.y, 0f) - occupiedGadget.transform.position), out hit)) 
+							&& hit.collider.gameObject == g.gameObject)
+						{
+							visibleObjects.Add(g.gameObject);
+						}
+					}
+				}
 			}
 		}
 		
