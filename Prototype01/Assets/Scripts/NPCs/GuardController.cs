@@ -25,6 +25,7 @@ public class GuardController : AiControllable {
 	private const float bumpRange = 6f;
 	private bool destroyed = false;
 	private GameObject gunPosition;
+	private float stunTimer = 0;
 	
 	public override void aiArrived ()
 	{
@@ -83,6 +84,8 @@ public class GuardController : AiControllable {
 	// Update is called once per frame
 	void Update () 
 	{
+		if (stunTimer > 0) stunTimer -= Time.deltaTime;
+		
 		if (!isActive || destroyed) // Do nothing if currently occupied by ai
 			return;
 		
@@ -108,9 +111,10 @@ public class GuardController : AiControllable {
 		}
 		
 		alertness = reaction.DetermineAlertness();
+		if (stunTimer > 0) alertness = Alertness.Normal;
 		if (alertness == Alertness.Aggressive)
 		{
-			reactionMethod.OnAggressive();
+			if (stunTimer <= 0) reactionMethod.OnAggressive();
 			if (previousAlertness != Alertness.Aggressive) 
 			{
 				if (alertSound != null) AudioSource.PlayClipAtPoint(alertSound, transform.position);
@@ -143,8 +147,11 @@ public class GuardController : AiControllable {
 			previousAlertness = Alertness.Normal;
 		}
 		
-		movement.UpdateMovement();
-		orientation = (int)Mathf.Sign (movement.Velocity.x);
+		if (stunTimer <= 0)
+		{
+			movement.UpdateMovement();
+			orientation = (int)Mathf.Sign (movement.Velocity.x);
+		}
 		Vector3 gunPosi = gunPosition.transform.localPosition;
 		if (orientation == 1)
 			gunPosi.x = 2.604553f;
@@ -159,6 +166,8 @@ public class GuardController : AiControllable {
 		//Set our FOV orientation
 		sight.Rotation = orientation == 1 ? 0 : 180;
 		
+		sight.getLight ().LightEnabled = (stunTimer <= 0f);
+		
 		if (orientation > 0) animations.Sprite.FlipX = true;
 		else if (orientation < 0) animations.Sprite.FlipX = false;
 		
@@ -166,5 +175,10 @@ public class GuardController : AiControllable {
 		{
 			animations.Play (animations.Library.GetClipByName("Hover"));
 		}
+	}
+	
+	public void Stun(float seconds)
+	{
+		stunTimer += seconds;
 	}
 }

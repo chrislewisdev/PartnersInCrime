@@ -1287,6 +1287,39 @@ MonoBehaviour:
     - foreground - pillar/5
     - foreground - walk platform/0
     - foreground - walk platform/1
+    - background - wall 1/0
+    - background - wall 1/1
+    - background - wall 1/2
+    - background - wall 1/3
+    - background - wall 1/4
+    - background - wall 1/5
+    - background - wall 1/6
+    - background - wall 1/7
+    - background - wall 1/8
+    - background - wall 1/9
+    - background - wall 1/10
+    - background - wall 1/11
+    - background - wall 2/0
+    - background - wall 2/1
+    - background - wall 2/2
+    - background - wall 2/3
+    - background - wall 2/4
+    - background - wall 2/5
+    - background - wall 2/6
+    - background - wall 2/7
+    - background - wall 2/8
+    - background - wall 2/9
+    - background - wall 3/0
+    - background - wall 3/1
+    - background - wall 3/2
+    - background - wall 3/3
+    - background - wall 3/4
+    - background - wall 3/5
+    - background - wall 3/6
+    - background - wall 3/7
+    - background - wall 3/8
+    - background - wall 3/9
+    - background - wall 3/10
     spriteTextureGUIDs:
     - 5cdf6f4fa6b1f6f4a85f411d953d72d1
     - 5cdf6f4fa6b1f6f4a85f411d953d72d1
@@ -1323,42 +1356,108 @@ MonoBehaviour:
     - 1d06d3d36e45936499a22a87f478906d
     - b80a3cacd7367874780575ae41eaa9b1
     - b80a3cacd7367874780575ae41eaa9b1
+    - 986c810a6ef37ec4099cadfd996c6edc
+    - 986c810a6ef37ec4099cadfd996c6edc
+    - 986c810a6ef37ec4099cadfd996c6edc
+    - 986c810a6ef37ec4099cadfd996c6edc
+    - 986c810a6ef37ec4099cadfd996c6edc
+    - 986c810a6ef37ec4099cadfd996c6edc
+    - 986c810a6ef37ec4099cadfd996c6edc
+    - 986c810a6ef37ec4099cadfd996c6edc
+    - 986c810a6ef37ec4099cadfd996c6edc
+    - 986c810a6ef37ec4099cadfd996c6edc
+    - 986c810a6ef37ec4099cadfd996c6edc
+    - 986c810a6ef37ec4099cadfd996c6edc
+    - 710a71a6cafb4c843841a828a5e060f8
+    - 710a71a6cafb4c843841a828a5e060f8
+    - 710a71a6cafb4c843841a828a5e060f8
+    - 710a71a6cafb4c843841a828a5e060f8
+    - 710a71a6cafb4c843841a828a5e060f8
+    - 710a71a6cafb4c843841a828a5e060f8
+    - 710a71a6cafb4c843841a828a5e060f8
+    - 710a71a6cafb4c843841a828a5e060f8
+    - 710a71a6cafb4c843841a828a5e060f8
+    - 710a71a6cafb4c843841a828a5e060f8
+    - c4d78165d0e9984418e4c2cbba0aa8e1
+    - c4d78165d0e9984418e4c2cbba0aa8e1
+    - c4d78165d0e9984418e4c2cbba0aa8e1
+    - c4d78165d0e9984418e4c2cbba0aa8e1
+    - c4d78165d0e9984418e4c2cbba0aa8e1
+    - c4d78165d0e9984418e4c2cbba0aa8e1
+    - c4d78165d0e9984418e4c2cbba0aa8e1
+    - c4d78165d0e9984418e4c2cbba0aa8e1
+    - c4d78165d0e9984418e4c2cbba0aa8e1
+    - c4d78165d0e9984418e4c2cbba0aa8e1
+    - c4d78165d0e9984418e4c2cbba0aa8e1
     spriteTextureTimeStamps:
-    - 1382212204.45339
-    - 1382212204.45339
-    - 1382212204.45339
-    - 1382212204.45339
-    - 1382212204.45339
-    - 1382212204.45339
-    - 1382698003.55877
-    - 1382698003.55877
-    - 1382698003.55877
-    - 1382698003.55877
-    - 1382698003.55877
-    - 1382698003.55877
-    - 1382698003.54877
-    - 1382698003.54877
-    - 1382698003.54877
-    - 1382698003.54877
-    - 1382698003.54877
-    - 1382698003.54877
-    - 1382698003.54877
-    - 1382698003.54877
-    - 1382698003.54877
-    - 1382698003.55677
-    - 1382698003.55677
-    - 1382698003.55677
-    - 1382698003.55677
-    - 1382698003.55677
-    - 1382698003.55677
-    - 1382698003.56077
-    - 1382698003.56077
-    - 1382698003.56077
-    - 1382698003.56077
-    - 1382698003.56077
-    - 1382698003.56077
-    - 1382698003.56477
-    - 1382698003.56477
+    - 1381671235
+    - 1381671235
+    - 1381671235
+    - 1381671235
+    - 1381671235
+    - 1381671235
+    - 1381670621
+    - 1381670621
+    - 1381670621
+    - 1381670621
+    - 1381670621
+    - 1381670621
+    - 1381670613
+    - 1381670613
+    - 1381670613
+    - 1381670613
+    - 1381670613
+    - 1381670613
+    - 1381670613
+    - 1381670613
+    - 1381670613
+    - 1381670618
+    - 1381670618
+    - 1381670618
+    - 1381670618
+    - 1381670618
+    - 1381670618
+    - 1381670623
+    - 1381670623
+    - 1381670623
+    - 1381670623
+    - 1381670623
+    - 1381670623
+    - 1382654531.36905
+    - 1382654531.36905
+    - 1383265135
+    - 1383265135
+    - 1383265135
+    - 1383265135
+    - 1383265135
+    - 1383265135
+    - 1383265135
+    - 1383265135
+    - 1383265135
+    - 1383265135
+    - 1383265135
+    - 1383265135
+    - 1383515230
+    - 1383515230
+    - 1383515230
+    - 1383515230
+    - 1383515230
+    - 1383515230
+    - 1383515230
+    - 1383515230
+    - 1383515230
+    - 1383515230
+    - 1383515233
+    - 1383515233
+    - 1383515233
+    - 1383515233
+    - 1383515233
+    - 1383515233
+    - 1383515233
+    - 1383515233
+    - 1383515233
+    - 1383515233
+    - 1383515233
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

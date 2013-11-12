@@ -4,6 +4,8 @@ using System.Collections;
 [RequireComponent(typeof(RobotMovement))]
 public class RobotController : AiControllable {
 	
+	public float punchCooldown;
+	
 	private tk2dSpriteAnimator animations;
 	private float health = 2f;
 	private float timeSinceLastHit = 5f;
@@ -13,6 +15,7 @@ public class RobotController : AiControllable {
 	private ParticleSystem smokeParticles;
 	private bool destroyed = false;
 	private bool punching = false;
+	private float punchTimer;
 	
 	public override void aiSendDirection (Vector2 direction)
 	{
@@ -78,17 +81,14 @@ public class RobotController : AiControllable {
 	{
 		if (destroyed) return;
 		
-		if (Input.GetButtonDown("Attack"))
+		if (punchTimer > 0) punchTimer -= Time.deltaTime;
+		
+		if (Input.GetButtonDown("Attack") && !punching && punchTimer <= 0f)
 		{
 			attack();
 			animations.Play (animations.Library.GetClipByName("Punch"));
 			punching = true;
-		}
-		
-		if (punching)
-		{
-			if (!animations.Playing || animations.CurrentClip.name != "Punch")
-				punching = false;
+			punchTimer = punchCooldown;
 		}
 
 		timeSinceLastHit += Time.deltaTime;
@@ -98,7 +98,12 @@ public class RobotController : AiControllable {
 		movement.UpdateMovement ();
 		
 		//Update sprite
-		if (movement.Velocity.y > 0 && movement.AttachedToLadder)
+		if (punching)
+		{
+			if (!animations.Playing || animations.CurrentClip.name != "Punch")
+				punching = false;
+		}
+		else if (movement.Velocity.y > 0 && movement.AttachedToLadder)
 		{
 			animations.Play (animations.Library.GetClipByName("Ladder_Climb_Up"));
 		}
@@ -149,10 +154,14 @@ public class RobotController : AiControllable {
 		{
 			if (Vector3.Distance(transform.position, guard.transform.position) < 5f)
 			{
-				if (guard.isPossessed() || poweredUp)
+				/*if (guard.isPossessed() || poweredUp)
 				{
 					guard.Damage(10);
 				}
+				else
+				{*/
+					guard.Stun (1f);
+				//}
 			}
 		}
 		
