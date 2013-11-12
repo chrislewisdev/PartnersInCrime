@@ -24,6 +24,7 @@ public class GuardController : AiControllable {
 	private int orientation = 1;
 	private const float bumpRange = 6f;
 	private bool destroyed = false;
+	private GameObject gunPosition;
 	
 	public override void aiArrived ()
 	{
@@ -76,6 +77,7 @@ public class GuardController : AiControllable {
 		movement = GetComponent<GuardMovement>();
 		animations = GetComponent<tk2dSpriteAnimator>();
 		effects = GetComponent<SpriteEffects>();
+		gunPosition = GetComponentInChildren<PositionMarker>().gameObject;
 	}
 	
 	// Update is called once per frame
@@ -92,6 +94,13 @@ public class GuardController : AiControllable {
 			reaction.OnIntruderInSight();
 			//Try to turn to face the player
 			orientation = (int)Mathf.Sign (GameManager.gameManager.Robot.transform.position.x - transform.position.x);
+			Vector3 gunPos = gunPosition.transform.localPosition;
+			if (orientation == 1)
+				gunPos.x = 2.604553f;
+			else
+				gunPos.x = -2.604553f;
+		
+		gunPosition.transform.localPosition = gunPos;
 		}
 		else
 		{
@@ -136,6 +145,13 @@ public class GuardController : AiControllable {
 		
 		movement.UpdateMovement();
 		orientation = (int)Mathf.Sign (movement.Velocity.x);
+		Vector3 gunPosi = gunPosition.transform.localPosition;
+		if (orientation == 1)
+			gunPosi.x = 2.604553f;
+		else
+			gunPosi.x = -2.604553f;
+		
+		gunPosition.transform.localPosition = gunPosi;
 	}
 	
 	private void UpdateVisuals()

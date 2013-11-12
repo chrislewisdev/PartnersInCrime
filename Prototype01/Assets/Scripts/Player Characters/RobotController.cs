@@ -5,7 +5,7 @@ using System.Collections;
 public class RobotController : AiControllable {
 	
 	private tk2dSpriteAnimator animations;
-	private float health = 10f;
+	private float health = 2f;
 	private float timeSinceLastHit = 5f;
 	private RobotMovement movement;
 	private bool poweredUp = false;
@@ -78,12 +78,12 @@ public class RobotController : AiControllable {
 	{
 		if (destroyed) return;
 		
-		/*if (Input.GetButtonDown("Attack"))
+		if (Input.GetButtonDown("Attack"))
 		{
 			attack();
 			animations.Play (animations.Library.GetClipByName("Punch"));
 			punching = true;
-		}*/
+		}
 		
 		if (punching)
 		{

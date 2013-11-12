@@ -48,6 +48,9 @@ public class ShootReactionMethod : ReactionMethod {
 				if (shootSound != null) 
 					AudioSource.PlayClipAtPoint (shootSound, transform.position);
 				shotTimer = shotDelay;
+				
+				if (collider.bounds.Intersects(GameManager.gameManager.Robot.collider.bounds))
+					GameManager.gameManager.Robot.Damage();
 				if (gunPosition == null)
 				{
 					Vector3 direction = GameManager.gameManager.Robot.transform.position - transform.position;
