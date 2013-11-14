@@ -41,7 +41,7 @@ public class ShootReactionMethod : ReactionMethod {
 	
 	private void AttackPlayer()
 	{
-		if (sight.IsObjectInView(GameManager.gameManager.Robot.gameObject))
+		if (sight.IsObjectInView(GameManager.gameManager.Robot.gameObject) && !GameManager.gameManager.Robot.isDestroyed())
 		{
 			if (shotTimer <= 0) 
 			{

@@ -58,10 +58,10 @@ MonoBehaviour:
     normals: []
     tangents: []
     uvs:
-    - {x: .00195410149, y: .000977050746}
-    - {x: .00195410149, y: .667968273}
-    - {x: .769530296, y: .000977050746}
-    - {x: .769530296, y: .667968273}
+    - {x: .001465332, y: .001465332}
+    - {x: .668456554, y: .001465332}
+    - {x: .001465332, y: .385253429}
+    - {x: .668456554, y: .385253429}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 0dbf756a50221d347a6c35e3f41dc657, type: 2}
     materialId: 0
@@ -71,7 +71,45 @@ MonoBehaviour:
     regionY: 0
     regionW: 0
     regionH: 0
-    flipped: 1
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
+  - name: credits
+    boundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 71.1458282, y: 40.9375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 71.1458282, y: 40.9375, z: 0}
+    texelSize: {x: .0520833321, y: .0520833321}
+    positions:
+    - {x: -35.5729141, y: -20.46875, z: 0}
+    - {x: 35.5729141, y: -20.46875, z: 0}
+    - {x: -35.5729141, y: 20.46875, z: 0}
+    - {x: 35.5729141, y: 20.46875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .001465332, y: .388184071}
+    - {x: .668456554, y: .388184071}
+    - {x: .001465332, y: .771972179}
+    - {x: .668456554, y: .771972179}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0dbf756a50221d347a6c35e3f41dc657, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1ad3346101843854caf0340bb9bada6d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
     complexGeometry: 0
     colliderType: 0
     colliderVertices: []
@@ -93,7 +131,7 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: .0500000007
   halfTargetHeight: 384
-  buildKey: 538933044
+  buildKey: 1153807843
   dataGuid: 3be07738f9a377349a159d42535cbd80
   managedSpriteCollection: 0
   hasPlatformData: 0

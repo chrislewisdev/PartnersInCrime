@@ -108,9 +108,9 @@ public class Door : AiControllable {
 			float y = Mathfx.Coserp(beginScale, targetScale, doorCloseTimer);
 			doorCollider.transform.localScale = new Vector3(1f, y, 1f);
 			
-			if (!particleEffectPlayed && doorCollider.transform.localScale.y >= 2.9f)
+			if (!particleEffectPlayed && doorCollider.transform.localScale.y >= 0.9f)
 			{
-				Instantiate(Resources.Load("FloorHit") as GameObject, transform.position + new Vector3(0f, -collider.bounds.extents.y, -1f), Quaternion.identity);
+				Instantiate(Resources.Load("FloorHit") as GameObject, transform.position + new Vector3(0f, -collider.bounds.extents.y - 0.5f, -1f), Quaternion.identity);
 				particleEffectPlayed = true;
 			}
 		}
@@ -129,6 +129,7 @@ public class Door : AiControllable {
 					doorCloseTimer = 0f;
 					boxCollider.enabled = true;
 					if (closeSound != null) AudioSource.PlayClipAtPoint(closeSound, transform.position);
+					particleEffectPlayed = false;
 				}
 			}
 		}

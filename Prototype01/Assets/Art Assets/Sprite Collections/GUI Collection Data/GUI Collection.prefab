@@ -96,10 +96,10 @@ MonoBehaviour:
     normals: []
     tangents: []
     uvs:
-    - {x: .00390820298, y: .948243141}
-    - {x: .0566386729, y: .948243141}
-    - {x: .00390820298, y: .996092796}
-    - {x: .0566386729, y: .996092796}
+    - {x: .162111327, y: .579102516}
+    - {x: .214841798, y: .579102516}
+    - {x: .162111327, y: .626952171}
+    - {x: .214841798, y: .626952171}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 2d7423eba20baad4992b984924171843, type: 2}
     materialId: 0
@@ -194,6 +194,44 @@ MonoBehaviour:
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
     attachPoints: []
+  - name: back retry
+    boundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 18.5, y: 2.375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 18.5, y: 2.375, z: 0}
+    texelSize: {x: .0625, y: .0625}
+    positions:
+    - {x: -9.25, y: -1.1875, z: 0}
+    - {x: 9.25, y: -1.1875, z: 0}
+    - {x: -9.25, y: 1.1875, z: 0}
+    - {x: 9.25, y: 1.1875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00390820298, y: .948243141}
+    - {x: .582029283, y: .948243141}
+    - {x: .00390820298, y: .985350609}
+    - {x: .582029283, y: .985350609}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 2d7423eba20baad4992b984924171843, type: 2}
+    materialId: 0
+    sourceTextureGUID: 54f60d6b3f64e5948843ac4a763ebfa8
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    attachPoints: []
   premultipliedAlpha: 0
   material: {fileID: 0}
   materials:
@@ -207,7 +245,7 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: .0500000007
   halfTargetHeight: 320
-  buildKey: 202143512
+  buildKey: 328312852
   dataGuid: 71f5123ee30b16a4fbaee849199395af
   managedSpriteCollection: 0
   hasPlatformData: 0

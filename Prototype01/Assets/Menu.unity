@@ -244,8 +244,8 @@ MonoBehaviour:
   viewportClippingEnabled: 0
   viewportRegion: {x: 0, y: 0, z: 100, w: 100}
   zoomFactor: 1
-  forceResolutionInEditor: 0
-  forceResolution: {x: 960, y: 640}
+  forceResolutionInEditor: 1
+  forceResolution: {x: 1366, y: 768}
 --- !u!20 &827109511
 Camera:
   m_ObjectHideFlags: 3
@@ -298,6 +298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetLevel: finalLevel
+  menuImage: {fileID: 10748527}
 --- !u!1 &1335101243
 GameObject:
   m_ObjectHideFlags: 0

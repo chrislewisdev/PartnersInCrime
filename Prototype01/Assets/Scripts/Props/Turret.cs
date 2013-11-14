@@ -57,7 +57,7 @@ public class Turret : AiControllable {
 	
 	private void fireTurret()
 	{	
-		if (fireTimer >= reloadTimer)
+		if (fireTimer >= reloadTimer && !GameManager.gameManager.Robot.isDestroyed())
 		{
 			if (shootSound != null) AudioSource.PlayClipAtPoint(shootSound, transform.position);
 			Bullet.createBullet(transform.position, transform.eulerAngles.z);

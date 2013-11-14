@@ -5,6 +5,7 @@ using System.Collections;
 public class RobotController : AiControllable {
 	
 	public float punchCooldown;
+	public AudioClip zapSound;
 	
 	private tk2dSpriteAnimator animations;
 	private float health = 2f;
@@ -74,6 +75,11 @@ public class RobotController : AiControllable {
 	public void Flash(Color colour)
 	{
 		GetComponent<SpriteEffects>().FlashColour (colour, 0.5f);
+	}
+	
+	public bool isDestroyed()
+	{
+		return destroyed;
 	}
 	
 	// Update is called once per frame
@@ -147,7 +153,7 @@ public class RobotController : AiControllable {
 	//Attack robot for takedown
 	void attack()
 	{
-		//seriously ugly but it should be a problem for performance
+		//seriously ugly but it shouldn't be a problem for performance
 		GuardController[] guardControllers = (GuardController[])Object.FindObjectsOfType(typeof(GuardController));
 		
 		foreach (GuardController guard in guardControllers)
@@ -161,6 +167,8 @@ public class RobotController : AiControllable {
 				else
 				{*/
 					guard.Stun (1f);
+					if (zapSound != null) 
+						AudioSource.PlayClipAtPoint(zapSound, transform.position);
 				//}
 			}
 		}

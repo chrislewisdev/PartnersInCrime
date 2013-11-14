@@ -26,6 +26,7 @@ public class GuardController : AiControllable {
 	private bool destroyed = false;
 	private GameObject gunPosition;
 	private float stunTimer = 0;
+	private ParticleSystem stunSparks;
 	
 	public override void aiArrived ()
 	{
@@ -79,6 +80,8 @@ public class GuardController : AiControllable {
 		animations = GetComponent<tk2dSpriteAnimator>();
 		effects = GetComponent<SpriteEffects>();
 		gunPosition = GetComponentInChildren<PositionMarker>().gameObject;
+		stunSparks = GetComponentInChildren<ParticleSystem>();
+		stunSparks.enableEmission = false;
 	}
 	
 	// Update is called once per frame
@@ -118,6 +121,7 @@ public class GuardController : AiControllable {
 			if (previousAlertness != Alertness.Aggressive) 
 			{
 				if (alertSound != null) AudioSource.PlayClipAtPoint(alertSound, transform.position);
+
 				animations.Play (animations.Library.GetClipByName ("Shoot"));
 			}
 			activateConnectedGadgets();
@@ -151,6 +155,7 @@ public class GuardController : AiControllable {
 		{
 			movement.UpdateMovement();
 			orientation = (int)Mathf.Sign (movement.Velocity.x);
+			stunSparks.enableEmission = false;
 		}
 		Vector3 gunPosi = gunPosition.transform.localPosition;
 		if (orientation == 1)
@@ -180,5 +185,6 @@ public class GuardController : AiControllable {
 	public void Stun(float seconds)
 	{
 		stunTimer += seconds;
+		stunSparks.enableEmission = true;
 	}
 }
