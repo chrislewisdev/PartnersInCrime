@@ -166,7 +166,7 @@ public class RobotController : AiControllable {
 				}
 				else
 				{*/
-					guard.Stun (1f);
+					guard.Stun (1.5f);
 					if (zapSound != null) 
 						AudioSource.PlayClipAtPoint(zapSound, transform.position);
 				//}
