@@ -108,7 +108,7 @@ public class Door : AiControllable {
 			float y = Mathfx.Coserp(beginScale, targetScale, doorCloseTimer);
 			doorCollider.transform.localScale = new Vector3(1f, y, 1f);
 			
-			if (!particleEffectPlayed && doorCollider.transform.localScale.y >= 0.9f)
+			if (transform.rotation.eulerAngles.z == 0f && !particleEffectPlayed && doorCollider.transform.localScale.y >= 0.9f)
 			{
 				Instantiate(Resources.Load("FloorHit") as GameObject, transform.position + new Vector3(0f, -collider.bounds.extents.y - 0.5f, -1f), Quaternion.identity);
 				particleEffectPlayed = true;
